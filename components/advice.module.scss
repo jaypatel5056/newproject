@@ -1,0 +1,91 @@
+.home{
+    height: 375px;
+    font-size: 2rem;
+    margin-top: 70px;
+    .colour1{
+        height: 250px;
+    }
+    .colour2{
+        height: 600px;
+        background-color: #5576fb;
+    }
+    .section1{
+        border: 1px solid;
+        width: 65%;
+        margin: 0 auto;
+        height: 500px;
+        position: relative;
+        background-color: white;
+        transform: translatey(-900px);
+        // .try{
+        //     height: 300px;
+        // }
+        
+        .image{
+            background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c89956fbc2d95ac2bffb4a86/gffg.jpg);
+            width: 900px;
+            height: 720px ;
+            background-size: cover;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+        .rectangle1{
+            height: 450px;
+            width: 550px;
+            position: absolute;
+            background-color: white;
+            top: 15%;
+            left: 50%;
+            // transform: translateX(50%);
+            padding: 30px;
+            padding-top: 40px;
+            .h2{
+                font-size: 3rem;
+                font-family: Montserrat,sans-serif;
+                line-height: 1.1;
+                font-weight: 700;
+                word-wrap: break-word;
+                text-align: left;
+            }
+           .p1{
+            margin-top: 30px;
+            font-size: 1rem;
+            font-style: italic;
+            color: #111111 !important;
+            word-wrap: break-word;
+            text-align: left;
+            font-family: 'Open Sans',sans-serif;
+            .a1{
+                border-bottom-style: solid;
+                border-radius: 2px;
+               }
+           }
+           .buttons1{
+            width: 230px;
+            margin-top: 30px;
+            border: 1px solid;
+            border-radius: 50px !important;
+            text-align: center;
+            padding: 10px;
+            margin-top: 45px;
+            font-family: 'Open Sans',sans-serif;
+            letter-spacing: 1px;
+            background-color: white;
+            height: 60px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5576fb !important;
+            a{
+                // padding: 10px;
+                color: #ffffff !important;
+                
+                
+            }
+          }
+
+    }
+}
+}

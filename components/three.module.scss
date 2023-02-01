@@ -1,0 +1,72 @@
+.starting{
+    margin-top: 475px;
+    height:800px;
+    // .binding{
+    //     width: 65% !important;
+    //     margin: 0 auto;
+    // }
+    .firstsection{
+        background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f6017eaa9b1354efa1f776d0/pexels-photo-301930.png);
+        height: 800px;
+       object-fit: cover;
+       background-repeat: no-repeat;
+       width: 100% !important;
+       margin: 0 auto;
+    //    vertical-align: middle;
+       overflow: hidden;
+       background-size:cover ;
+       background-position: center center;
+
+    }
+    .secondsection{
+        // margin-top: 100px;
+        .sections{
+            display: flex;
+                 
+            transform: translateY(400px);
+            width: 70%;
+            margin: auto;
+            margin-top: 30px;
+            .section{
+                flex: 1;
+                height: 300px;
+                word-wrap: break-word;
+                padding: 30px;
+                .style{
+                    padding: 30px;
+                    padding-left: 0;
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    .h2{
+                        font-weight: 700;   
+                        font-size: 3.75rem;
+                        margin: 20px 25px 0 0;
+                        font-family: Montserrat, sans-serif !important;
+                        color: #879ffc !important;
+                    }
+                    .h5{
+                        font-weight: 700;
+                        font-family: Montserrat, sans-serif !important;
+                        margin: -35px 0 0 97px;
+                        word-wrap: break-word;
+                        text-align: left;
+                        margin: 20px 20px 0 0;
+                        font-size: 1.25rem;
+                        align-items: flex-end;
+                    }
+                }
+                    .p1{
+                        word-wrap: break-word;
+                        color: #111111;
+                        font-family: 'Open Sans',sans-serif;
+                        // font-size: 1rem;
+                        font-size: 1.2rem;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    
+
+    }
