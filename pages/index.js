@@ -55,9 +55,7 @@ export default function Home() {
 <Firm/>
 <Last/>
 <FAQ/>
-
-      </main>
-      
-    </>
+</main>
+</>
   )
 }

@@ -1,0 +1,219 @@
+.first {
+  width: 65% !important;
+  margin: 0 auto;
+  height: 100%;
+  
+  //background: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-hero-gradient-bg-purple.svg");
+  // object-fit: cover;
+  // background-size: cover;
+  background-position: top left;
+  width: 100%;
+  background-repeat: no-repeat;
+  .navbar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .logo{
+        margin-right: 20px;
+    }
+    .hello{
+        font-size:1rem;
+        margin-right: 10px;
+        
+    }
+  }
+  .twosections{
+    display: flex;
+    gap: 30px;
+    height: 1500px;
+   .firstsection{
+    width: 70%;
+    border: 1px solid;
+    .blog1{
+        background-image:linear-gradient(90deg, rgba(144,143,162,1) 0%, rgba(92,92,94,1) 0%, rgba(0,0,0,0.4542191876750701) 100%, rgba(0,212,255,1) 100%),
+        url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-01.jpg");
+        object-fit: cover;
+        position: relative;
+        background-size: cover;
+        height: 600px;
+
+        .rectangle {
+            // background-color:#5576fb;
+            font-size: 1rem;
+            padding: 30px 50px;
+            width: 75%;
+            height: 410px;
+            position: absolute;
+            top: 80%;
+            // bottom: 30%;
+            /* bottom: 0; */
+            /* top: 100px; */
+            /* left: 10%; */
+            transform: translateY(-50%);
+            text-align: left;
+          //   animation: slidefromleft 0.3s ease forwards;
+            
+          //   transform: translateX(-100%);
+            &.rectangleshow{
+              // animation: slidefromleft 0.3s ease forwards;
+  
+            }
+            /* margin-left: 130px; */
+            .p1 {
+              padding-top: 20px;
+              font-size: 0.75rem;
+              //   font-family: Montserrat,sans-serif;
+              /* padding-top:px; */
+              color: white;
+            //   font-weight: 700;
+              word-wrap: break-word;
+              font-family: 'Inter',sans-serif;
+              opacity: 1;            
+              // transform: translateY(-200%);
+              letter-spacing: 3px;
+              // animation: slidefromup 2s ease-in forwards;
+              cursor: pointer;
+              &:hover{
+                color: #805aed;
+              // opacity: ;
+              transition: all .5s linear;
+              }
+            }
+            .p2{
+              font-size: 1.25rem;
+              font-family: 'Open Sans',sans-serif;
+              color: white !important;
+              padding-top: 20px;
+            //   padding-bottom: 20px;
+              font-family: 'Open Sans',sans-serif;
+              a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Sora',sans-serif;
+                line-height: 1.2em;
+                font-size: 2rem;
+                font-weight: 700;
+               
+              }
+            }
+            .p3{
+              font-size: 1rem;
+              // font-family: 'Open Sans',sans-serif;
+              color: white !important;
+              padding-top: 10px;
+            //   padding-bottom: 20px;
+              font-family: 'Inter',sans-serif;
+  
+              .a1{
+                  border-bottom-style: solid;
+                  border-width: 1px;
+                  // color: white !important;
+                  // text-decoration: none;
+              }
+            }
+            .details{
+                margin-top: 5px;
+                color: white;
+                display: flex;
+                gap : 15px;
+                .details1{
+                    display: flex;
+                    gap : 10px;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                    .icons{
+                        text-align: center;
+                    }
+                   }
+            }
+          }
+        // background: linear-gradient(90deg, rgba(144,143,162,1) 0%, rgba(92,92,94,1) 0%, rgba(133,133,142,1) 100%, rgba(0,212,255,1) 100%)
+    }
+    .editorspick{
+      margin-top: 50px;
+      display:  flex;
+      gap: 30px;
+      .label1{
+        height: 17px;
+        width: 120px;
+        background-color: white;
+        transform: translateY(-245px);
+        font-family: 'Inter',sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 20px;
+        // position: absolute;
+        font-size: 0.75rem;
+        // top: 20px ;
+        
+}
+      .section1{
+        flex: 1;
+        .epimg1{
+          
+          position: relative;
+          img{
+            height: 170px;
+            object-fit: cover;
+            background-size: cover;
+            width: 100%;
+          } 
+        }
+        .desc{
+          margin-top: 30px;
+          a{
+            text-decoration: none;
+            color: black;
+            font-family: '  ',sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+          }
+
+        }
+      }
+
+    }
+    
+   }
+   .secondsection{
+    padding-left: 10px;
+    width: 25%;
+    border: 1px solid;
+    .image{
+        background-image: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-09.jpg");
+        height: 200px; 
+        object-fit: cover;  
+        object-fit: cover;
+        background-size: cover;
+        // background-position: center center;
+    }
+    .text{
+.text1{
+    margin-top: 20px;
+    .h2{
+        color:#4169e1;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        font-family: 'Inter',sans-serif;
+        font-weight: 400;   
+    }
+    .link1{
+        text-decoration: none;
+        color: black;
+        font-family: 'Sora',sans-serif;
+        font-weight: 700;
+    }
+}
+    }
+   }
+   .news{
+    margin-top: 50px;
+    border: 1px solid;
+    .mailsection{
+      width: 50px;
+      height: 100px;
+    }
+   }
+  }
+}

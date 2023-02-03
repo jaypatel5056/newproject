@@ -55,7 +55,6 @@ const FAQ = () => {
         <div className={styles.form}>
          <form onSubmit={handleSubmit}>
          <input type="text" className={styles.name} placeholder="Enter your Name" id="name-2ee9" name="name"  required=""/>
-
          <input type="text" className={styles.email} placeholder="Enter a valid email address " id="name-2ee9" name="name"  required=""/>
          <input type="text" className={styles.message} placeholder="Enter your message" id="name-2ee9" name="name"  required=""/>
          <button className={styles.button}>SUBMIT</button>
