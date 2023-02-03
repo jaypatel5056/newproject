@@ -1,17 +1,33 @@
 import React from 'react'
-import styles from "./teamsection.module.scss"
-import { FaFacebookF ,FaInstagram } from 'react-icons/Fa';
+import styles from "../styles/TeamSection.module.scss";
+  import { FaFacebookF ,FaInstagram } from 'react-icons/Fa';
 import { BsTwitter } from 'react-icons/Bs';
+import { motion, variants } from "framer-motion"
 
 const Meet = () => {
   return (
-    <div className={styles.hello1}>
-    <div className={styles.hello}>
+    <div 
+    initial={{x:-1000,opacity:0}}
+    animate={{x: 0,opacity:1}}
+    transition={{duration: 2,delay:2}}
+    
+    className={styles.hello1}>
+    <motion.div 
+    initial={{x:-100}}
+    whileInView={{x: 0}}
+    viewport={{ once: true, amount: 0.9 }}
+    transition={{duration: 0.1,delay:0.1}}className={styles.hello}>
       <div className={styles.first}>
 <h2 class={styles.h2}>Meet The Team</h2>
 <p class={styles.p2}>Image by <a href="https://freepik.com" class={styles.a1}>Freepik</a></p>
     </div>
-    <div className={styles.squaresection}>
+    
+    <motion.div 
+     initial={{x:0,y: 600,opacity:0}}
+     animate={{x:0,y: 0,opacity: 1}}
+     whileInView={{duration: 1,delay:1}}
+     viewport={{ once: true, amount: 0.9 }}
+    className={styles.squaresection}>
       <div className={styles.square}>
         {/* <div className={styles.content}> */}
         <div className={styles.image1}></div>
@@ -60,14 +76,14 @@ const Meet = () => {
 
 
 
-
+      
 
       </div>
 
 
 
-    </div>
-    </div>
+    </motion.div>
+    </motion.div>
     </div>
   )
 }

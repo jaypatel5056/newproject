@@ -1,0 +1,69 @@
+
+.first{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/c190f609f00a5cc4bd7d3060/pexels-pawe-l-1309687.jpg);
+    background-position: 50% 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .middle{
+        width: calc(100% - 52%);
+        height: calc(100% - 25%);
+        background-color: white;
+        margin: 20px auto;
+        position: relative;
+
+        .border{
+            width: 425px;
+            height: 20px;
+            background-color: #5576fb;  
+            text-align: center;
+            margin: auto;
+
+        }
+        .border1{
+            width: 425px;
+            height: 20px;
+            background-color: #5576fb;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+
+        }
+        .h2{
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: Montserrat,sans-serif;
+            // margin:auto;
+            margin-top: 50px;
+            text-align: center;
+            padding: 0 100px;
+        }
+        .p1{
+            margin-top: 40px;
+            font-weight: 700;
+            word-wrap: break-word;
+            text-align: center;
+            font-family: 'Open Sans',sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: black;
+            .extra{
+                //  margin-top: 50px;
+
+                color: #000000 !important;
+                font-family: 'Open Sans',sans-serif;
+            }
+        }
+
+        
+    }
+}

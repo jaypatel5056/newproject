@@ -1,10 +1,4 @@
 
-
-.header2 {
-    width: 100%;
-    margin-top: 0px;
-    height: 100%;
-    margin: 0;
     .navbar {
       display: flex;
       align-items: center;
@@ -65,7 +59,7 @@
           
         //   transform: translateX(-100%);
           &.rectangleshow{
-            animation: slidefromleft 0.3s ease forwards;
+            // animation: slidefromleft 0.3s ease forwards;
 
           }
           /* margin-left: 130px; */
@@ -78,8 +72,8 @@
             font-weight: 700;
             word-wrap: break-word;
             font-family: 'Montserrat', sans-serif;
-            transform: translateY(-200%);
-            animation: slidefromup 2s ease-in forwards;
+            // transform: translateY(-200%);
+            // animation: slidefromup 2s ease-in forwards;
           }
           .p2{
             font-size: 1.25rem;
@@ -124,7 +118,7 @@
         }
       }
     }
-  }
+  
 
   @keyframes slidefromleft {
     0%{

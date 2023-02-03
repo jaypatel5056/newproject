@@ -33,6 +33,7 @@
        padding-left: 30px;
        padding-bottom: 30px;
         background-color: white; 
+        
         // color: white;
       
         text-align: left;
@@ -40,6 +41,7 @@
             font-size: 3rem;
             font-family: Montserrat,sans-serif;
             color: #5576fb !important;
+            // animation: rsctoggle 0.7s  ease-in forwards;
           }
           .p1{
             font-family: 'Open Sans',sans-serif;
@@ -57,4 +59,17 @@
     // .consulting{}
 
 
+}
+@keyframes rsctoggle {
+  0%{
+      transform: translatey(-150%);
+      opacity: 0.5;
+  }
+  100%{
+      transform: translatey(0%);
+      opacity: 1;
+      // transform: translateY(-50%);
+      // transform: translateY(-50%);
+  }
+  
 }

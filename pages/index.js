@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles1 from '@/styles/Home.module.css'
 import styles from '@/styles/Home.module.scss'
 import { GiHamburgerMenu } from 'react-icons/Gi';
-import RSC from '../components/rsc'
-import Meet from "../components/teamsection.js"
-import Advice from '@/components/advice'
-import Three from "../components/three"
-import Firm from "../components/firm"
+import RSC from '../components/Rsc'
+import Meet from "../components/TeamSection.js"
+import Advice from '@/components/Advice'
+import Three from "../components/Three"
+import Firm from "../components/Firm"
+import Last from "../components/Last"
+import Header from '@/components/Header';
+import FAQ from '@/components/FAQ';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +25,7 @@ export default function Home() {
         
       </Head>
       <main className={styles.header2}>  
-    <div className={styles.navbar}>
+    {/* <div className={styles.navbar}>
       <div className={styles.navbarheading}>
       <img src="https://capp.nicepage.com/1a3b34123e5a23fa2ec02642c3f27a25764372fe/images/default-logo.png" alt="log-img" />
        </div>
@@ -39,17 +41,21 @@ export default function Home() {
         <p className={styles.p2}>Nibh venenatis cras sed felis eget velit aliquet sagittis id. Tellus pellentesque eu tincidunt tortor aliquam nulla. </p>
         <p class={styles.p3}>Image from <a href="https://freepik.com/photos/backround" class={styles.a1}>Freepik</a>
             </p>
-        <div className={styles.buttons} class="buttons">
+        <div className={styles.buttons12} >
         <a href="#">READ MORE</a>
         </div>
       </div>
     </div>
-  </div>
+  </div> */}
+  <Header/>
 <RSC/>
 <Meet/>
 <Advice/>
 <Three/>
 <Firm/>
+<Last/>
+<FAQ/>
+
       </main>
       
     </>
