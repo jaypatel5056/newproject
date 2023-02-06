@@ -34,6 +34,8 @@ const Three = () => {
         transition={{duration: 1,delay:0.5}}
         viewport={{ once: true, amount: 0.2}}
        className={styles.section}>
+
+
        <div className={styles.style}>
          <div><h2 class={styles.h2}>02</h2></div>
          <div><h5 class={styles.h5}>Consulting</h5></div>
@@ -44,10 +46,7 @@ const Three = () => {
         initial={{y: 200,opacity:0}}
         whileInView={{y: 0,opacity:1}}
         transition={{duration: 1,delay:0.5}}
-        viewport={{ once: true, amount: 0.2}}
-        
-       
-       
+        viewport={{ once: true, amount: 0.2}}  
        className={styles.section}>
        <div className={styles.style}>
          <div><h2 class={styles.h2}>03</h2></div>

@@ -5,9 +5,18 @@ import styles from "../../styles/Blogs.module.scss"
 import { AiOutlineUser,AiFillWechat } from 'react-icons/Ai';
 import { SlCalender } from 'react-icons/Sl';
 import Link from 'next/link'
+import { useState } from 'react';
 
 
 function BLogs() {
+   const [id,setId]=useState()
+
+  //  const handleCLick=async ()=>{
+  //   setId(1)
+  //      const res=await fetch(`api/users/${id}`) 
+  //      const data=await res.json();
+       
+  //  }
   return (
     <>
     <div className={styles.first}>
@@ -32,7 +41,7 @@ function BLogs() {
         <div  className={styles.rectangle} id="rectangle">  
         <h5 className={styles.p1} id="p1">SOFTWARE</h5>
         <h3 class={styles.p2}>
-          <Link href="/blogs/runningmacosandwindows10onthesamecomputer"> Running macOS and Windows 10 on the Same Computer</Link>
+          <Link href="/blogs/runningmacosandwindows10onthesamecomputer" > Running macOS and Windows 10 on the Same Computer </Link>
         {/* <a href="https://websitedemos.net/tech-news-04/running-macos-and-windows-10-on-the-same-computer/" target="_self">
         Running macOS and Windows 10 on the Same Computer </a> */}
         </h3>
@@ -56,15 +65,18 @@ function BLogs() {
         <a href="#">READ MORE</a> </div> */}
          </div>
         </div>
+        <h5 class="elementor-heading-title elementor-size-default">Editor’s Pick</h5>
 <div className={styles.editorspick}> 
+
+
  <div className={styles.section1}> 
 
  <div className={styles.epimg1}> 
  <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-02.jpg" alt=""></img>
  </div>
  <div className={styles.desc}> 
- <a href="https://websitedemos.net/tech-news-04/for-families-of-teens-at-microsoft-surface/" target="_self">
-For Families of Teens at Microsoft Surface </a>
+ <Link href="/blogs/forfamiliesofteensatmicrosoftsurface" > Running macOS and Windows 10 on the Same Computer </Link>
+
 <div className={styles.label1}>
  EDITORS PICK
  </div>
@@ -75,8 +87,10 @@ For Families of Teens at Microsoft Surface </a>
  <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-10.jpg" alt=""></img>
  </div>
  <div className={styles.desc}> 
- <a href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-10.jpg" target="_self">
- Why Netflix shares are down 10% </a>
+ <Link href="/blogs/whynetflixsharesaredown10" > Why Netflix shares are down 10% </Link>
+
+ {/* <a href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-10.jpg" target="_self">
+ Why Netflix shares are down 10% </a> */}
  </div>
  <div className={styles.label1}>
  EDITORS PICK
@@ -88,6 +102,7 @@ For Families of Teens at Microsoft Surface </a>
  <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-21.jpg" alt=""></img>
  </div>
  <div className={styles.desc}> 
+ <Link href="/blogs/6botsthatdeliverscienceandserendipityontwitter" > 6 Bots That Deliver Science and Serendipity on Twitter </Link>
  <a href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-21.jpg" target="_self">6 Bots That Deliver Science and Serendipity on Twitter
  </a>
  </div>
@@ -102,7 +117,7 @@ For Families of Teens at Microsoft Surface </a>
         <div className={styles.text}> 
         <div className={styles.text1}>
          <h2 className={styles.h2}>APPS</h2>
-        <Link href="/api/hello" className={styles.link1}>Broke a Glass? Someday You Might 3-D-Print a New One </Link>
+        <Link href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" className={styles.link1}>Broke a Glass? Someday You Might 3-D-Print a New One </Link>
         </div>
         <div className={styles.text1}>
          <h2 className={styles.h2}>GAMES</h2>
@@ -110,7 +125,7 @@ For Families of Teens at Microsoft Surface </a>
         </div>
         <div className={styles.text1}>
          <h2 className={styles.h2}>EDITORS PICK</h2>
-        <Link href="blogs/running-macos-and-windows-10-on-the-same-computer" className={styles.link1}>For Families of Teens at Microsoft Surface </Link>
+        <Link href="blogs/for-families-of-teens-at-microsoft-surface" className={styles.link1}>For Families of Teens at Microsoft Surface </Link>
         </div>
         <div className={styles.text1}>
          <h2 className={styles.h2}>EDITORS PICK</h2>

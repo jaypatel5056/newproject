@@ -13,7 +13,7 @@ const Navbar1 = () => {
       </Navbar.Brand>
         {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <Nav className="me-auto">
-          <Nav.Link href="#home" className={styles.hello}>Home</Nav.Link>
+          <Nav.Link href="/blogs" className={styles.hello}> </Nav.Link>
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
         </Nav>
