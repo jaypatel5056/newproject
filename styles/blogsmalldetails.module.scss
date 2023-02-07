@@ -1,0 +1,20 @@
+.details{
+    margin-top: 10px;
+    color: black;
+    display: flex;
+    gap : 15px;
+    font-size: 0.9rem;
+
+    .details1{
+        display: flex;
+        gap : 10px;
+        a{
+            color: black;
+            text-decoration: none;
+            
+        }
+        .icons{
+            text-align: center;
+        }
+      }
+}
