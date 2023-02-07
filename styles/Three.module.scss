@@ -1,3 +1,5 @@
+@import "../styles/mixins.scss";
+
 .starting{
     margin-top: 475px;
     height:850px;
@@ -5,6 +7,9 @@
     //     width: 65% !important;
     //     margin: 0 auto;
     // }
+    @include sm{
+        height: 1600px;
+    }
     .firstsection{
         background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f6017eaa9b1354efa1f776d0/pexels-photo-301930.png);
         height: 800px;
@@ -13,7 +18,7 @@
        width: 100% !important;
        margin: 0 auto;
     //    vertical-align: middle;
-       overflow: hidden;
+    //    overflow: hidden;
        background-size:cover ;
        background-position: center center;
 
@@ -26,6 +31,12 @@
             width: 70%;
             margin: auto;
             margin-top: 30px;
+            @include sm{
+                flex-direction: column;
+                width: 100%;
+                margin-left: 5px;
+
+            }
             .section{
                 flex: 1;
                 height: 300px;
@@ -37,12 +48,19 @@
                     display: flex;
                     align-items: center;
                     text-align: left;
+                    @include sm{
+                        display: block;
+                    }
                     .h2{
                         font-weight: 700;   
                         font-size: 3.75rem;
                         margin: 20px 25px 0 0;
                         font-family: Montserrat, sans-serif !important;
                         color: #879ffc !important;
+                        @include sm{
+                            display: block;
+                            font-size: 2.5rem;
+                        }
                     }
                     .h5{
                         font-weight: 700;

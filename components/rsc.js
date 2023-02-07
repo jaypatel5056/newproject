@@ -3,6 +3,7 @@ import styles from "../styles/Rsc.module.scss";
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { HiOutlineArrowNarrowRight } from 'react-icons/Hi';
 import { motion, variants } from "framer-motion"
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 const cardVariants= {
   offscreen: {
@@ -23,7 +24,7 @@ const RSC = () => {
      initial={{y: 350,opacity: 0}}
      whileInView={{y: 0,opacity: 1}}
      transition={{duration: 1,opacity: 1}}
-     viewport={{ once: false, amount: 0.4}}  
+     viewport={{ once: true, amount: 0.3}}  
      className={styles.square1}>
      <motion.h2
      variants={cardVariants}
@@ -57,7 +58,7 @@ const RSC = () => {
      variants={cardVariants}
      initial="offscreen"
      whileInView="onscreen"
-      viewport={{ once: false, amount: 0.1 }}
+      viewport={{ once: false, amount: 0.5 }}
       transition={{delay: 2}}
     //  variants={cardVariants}
     //  initial={{
@@ -82,7 +83,7 @@ const RSC = () => {
       initial={{x: -350,opacity:0}}
       whileInView={{x: 0,opacity: 1}}
       transition={{duration: 0.5,delay: 1}}  
-       viewport={{ once: true, amount: 0.2}}  
+       viewport={{ once: false, amount: 0.2}}  
       className={styles.icon}>  
       <HiOutlineArrowNarrowRight size={70}  color="#5576fb"/>
       </motion.div>

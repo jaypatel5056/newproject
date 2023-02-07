@@ -1,6 +1,11 @@
+@import "../styles/mixins.scss";
 .rsc{
     height: 500px;
     display: flex;
+    @include sm{
+      height: 1800px;
+      flex-direction: column;
+    }
     .square1{
         padding-top: 101px;
        padding-right: 30px;

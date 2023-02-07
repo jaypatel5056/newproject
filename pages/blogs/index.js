@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import GadgetComponent from "@/components/GadgetComponent"
+import GadgetComponent from "@/components/GadgetComponent";
 import styles from "../../styles/Blogs.module.scss";
 import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
 import { SlCalender } from "react-icons/Sl";
@@ -11,10 +11,15 @@ import { FiMail } from "react-icons/Fi";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
 import { GrFacebookOption } from "react-icons/Gr";
 import PodcastImageComponent from "@/components/PodcastImageComponent";
-import Technology from "@/components/TechnologyComponent"
+import Technology from "@/components/TechnologyComponent";
 import Rsc from "../../components/Rsc";
-import GadgetSoftware from "@/components/gadgetsoftwareComponent"
+import Last from "@/components/LastComponent";
+import GadgetSoftware from "@/components/gadgetsoftwareComponent";
 // impoGadgetComponent
+import GamesComponent from "@/components/GamesComponent";
+import FAQ from "@/components/FAQ";
+
+// Last;
 
 function BLogs() {
   const [id, setId] = useState();
@@ -101,11 +106,11 @@ function BLogs() {
                 {/* <div className={styles.buttons12} >
                <a href="#">READ MORE</a> </div> */}
               </div>
-                     </div>
-                           <h5 class="elementor-heading-title elementor-size-default">
-                           Editor’s Pick
-                      </h5>
-                     <div className={styles.editorspick}>
+            </div>
+            <h5 class="elementor-heading-title elementor-size-default">
+              Editor’s Pick
+            </h5>
+            <div className={styles.editorspick}>
               <div className={styles.section1}>
                 <div className={styles.epimg1}>
                   <img
@@ -138,7 +143,7 @@ function BLogs() {
                   {/* <a href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-10.jpg" target="_self">
                       Why Netflix shares are down 10% </a> */}
                 </div>
-                <div className={styles.label1}>EDITORS PICK</div>
+                <div className={styles.label2}>EDITORS PICK</div>
               </div>
 
               <div className={styles.section1}>
@@ -160,7 +165,7 @@ function BLogs() {
                     6 Bots That Deliver Science and Serendipity on Twitter
                   </a>
                 </div>
-                <div className={styles.label1}>APPS</div>
+                <div className={styles.label3}>APPS</div>
               </div>
             </div>
 
@@ -413,11 +418,18 @@ function BLogs() {
             </div>
           </div>
         </div>
-        <PodcastImageComponent/>
-        <GadgetComponent/>
-        <Technology/>
-        <GadgetSoftware/>
-        <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-wide-promo-banner-placeholder.jpg" alt="" className={styles.lastimg}/>
+        <PodcastImageComponent />
+        <GadgetComponent />
+        <Technology />
+        <GadgetSoftware />
+        <img
+          src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-wide-promo-banner-placeholder.jpg"
+          alt=""
+          className={styles.lastimg}
+        />
+        <GamesComponent />
+        <Last />
+        <FAQ  />
       </div>
     </>
   );

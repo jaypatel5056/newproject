@@ -54,7 +54,9 @@ export default function Home() {
 <Three/>
 <Firm/>
 <Last/>
+<div className={styles.FAQ}>
 <FAQ/>
+</div>
 </main>
 </>
   )

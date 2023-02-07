@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Gadget.module.scss";
+import styles from "../styles/Games.module.scss";
 import Link from "next/link";
 import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
 import { SlCalender } from "react-icons/Sl";
@@ -27,7 +27,7 @@ const GadgetComponent = () => {
           <h3 class={styles.p2}>
             <Link href="/blogs/runningmacosandwindows10onthesamecomputer">
               {" "}
-              Spend a Dollar on Upcoming iPhone 13, and How to Save More{" "}
+              After Badger Buries Entire Cow Carcass, Scientists Go to the Tape{" "}
             </Link>
             {/* <a href="https://websitedemos.net/tech-news-04/running-macos-and-windows-10-on-the-same-computer/" target="_self">
                 Running macOS and Windows 10 on the Same Computer </a> */}
@@ -59,7 +59,9 @@ const GadgetComponent = () => {
             </div>
           </div> */}
           <p class={styles.p3}>
-          Cursus iaculis etiam in In nullam donec sem sed consequat scelerisque nibh amet, massa egestas risus.
+          Cursus iaculis etiam in In nullam donec sem sed consequat scelerisque nibh amet, massa egestas risus, gravida vel amet, imperdiet …
+
+
           </p>
           {/* <div className={styles.buttons12} >
                <a href="#">READ MORE</a> </div> */}
@@ -74,7 +76,7 @@ const GadgetComponent = () => {
           <h3 class={styles.p2}>
             <Link href="/blogs/runningmacosandwindows10onthesamecomputer">
               {" "}
-              No Longer a Dream: Silicon Valley Takes On the Flying Car{" "}
+              A Genetic Oddity May Give Octopuses and Squids Their Smarts{" "}
             </Link>
             {/* <a href="https://websitedemos.net/tech-news-04/running-macos-and-windows-10-on-the-same-computer/" target="_self">
                 Running macOS and Windows 10 on the Same Computer </a> */}
@@ -107,6 +109,8 @@ const GadgetComponent = () => {
           {/* </div> */}
           <p class={styles.p3}>
           Cursus iaculis etiam in In nullam donec sem sed consequat scelerisque nibh amet, massa egestas risus, gravida vel amet, imperdiet …
+
+
           </p>
           {/* <div className={styles.buttons12} >
                <a href="#">READ MORE</a> </div> */}

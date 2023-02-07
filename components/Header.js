@@ -9,9 +9,29 @@ const Header = () => {
       <div className={styles.navbarheading}>
       <img src="https://capp.nicepage.com/1a3b34123e5a23fa2ec02642c3f27a25764372fe/images/default-logo.png" alt="log-img" />
        </div>
+       <div className={styles.links}>
+         <ul id="ast-hf-menu-1" class="" >
+             <li id="menu-item-859" class=""><a href="https://websitedemos.net/tech-news-04/category/technology/" class="menu-link">Technology</a></li>
+             <li id="menu-item-861" class=""><a href="https://websitedemos.net/tech-news-04/category/software/" class="menu-link">Software</a></li>
+             <li id="menu-item-862" class=""><a href="https://websitedemos.net/tech-news-04/category/apps/" class="menu-link">Apps</a></li>
+             <li id="menu-item-863" class=""><a href="https://websitedemos.net/tech-news-04/category/games/" class="menu-link">Games</a></li>
+             <li id="menu-item-864" class=""><a href="https://websitedemos.net/tech-news-04/podcasts/" class="menu-link">Podcasts</a></li>
+             <li id="menu-item-860" class=""><a href="https://websitedemos.net/tech-news-04/category/gadget/" class="menu-link">Gadget</a></li>
+           </ul>
+
+
+       </div>
+       <div className={styles.rightside}>
+
+       <ul id="ast-hf-menu-1" class="" >
+             <li id="menu-item-859" class={styles.button}><a href="https://websitedemos.net/tech-news-04/category/technology/" class={styles.button}>Subscribe</a></li>
+             <li id="menu-item-861" class=""><a href="https://websitedemos.net/tech-news-04/category/software/" class="menu-link">Signin</a></li>
+        </ul>
+
        <div className={styles.navbaricon}>
        <GiHamburgerMenu/>
       </div> 
+      </div>
       </div>
 
       <div className={styles.section1}>

@@ -10,7 +10,7 @@ const TechnologyComponent = () => {
     <>
      <div className={styles.header}>
     <div>
-      <h3 className={styles.h3}>Must Read</h3>
+      <h3 className={styles.h3}>Technology</h3>
     </div>
     <div className={styles.right}>
       {" "}
