@@ -9,7 +9,7 @@ const Navbar1 = () => {
     <Navbar bg="light" variant="light">
       <Container>
       <Navbar.Brand>
-      <img width="168" height="40" src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/site-logo.svg" class={styles.logo} alt="Tech News" decoding="async"/>
+      <img width="168" height="40" src="https://www.vaimanagement.co/images/logo/vai-h-b.svg" class={styles.logo} alt="Tech News" decoding="async"/>
       </Navbar.Brand>
         {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <Nav className="me-auto">

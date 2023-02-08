@@ -1,7 +1,13 @@
+
+@import "../styles/mixins.scss";
 .twosection{
     display: flex;
     gap: 20px;
     flex: 1;
+    @include sm{
+      flex-direction: column;
+      padding: 0 20px;
+    }
     .hello{
         flex: 1;
     }
@@ -82,6 +88,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include sm{
+    flex-direction: column;
+    // padding: 0 20px;
+    }
   
     /* overflow-x: hidden; */
     /* margin: 20px; */

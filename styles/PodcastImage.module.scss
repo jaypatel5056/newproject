@@ -1,9 +1,23 @@
+@import "../styles/mixins.scss";
 .image4{
   height: 200px;
   margin-top: 200px;
   display: flex;
   width: 100%;
   background-color: rgb(142,251,218);
+  @include sm{
+    margin-top: 100px;
+    height: 570px;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    flex-direction: column;
+    // padding-left: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 4%;
+    
+  }
 
   .section1{
     
@@ -39,9 +53,15 @@ img{
   justify-content: flex-end;
   align-items: center;
   width: 30%;
+  flex: 1;
+  @include sm{
+    width: 100%;
+    padding-left: 20px;
+  }
   .buttons1{
-    margin-top: -px;
-    width: 150px;
+    flex: 1;
+    // margin-top: -px;
+    width: 150px !important;
     // margin-top: 30px;
     border: 1px solid;
     border-radius: 50px !important;
@@ -58,6 +78,11 @@ img{
     align-items: center;
    background-color: #805aed;
    margin-right: 30px;
+   margin: 70px;
+   @include sm{
+    margin: 0;
+      
+   }
     a{
         // padding: 10px;
         color: #ffffff !important;

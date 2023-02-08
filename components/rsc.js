@@ -44,10 +44,10 @@ const RSC = () => {
      
      class= {styles.p1}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</motion.p>
      <motion.div 
-     initial={{x: -350}}
+     initial={{x: -50}}
      whileInView={{x: 0}}
      transition={{duration: 0.5}}  
-     viewport={{ once: false, amount: 0.2}}  
+     viewport={{ once: true, amount: 0.2}}  
       className={styles.icon}>  
       <HiOutlineArrowNarrowRight  size={70}  color="white"/>
       </motion.div> 
@@ -80,7 +80,7 @@ const RSC = () => {
        
      {/* <p class= {styles.p1}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
       <motion.div 
-      initial={{x: -350,opacity:0}}
+      initial={{x: -50,opacity:0}}
       whileInView={{x: 0,opacity: 1}}
       transition={{duration: 0.5,delay: 1}}  
        viewport={{ once: false, amount: 0.2}}  
@@ -102,10 +102,10 @@ const RSC = () => {
        viewport={{ once: true, amount: 0.2}} 
      class= {styles.p1}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</motion.p>
       <motion.div 
-      initial={{x: -350,opacity:0}}
+      initial={{x: -50,opacity:0}}
       whileInView={{x: 0,opacity:1}}
       transition={{duration: 0.5,delay: 2}}  
-      viewport={{ once: true, amount: 0.2}}  
+      viewport={{ once: true, amount: 0.1}}  
       className={styles.icon}>  
       <HiOutlineArrowNarrowRight size={70}  color="#5576fb"/>
       </motion.div>

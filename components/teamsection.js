@@ -13,10 +13,11 @@ const Meet = () => {
     
     className={styles.hello1}>
     <motion.div 
-    initial={{x:-100}}
-    whileInView={{x: 0}}
-    viewport={{ once: true, amount: 0.9 }}
-    transition={{duration: 0.1,delay:0.1}}className={styles.hello}>
+    // initial={{x:-100}}
+    // whileInView={{x: 0}}
+    // viewport={{ once: true, amount: 0.9 }}
+    // transition={{duration: 0.1,delay:0.1}}
+    className={styles.hello}>
       <div className={styles.first}>
 <h2 class={styles.h2}>Meet The Team</h2>
 <p class={styles.p2}>Image by <a href="https://freepik.com" class={styles.a1}>Freepik</a></p>

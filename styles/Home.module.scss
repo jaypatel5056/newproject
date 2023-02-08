@@ -1,5 +1,4 @@
 
-
 @import "../styles/mixins.scss";
 
 .header2 {
@@ -10,6 +9,9 @@
     .FAQ{
       width: 55%;
       margin: 0 auto;
+      @include sm{
+        width: 100%;
+      }
     }
     .navbar {
       display: flex;

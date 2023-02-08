@@ -1,9 +1,11 @@
+@import "../styles/mixins.scss";
 .header{
   margin-top: 30px;
   display: flex;
   justify-content: flex-end;
   position: relative;
   
+ 
 .h3{
   position: absolute;
   flex: 1;
@@ -13,6 +15,11 @@
   font-size: 2rem;
   font-family: 'Sora',sans-serif;
   font-weight: 700;
+  @include sm{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
 }
 .right{
   cursor: pointer;
@@ -24,6 +31,9 @@
   font-family: 'Inter',sans-serif;
   transform: translateY(10px);
   // font-weight: 500;
+  @include sm{
+    margin-top: 5px;
+  }
   .h5{
     margin-top: 0;
   font-size: 1rem;
@@ -41,6 +51,11 @@
 .twosides{
     display: flex;
     margin-top: 40px;
+    @include sm{
+      flex-direction: column;
+      padding: 20px;
+      gap: 10px;
+    }
     .blog1{
     background-image:linear-gradient(90deg, rgba(144,143,162,1) 0%, rgba(92,92,94,1) 0%, rgba(0,0,0,0.4542191876750701) 100%, rgba(0,212,255,1) 100%),
     url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-iphone.jpg");
@@ -51,6 +66,10 @@
     // border: 1px solid;
     width: 100%;
     background-position: center center;
+    @include sm{
+      height: 300px;
+
+    }
 
     .rectangle {
         // background-color:#5576fb;
@@ -74,6 +93,12 @@
 
         }
         /* margin-left: 130px; */
+        @include sm{
+          height: 500px;
+          top: 60%;
+        
+          
+        }
         .p1 {
           padding-top: 20px;
           font-size: 0.75rem;
@@ -102,6 +127,9 @@
         //   padding-bottom: 20px;
           font-family: 'Open Sans',sans-serif;
           font-weight: 700;
+          @include sm{
+            font-size: 0.7rem;
+          }
           a{
             color: white;
             text-decoration: none;
@@ -120,6 +148,9 @@
         //   padding-bottom: 20px;
           font-family: 'Inter',sans-serif;
           padding-bottom: 10px;
+          @include sm{
+            font-size: 0.9rem;
+          }
 
           .a1{
               border-bottom-style: solid;

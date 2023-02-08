@@ -18,6 +18,7 @@ import GadgetSoftware from "@/components/gadgetsoftwareComponent";
 // impoGadgetComponent
 import GamesComponent from "@/components/GamesComponent";
 import FAQ from "@/components/FAQ";
+import { faSortAlphaDesc } from "@fortawesome/free-solid-svg-icons";
 
 // Last;
 
@@ -37,23 +38,27 @@ function BLogs() {
           <Navbar bg="light" variant="light">
             <Container>
               <Navbar.Brand>
+                <Link href="/">
                 <img
                   width=""
                   height="40"
-                  src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/site-logo.svg"
+                  src="https://www.vaimanagement.co/images/logo/vai-h-b.svg"
                   class={styles.logo}
                   alt="Tech News"
                   decoding="async"
                 />
+                </Link>
               </Navbar.Brand>
               {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-              <Nav className="me-auto">
+              <div className={styles.section2}>
+              <Nav className="me-auto" >
                 <Nav.Link href="#home" className={styles.hello}>
                   Home
                 </Nav.Link>
                 <Nav.Link href="#features">Features</Nav.Link>
                 <Nav.Link href="#pricing">Pricing</Nav.Link>
               </Nav>
+              </div>
             </Container>
           </Navbar>
         </div>
@@ -190,13 +195,19 @@ function BLogs() {
 
                 <div className={styles.content1}>
                   <p className={styles.p1}> GADGET</p>
-                  <a
+
+                  <Link href="blogs/ipad-pro-m1-chip-bringing-the-macbook-pro-power" className={styles.a1}>
+                  iPad Pro M1 Chip: Bringing The MacBook Pro Power{" "}
+                  </Link>
+                  
+                  
+                  {/* <a
                     href="https://websitedemos.net/tech-news-04/ipad-pro-m1-chip-bringing-the-macbook-pro-power/"
                     target="_self"
                     className={styles.a1}
                   >
                     iPad Pro M1 Chip: Bringing The MacBook Pro Power{" "}
-                  </a>
+                  </a> */}
                   <p>
                     Cursus iaculis etiam in In nullam donec sem sed consequat
                     scelerisque nibh amet, massa egestas risus, gravida vel
@@ -233,13 +244,16 @@ function BLogs() {
 
                 <div className={styles.content1}>
                   <p className={styles.p1}> GADGET</p>
-                  <a
+                  <Link href="blogs/dell-xps-13-2021-the-best-windows-laptop-now-with-oled" className={styles.a1}>
+                  Dell XPS 13 2021: The best Windows laptop now with OLED{" "}
+                  </Link>
+                  {/* <a
                     href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-11.jpg"
                     target="_self"
                     className={styles.a1}
                   >
                     Dell XPS 13 2021: The best Windows laptop now with OLED{" "}
-                  </a>
+                  </a> */}
                   <p>
                     Cursus iaculis etiam in In nullam donec sem sed consequat
                     scelerisque nibh amet, massa egestas risus, gravida vel
@@ -268,20 +282,25 @@ function BLogs() {
                 </div>
               </div>
               <div className={styles.firstsection}>
+              <Link href="blogs/watching-their-dust-photographing-players-in-pollination" className={styles.a1}>
                 <img
                   src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-22.jpg"
                   alt=""
                 ></img>
+                </Link>
 
                 <div className={styles.content1}>
                   <p className={styles.p1}> GADGET</p>
-                  <a
+                  <Link href="blogs/watching-their-dust-photographing-players-in-pollination" className={styles.a1}>
+                  Watching Their Dust: Photographing Players in Pollination
+                  </Link>
+                  {/* <a
                     href="https://websitedemos.net/tech-news-04/ipad-pro-m1-chip-bringing-the-macbook-pro-power/"
                     target="_self"
                     className={styles.a1}
                   >
                     Watching Their Dust: Photographing Players in Pollination{" "}
-                  </a>
+                  </a> */}
                   <p>
                     Cursus iaculis etiam in In nullam donec sem sed consequat
                     scelerisque nibh amet, massa egestas risus, gravida vel
@@ -325,7 +344,7 @@ function BLogs() {
               </div>
               <div className={styles.text1}>
                 <h2 className={styles.h2}>GAMES</h2>
-                <Link href="/api/hello" className={styles.link1}>
+                <Link href="blogs/this-is-a-giant-shipworm-you-may-wish-it-had-stayed-in-its-tube" className={styles.link1}>
                   This Is a Giant Shipworm. You May Wish It Had Stayed In Its
                   Tube.
                 </Link>
@@ -429,7 +448,7 @@ function BLogs() {
         />
         <GamesComponent />
         <Last />
-        <FAQ  />
+        <FAQ />
       </div>
     </>
   );

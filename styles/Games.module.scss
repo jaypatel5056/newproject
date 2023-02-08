@@ -1,8 +1,13 @@
+
+@import "../styles/mixins.scss";
 .header{
     margin-top: 30px;
     display: flex;
     justify-content: flex-end;
     position: relative;
+    @include sm{
+      // padding: 20px;
+    }
     
   .h3{
     position: absolute;
@@ -13,6 +18,9 @@
     font-size: 2rem;
     font-family: 'Sora',sans-serif;
     font-weight: 700;
+    @include sm{
+      padding: 0 20px;
+    }
   }
   .right{
     cursor: pointer;
@@ -41,6 +49,11 @@
   .twosides{
       display: flex;
       margin-top: 40px;
+      @include sm{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+      }
       .blog1{
       background-image:linear-gradient(90deg, rgba(144,143,162,1) 0%, rgba(92,92,94,1) 0%, rgba(0,0,0,0.4542191876750701) 100%, rgba(0,212,255,1) 100%),
       url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-06.jpg");
@@ -51,6 +64,9 @@
       // border: 1px solid;
       width: 100%;
       background-position: center center;
+      @include sm{
+        height: 300px
+      }
   
       .rectangle {
           // background-color:#5576fb;
@@ -73,6 +89,9 @@
             // animation: slidefromleft 0.3s ease forwards;
   
           }
+          @include sm{
+            top: 50%;
+          }
           /* margin-left: 130px; */
           .p1 {
             padding-top: 20px;
@@ -93,6 +112,7 @@
             // opacity: ;
             transition: all .5s linear;
             }
+           
           }
           .p2{
             font-size: 1.25rem;
@@ -109,8 +129,12 @@
               line-height: 1.2em;
               font-size:1.5rem;
               font-weight: 700;
+              @include sm{
+                font-size: 1.2rem;
+              }
              
             }
+          
           }
           .p3{
             font-size: 1rem;
@@ -154,11 +178,15 @@
   .blog2{
       @extend .blog1;
       background-image: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-16.jpg");
-      background-position: 1000% center;
+      background-position: 100% center;
       background-repeat: no-repeat;
-      height: 400px;
-  width: 100%;
-  background-size: cover;
+      // height: 400px;
+       width: 100%;
+     background-size: cover;
+     @include sm{
+
+     }
+  
 
   }
   }

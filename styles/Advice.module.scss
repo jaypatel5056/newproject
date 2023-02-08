@@ -12,6 +12,9 @@
     .colour2{
         height: 600px;
         background-color: #5576fb;
+        @include sm{
+            height: 600px;
+        }
     }
     .section1{
         // border: 1px solid;
@@ -41,7 +44,7 @@
             vertical-align: middle;
             @include sm{
                 width: 400px;
-                margin: auto;
+                // margin: auto;
                 height: 500px ;
                 transform: translateY(100%);
            

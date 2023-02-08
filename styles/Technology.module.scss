@@ -1,9 +1,12 @@
+@import "../styles/mixins.scss";
+
 .header{
     margin-top: 30px;
     display: flex;
     justify-content: flex-end;
     position: relative;
     margin-top: 50px;
+   
     
   .h3{
     position: absolute;
@@ -14,6 +17,10 @@
     font-size: 2rem;
     font-family: 'Sora',sans-serif;
     font-weight: 700;
+    @include sm{
+      padding: 20px;
+      font-size: 1.5rem;
+      }
   }
   .right{
     cursor: pointer;
@@ -25,6 +32,9 @@
     font-family: 'Inter',sans-serif;
     transform: translateY(10px);
     // font-weight: 500;
+    @include sm{
+      transform: translateY(20px);
+    }
     .h5{
       margin-top: 0;
     font-size: 1rem;
@@ -46,6 +56,9 @@
     background-color: #eaf2fd;
     width: 100%;
     margin-top: 0px;
+    @include sm{
+      margin-top: 30px;
+    }
   
   .capacitysection .section1place h2 {
     margin-top: 0px;
@@ -72,6 +85,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include sm{
+      flex-direction: column;
+      padding: 0 10px;
+    }
   
     /* overflow-x: hidden; */
     /* margin: 20px; */
@@ -88,6 +105,11 @@
     padding: 0px;
     margin: 50px 20px 46px 0px;
     flex: 1;
+    @include sm{
+      padding-left: 20px;
+      margin: 50px 20px 46px 0px;
+
+    }
   }
   
   .square img {

@@ -3,6 +3,7 @@ import SmallDetails from "../components/blogsmalldetailsComponent"
 import styles from "../styles/Technology.module.scss"
 import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
+import Link from "next/link"
 
 
 const TechnologyComponent = () => {
@@ -22,12 +23,12 @@ const TechnologyComponent = () => {
        <div className={styles.section1place}>
  <div className={styles.squaresection}>
 <div className={styles.square}>
+  
 <a href="https://websitedemos.net/tech-news-04/a-lesson-from-the-henrietta-lacks-story-science-needs-your-cells/" target="_self">
   <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-26.jpg" alt="image1"/>
 </a>
-
-  <h3 className={styles.squareh3}><a href="https://websitedemos.net/tech-news-04/a-lesson-from-the-henrietta-lacks-story-science-needs-your-cells/" target="_self">
-A Lesson From the Henrietta Lacks Story: Science Needs Your Cells </a></h3>
+  <h3 className={styles.squareh3}><Link href="blogs/a-lesson-from-the-henrietta-lacks-story-science-needs-your-cells" target="_self"
+  >A Lesson From the Henrietta Lacks Story Science Needs Your Cells </Link></h3>
 <SmallDetails/>
   <p className={styles.squarep}>Cursus iaculis etiam in In nullam donec sem sed consequat scelerisque nibh …</p>
 </div>

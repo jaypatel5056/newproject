@@ -3,6 +3,7 @@
     height: 800px;
     @include sm{
       height: 2100px;
+      
     }
     .hello {
   height: 500px;
@@ -43,6 +44,7 @@
       flex-direction: column;
       width: 100%;
       gap: 50px;
+      
     }
 
     .square {
@@ -70,6 +72,7 @@
           padding: 10px;
           padding-left: 0;
           margin: auto;
+
         }
         .image2{
             background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/dee2a7ea9eea577cab16110a/fff.jpg);

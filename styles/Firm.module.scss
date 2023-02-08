@@ -137,6 +137,7 @@
                 height: 550px;
                 @include sm{
                     height: 250px;
+                    width: calc(100% - 20%);
 
                 }
             .image2{
@@ -147,8 +148,10 @@
                 background-size: cover;
                 @include sm{
                     height: 300px;
-                    width: 300px;
-                    transform: translate(70px, -150px);
+                    width: calc(100% - 20%);
+                    // transform: translate(70px, -150px);
+                    margin-right: 30px;
+                    transform: translate(100px, -150px);
 
                 }
          }
