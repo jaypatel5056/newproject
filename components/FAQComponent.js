@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import styles from '../styles/FAQ.module.scss'
  import { IoIosArrowDropdown } from 'react-icons/Io';
  import {Accordion , Row, Col} from 'react-bootstrap';
@@ -12,9 +12,19 @@ import { motion } from "framer-motion"
 import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
  
 const FAQ = () => {
-    const[globalToggle,setglobalToggle]=useState(false);
+  const[name,setName]=useState("");
+  const[email,setEmail]=useState("");
+  const[message,setMessage]=useState("");
+  const[inputData,setInputData]=useState({})
+  // useEffect(()=>{
+  //   console.log('hello');
+  //  console.log(name)
+  // },[name])
+  
+  
+  const[globalToggle,setglobalToggle]=useState(false);
     const [toggle1,setToggle1]=useState(false);
-    const [data,setData]=useState([])
+    const [data,setData]=useState({})
     const handletoggle1=()=>{
         setToggle1(!toggle1)
         setglobalToggle(!globalToggle);
@@ -35,13 +45,15 @@ const FAQ = () => {
     const handleToggletext=()=>{
   setHighlighted(!highlighted);
 }
-    const handleSubmit=async ()=>{
-      const response=await fetch('/api/index',{
+    const handleSubmit=async (e)=>{
+      e.preventDefault();
+      setInputData({name:name,email,message})
+     console.log(inputData)
+      const response=await fetch('/api/message',{
         method: 'POST',  
-        body: JSON.stringify({user})
+        body: JSON.stringify({name,email,message})
 
       })
-      const data=response.json();
 
 
     }
@@ -54,9 +66,9 @@ const FAQ = () => {
     </div>
         <div className={styles.form}>
          <form onSubmit={handleSubmit}>
-         <input type="text" className={styles.name} placeholder="Enter your Name" id="name-2ee9" name="name"  required=""/>
-         <input type="text" className={styles.email} placeholder="Enter a valid email address " id="name-2ee9" name="name"  required=""/>
-         <input type="text" className={styles.message} placeholder="Enter your message" id="name-2ee9" name="name"  required=""/>
+         <input type="text" className={styles.name} onChange={(e)=>{setName(e.target.value);console.log(name)}} placeholder="Enter your Name" id="name-2ee9" name="name" value={name}  required=""/>
+         <input type="text" className={styles.email} onChange={(e)=>{setEmail(e.target.value)}} placeholder="Enter a valid email address " id="name-2ee9" name="name" value={email} required=""/>
+         <input type="text" className={styles.message} onChange={(e)=>{setMessage(e?.target?.value);console.log(message)}} placeholder="Enter your message" id="name-2ee9" name="name" value={message} required=""/>
          <button className={styles.button}>SUBMIT</button>
        </form>
         </div>
