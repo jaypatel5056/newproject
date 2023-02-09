@@ -15,7 +15,7 @@ const PodcastImageComponent = () => {
         <div className={styles.section3}>
         <div className={styles.buttons1}>
                   <div>
-                    <a href="#">Subscribe</a>
+                    <a href="#">Listen Now</a>
                   </div>
                 </div>
 

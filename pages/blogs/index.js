@@ -126,7 +126,8 @@ function BLogs() {
                 <div className={styles.desc}>
                   <Link href="/blogs/forfamiliesofteensatmicrosoftsurface">
                     {" "}
-                    Running macOS and Windows 10 on the Same Computer{" "}
+                    For Families of Teens at Microsoft Surface
+
                   </Link>
 
                   <div className={styles.label1}>EDITORS PICK</div>
@@ -163,17 +164,20 @@ function BLogs() {
                     {" "}
                     6 Bots That Deliver Science and Serendipity on Twitter{" "}
                   </Link>
-                  <a
+                  {/* <a
                     href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-21.jpg"
                     target="_self"
                   >
                     6 Bots That Deliver Science and Serendipity on Twitter
-                  </a>
+                  </a> */}
                 </div>
                 <div className={styles.label3}>APPS</div>
               </div>
             </div>
+  
 
+
+            <div className={styles.divider}></div>
             <div className={styles.techreviews}>
               <div className={styles.header}>
                 <div>
@@ -423,6 +427,7 @@ function BLogs() {
                 alt=""
               />
             </div>
+            <div className={styles.divider}></div>
             <div className={styles.socials}>
               <h5 class="elementor-heading-title elementor-size-default">
                 Stay Connected
@@ -434,7 +439,7 @@ function BLogs() {
                   </div>
                   <div className={styles.socialscontent}>
                     <h5>TechWire News </h5>
-                    <p class="elementor-icon-box-description">2M+ Followers </p>
+                    <p class={styles.follow}>2M+ Followers{" "} </p>
                   </div>
                 </div>
 
@@ -445,7 +450,7 @@ function BLogs() {
                     </div>
                     <div className={styles.socialscontent}>
                       <h5>@techwirenews </h5>
-                      <p class="elementor-icon-box-description">
+                      <p class={styles.follow}>
                         1.4M+ Followers{" "}
                       </p>
                     </div>
@@ -458,7 +463,7 @@ function BLogs() {
                       </div>
                       <div className={styles.socialscontent}>
                         <h5>TechWire </h5>
-                        <p class="elementor-icon-box-description">
+                        <p class={styles.follow}>
                           4M+ Subscribers{" "}
                         </p>
                       </div>

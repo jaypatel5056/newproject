@@ -21,6 +21,15 @@
     /* padding: 0 20px; */
     font-size: 1.5rem;
     font-weight: 100;
+    img {
+      height: 100px;
+      width: 250px;
+      @include sm {
+       width: 200px;
+       height: 90px;
+       
+      }
+    }
     @include sm {
       font-size: 1rem;
     }
@@ -41,7 +50,7 @@
         transform: translatey(10px);
         a {
           text-decoration: none;
-          font-family: 'Sora', sans-serif;
+          font-family: "Sora", sans-serif;
           font-weight: 700;
           font-size: 0.8rem;
           color: #26222f;

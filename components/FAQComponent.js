@@ -10,6 +10,7 @@ const Animator = dynamic(
 import { motion } from "framer-motion"
 
 import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import { GiVikingLonghouse } from 'react-icons/Gi';
  
 const FAQ = () => {
   const[name,setName]=useState("");
@@ -19,7 +20,7 @@ const FAQ = () => {
   // useEffect(()=>{
   //   console.log('hello');
   //  console.log(name)
-  // },[name])
+  // },[inputData])
   
   
   const[globalToggle,setglobalToggle]=useState(false);
@@ -42,19 +43,26 @@ const FAQ = () => {
         setglobalToggle(!globalToggle)
     }
     const [highlighted, setHighlighted] = useState(false);
+  
     const handleToggletext=()=>{
   setHighlighted(!highlighted);
 }
     const handleSubmit=async (e)=>{
       e.preventDefault();
       setInputData({name:name,email,message})
-     console.log(inputData)
+     
+    
+     if(inputData){
+      console.log("from ")
+      console.log(inputData)
+       console.log(new1)
+       console.log(new2)
       const response=await fetch('/api/message',{
         method: 'POST',  
         body: JSON.stringify({name,email,message})
 
       })
-
+    }
 
     }
   return (

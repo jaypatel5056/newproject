@@ -68,8 +68,8 @@ const GadgetComponent = () => {
         </div>
       </div>
 
-      <div className={styles.blog2}>
-        <div className={styles.rectangle} id="rectangle">
+        <div className={styles.blog2}>
+          <div className={styles.rectangle} id="rectangle1">
           <h5 className={styles.p1} id="p1">
            MUST READ
           </h5>

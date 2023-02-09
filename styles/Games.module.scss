@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Inter',sans-serif;
+    font-family: "Sora",sans-serif;
     transform: translateY(10px);
     // font-weight: 500;
     .h5{
@@ -90,7 +91,8 @@
   
           }
           @include sm{
-            top: 50%;
+            top: 68%;
+          
           }
           /* margin-left: 130px; */
           .p1 {
@@ -107,6 +109,7 @@
             letter-spacing: 3px;
             // animation: slidefromup 2s ease-in forwards;
             cursor: pointer;
+            width: fit-content;
             &:hover{
               color: #805aed;
             // opacity: ;
@@ -118,7 +121,7 @@
             font-size: 1.25rem;
             font-family: 'Open Sans',sans-serif;
             color: white !important;
-            padding-top: 20px;
+            padding-top: 10px;
           //   padding-bottom: 20px;
             font-family: 'Open Sans',sans-serif;
             font-weight: 700;

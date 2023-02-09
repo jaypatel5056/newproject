@@ -113,11 +113,11 @@ const TechnologyComponent = () => {
         <div className={styles.hello}>
           <div className={styles.header}>
             <div>
-              <h3 className={styles.h3}>Gadgets</h3>
+              <h3 className={styles.h3}>Software</h3>
             </div>
             <div className={styles.right}>
               {" "}
-              <h5 class={styles.h5}>More In Gadgets</h5>
+              <h5 class={styles.h5}>More In Software</h5>
               <BsArrowRight />
             </div>
           </div>

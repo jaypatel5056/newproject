@@ -29,11 +29,12 @@
     gap: 5px;
     align-items: center;
     justify-content: center;
-    font-family: 'Inter',sans-serif;
+    // font-family: 'Inter',sans-serif;
+    font-family: "Sora", sans-serif;
     transform: translateY(10px);
     // font-weight: 500;
     @include sm{
-      transform: translateY(20px);
+      transform: translateY(25px);
     }
     .h5{
       margin-top: 0;
