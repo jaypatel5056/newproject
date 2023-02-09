@@ -119,9 +119,32 @@ export const data=[
             "imgpath": "https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-27.jpg",
             "email": "Sincere@april.biz",
             "title": "What Moves Gravel-Size Gypsum Crystals Around the Desert? ",
+          },{
+            "uid": 16,
+            "id": "scientists-feeling-under-siege-march-against-trump-policies",
+            "name": "Leanne Graham",
+            "imgpath": "https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-28.jpg",
+            "email": "Sincere@april.biz",
+            "title": "Scientists, Feeling Under Siege, March Against Trump Policies? ",
           },
-          what-moves-gravel-size-gypsum-crystals-around-the-desert
-
+          {
+            "uid": 16,
+            "id": "how-a-gadget-drives-human-creativity",
+            "name": "Leanne Graham",
+            "imgpath": "https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-05.jpg",
+            "email": "Sincere@april.biz",
+            "title": "How a Gadget Drives Human Creativity ",
+          },
+          {
+            "uid": 16,
+            "id": "scientists-fear-climate-data-gap-as-trump-aims-at-satellites",
+            "name": "Leanne Graham",
+            "imgpath": "https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-08.jpg",
+            "email": "Sincere@april.biz",
+            "title": "How a Gadget Drives Human Creativity ",
+          },
+          
+          
           
           
 ]

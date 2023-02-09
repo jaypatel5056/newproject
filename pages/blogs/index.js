@@ -12,12 +12,12 @@ import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
 import { GrFacebookOption } from "react-icons/Gr";
 import PodcastImageComponent from "@/components/PodcastImageComponent";
 import Technology from "@/components/TechnologyComponent";
-import Rsc from "../../components/Rsc";
+import Rsc from "../../components/RscComponent";
 import Last from "@/components/LastComponent";
 import GadgetSoftware from "@/components/gadgetsoftwareComponent";
 // impoGadgetComponent
 import GamesComponent from "@/components/GamesComponent";
-import FAQ from "@/components/FAQ";
+import FAQ from "@/components/FAQComponent";
 import { faSortAlphaDesc } from "@fortawesome/free-solid-svg-icons";
 
 // Last;
@@ -39,25 +39,25 @@ function BLogs() {
             <Container>
               <Navbar.Brand>
                 <Link href="/">
-                <img
-                  width=""
-                  height="40"
-                  src="https://www.vaimanagement.co/images/logo/vai-h-b.svg"
-                  class={styles.logo}
-                  alt="Tech News"
-                  decoding="async"
-                />
+                  <img
+                    width=""
+                    height="40"
+                    src="https://www.vaimanagement.co/images/logo/vai-h-b.svg"
+                    class={styles.logo}
+                    alt="Tech News"
+                    decoding="async"
+                  />
                 </Link>
               </Navbar.Brand>
               {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
               <div className={styles.section2}>
-              <Nav className="me-auto" >
-                <Nav.Link href="#home" className={styles.hello}>
-                  Home
-                </Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-              </Nav>
+                <Nav className="me-auto">
+                  <Nav.Link href="#home" className={styles.hello}>
+                    Home
+                  </Nav.Link>
+                  <Nav.Link href="#features">Features</Nav.Link>
+                  <Nav.Link href="#pricing">Pricing</Nav.Link>
+                </Nav>
               </div>
             </Container>
           </Navbar>
@@ -188,19 +188,30 @@ function BLogs() {
             </div>
             <div className={styles.threesection}>
               <div className={styles.firstsection}>
-                <img
+                <Link
+                  href="blogs/ipad-pro-m1-chip-bringing-the-macbook-pro-power"
+                  className={styles.a1}
+                >
+                  <img
+                    src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-03.jpg"
+                    alt=""
+                  ></img>
+                </Link>
+                {/* <img
                   src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-03.jpg"
                   alt=""
-                ></img>
+                ></img> */}
 
                 <div className={styles.content1}>
                   <p className={styles.p1}> GADGET</p>
 
-                  <Link href="blogs/ipad-pro-m1-chip-bringing-the-macbook-pro-power" className={styles.a1}>
-                  iPad Pro M1 Chip: Bringing The MacBook Pro Power{" "}
+                  <Link
+                    href="blogs/ipad-pro-m1-chip-bringing-the-macbook-pro-power"
+                    className={styles.a1}
+                  >
+                    iPad Pro M1 Chip: Bringing The MacBook Pro Power{" "}
                   </Link>
-                  
-                  
+
                   {/* <a
                     href="https://websitedemos.net/tech-news-04/ipad-pro-m1-chip-bringing-the-macbook-pro-power/"
                     target="_self"
@@ -237,15 +248,27 @@ function BLogs() {
               </div>
 
               <div className={styles.firstsection}>
-                <img
+                <Link
+                  href="blogs/dell-xps-13-2021-the-best-windows-laptop-now-with-oled"
+                  className={styles.a1}
+                >
+                  <img
+                    src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-11-768x499.jpg"
+                    alt=""
+                  ></img>
+                </Link>
+                {/* <img
                   src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-11.jpg"
                   alt=""
-                ></img>
+                ></img> */}
 
                 <div className={styles.content1}>
                   <p className={styles.p1}> GADGET</p>
-                  <Link href="blogs/dell-xps-13-2021-the-best-windows-laptop-now-with-oled" className={styles.a1}>
-                  Dell XPS 13 2021: The best Windows laptop now with OLED{" "}
+                  <Link
+                    href="blogs/dell-xps-13-2021-the-best-windows-laptop-now-with-oled"
+                    className={styles.a1}
+                  >
+                    Dell XPS 13 2021: The best Windows laptop now with OLED{" "}
                   </Link>
                   {/* <a
                     href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-11.jpg"
@@ -282,17 +305,23 @@ function BLogs() {
                 </div>
               </div>
               <div className={styles.firstsection}>
-              <Link href="blogs/watching-their-dust-photographing-players-in-pollination" className={styles.a1}>
-                <img
-                  src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-22.jpg"
-                  alt=""
-                ></img>
+                <Link
+                  href="blogs/watching-their-dust-photographing-players-in-pollination"
+                  className={styles.a1}
+                >
+                  <img
+                    src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-22.jpg"
+                    alt=""
+                  ></img>
                 </Link>
 
                 <div className={styles.content1}>
                   <p className={styles.p1}> GADGET</p>
-                  <Link href="blogs/watching-their-dust-photographing-players-in-pollination" className={styles.a1}>
-                  Watching Their Dust: Photographing Players in Pollination
+                  <Link
+                    href="blogs/watching-their-dust-photographing-players-in-pollination"
+                    className={styles.a1}
+                  >
+                    Watching Their Dust: Photographing Players in Pollination
                   </Link>
                   {/* <a
                     href="https://websitedemos.net/tech-news-04/ipad-pro-m1-chip-bringing-the-macbook-pro-power/"
@@ -344,7 +373,10 @@ function BLogs() {
               </div>
               <div className={styles.text1}>
                 <h2 className={styles.h2}>GAMES</h2>
-                <Link href="blogs/this-is-a-giant-shipworm-you-may-wish-it-had-stayed-in-its-tube" className={styles.link1}>
+                <Link
+                  href="blogs/this-is-a-giant-shipworm-you-may-wish-it-had-stayed-in-its-tube"
+                  className={styles.link1}
+                >
                   This Is a Giant Shipworm. You May Wish It Had Stayed In Its
                   Tube.
                 </Link>

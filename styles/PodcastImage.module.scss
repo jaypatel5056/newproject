@@ -1,10 +1,11 @@
 @import "../styles/mixins.scss";
 .image4{
   height: 200px;
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   width: 100%;
   background-color: rgb(142,251,218);
+  margin-bottom: 40px;
   @include sm{
     margin-top: 100px;
     height: 570px;

@@ -1,7 +1,7 @@
 import {React,useState,useEffect} from 'react'
-import Navbar from "../../components/Navbar"
+import Navbar from "../../components/NavbarComponent"
 import styles from "../../styles/Macos.module.scss"
-import Footer from "../../components/Footer"
+import Footer from "../../components/FooterComponent"
 import { useRouter } from 'next/router'
 import axios, {isCancel, AxiosError} from 'axios';
 import { BsArrowLeft,BsArrowRight } from 'react-icons/Bs'

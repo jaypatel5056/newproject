@@ -3,6 +3,7 @@ import SmallDetails from "../components/blogsmalldetailsComponent";
 import styles from "../styles/gadgetsoftware.module.scss";
 import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
+import Link from 'next/Link'
 
 const TechnologyComponent = () => {
   return (
@@ -34,12 +35,12 @@ const TechnologyComponent = () => {
                 </a>
                 {/* <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-27.jpg" alt="image2"/> */}
                 <h3 className={styles.squareh3}>
-                  <a
-                    href="https://websitedemos.net/tech-news-04/a-lesson-from-the-henrietta-lacks-story-science-needs-your-cells/"
+                  <Link
+                    href="blogs/how-a-gadget-drives-human-creativity"
                     target="_self"
                   >
                     How a Gadget Drives Human Creativity
-                  </a>
+                  </Link>
                 </h3>
                 <SmallDetails />
                 <p className={styles.squarep}>

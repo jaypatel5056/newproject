@@ -104,16 +104,7 @@ const FAQ = () => {
     </div>
     { toggle3 && globalToggle &&<p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>}
     </div> */}
-    
-    
-   
-
     </div>
-    
-    
-    
-    
-    
     </div>
     </div>
   )

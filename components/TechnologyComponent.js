@@ -38,9 +38,10 @@ const TechnologyComponent = () => {
 </a>
   {/* <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-27.jpg" alt="image2"/> */}
   <h3 className={styles.squareh3}>
-  <a href="https://websitedemos.net/tech-news-04/a-lesson-from-the-henrietta-lacks-story-science-needs-your-cells/" target="_self">
-  What Moves Gravel-Size Gypsum Crystals Around the Desert?
- </a></h3>
+  <Link href="blogs/what-moves-gravel-size-gypsum-crystals-around-the-desert" 
+  >
+  What Moves Gravel-Size Gypsum Crystals Around the Desert?</Link>
+ </h3>
  <SmallDetails/>
   <p className={styles.squarep}>Cursus iaculis etiam in In nullam donec sem sed consequat scelerisque nibh …</p>
 </div>
@@ -50,9 +51,9 @@ const TechnologyComponent = () => {
   <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-28.jpg" alt="image1"/>
 </a>
 
-  <h3 className={styles.squareh3}><a href="https://websitedemos.net/tech-news-04/a-lesson-from-the-henrietta-lacks-story-science-needs-your-cells/" target="_self">
+  <h3 className={styles.squareh3}><Link href="blogs/scientists-feeling-under-siege-march-against-trump-policies" target="_self">
   Scientists, Feeling Under Siege, March Against Trump Policies
- </a></h3>
+ </Link></h3>
  <SmallDetails/>
   <p className={styles.squarep}>Cursus iaculis etiam in In nullam donec sem sed consequat scelerisque nibh …
    </p>

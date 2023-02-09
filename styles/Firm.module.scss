@@ -6,8 +6,7 @@
     background-color: #5576fb;
     list-style-type: none;
     @include sm{
-        height: 2300px;
-
+        height: 2800px;
     }
     .main{
         margin: auto;
@@ -114,16 +113,15 @@
                 background-repeat: no-repeat;
                 width: 100% !important;
                 margin: 0 auto;
-             //    vertical-align: middle;
-                // overflow: hidden;
+                //vertical-align: middle;
+                //overflow: hidden;
                 background-size:cover;
                 background-position: 0px -60px;
                 @include sm{
-                    height: 100%;
-                    width: 50vw;
-                    background-repeat: repeat;
-
-                    
+                    flex: none;
+                    // height: 100%;
+                    width: 80vw !important;
+                    height: 500px;                    
                 }
             }
         }
