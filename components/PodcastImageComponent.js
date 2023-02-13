@@ -4,7 +4,7 @@ import styles from "../styles/PodcastImage.module.scss"
 const PodcastImageComponent = () => {
   return (
     <div className={styles.image4}>
-        <div className={styles.section1}>
+        <div className={styles.section1}>   
             <img src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/teh-news-podcast-cta-figure-img.png" alt=""/>
         </div>
         <div className={styles.section2}>

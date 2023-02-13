@@ -2,9 +2,17 @@
 .hello1{
     height: 800px;
     @include sm{
-      height: 2100px;
+    height: 2100px;
       
     }
+    @include lg{
+      height: 1400px;
+      
+    }
+    // @include xlg{
+    //   height: 1400px;
+      
+    // }
     .hello {
   height: 500px;
   background-color: #5576fb;
@@ -46,6 +54,16 @@
       gap: 50px;
       
     }
+    @include lg{
+      flex-wrap: wrap;
+      width: 100%;
+      
+    }
+    // @include xlg{
+    //   flex-wrap: wrap;
+    //   width: 100%;
+      
+    // }
 
     .square {
       padding: 30px;
@@ -72,8 +90,24 @@
           padding: 10px;
           padding-left: 0;
           margin: auto;
-
         }
+        @include lg{
+          width: 40%;
+          // padding: 0;
+          // margin: 0 auto;
+          margin: 10px 20px;
+          flex: none;
+          gap: 10px;
+        }
+        // @include xlg{
+        //   width: 40%;
+        //   // padding: 0;
+        //   // margin: 0 auto;
+        //   margin: 10px 20px;
+        //   flex: none;
+        //   gap: 10px;
+          
+        // }
         .image2{
             background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/dee2a7ea9eea577cab16110a/fff.jpg);
             width: 260px;

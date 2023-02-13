@@ -8,6 +8,10 @@
     @include sm{
         height: 2800px;
     }
+    @include lg{
+        height: 3000px;
+    }
+
     .main{
         margin: auto;
         width: 65%;
@@ -15,7 +19,11 @@
         @include sm{
             width: 100%;
             margin-left: 20px;
+        } @include lg{
+            width: 100%;
+            margin-left: 20px;
         }
+
 
         .h2{
         padding-top: 40px;
@@ -31,6 +39,10 @@
         @include sm{
             font-size: 2.2rem;
             width: 90%;
+        } 
+        @include lg{
+            // font-size: 2.2rem;
+            width: 90%;
         }
         }
         .flexsection{
@@ -39,7 +51,11 @@
             margin-top: 60px;
             margin-left: 0;
             @include sm{
-                flex-direction: column;
+                flex-direction: column; 
+            }
+            @include lg{
+                flex-wrap: wrap;
+                height: 1600px;
             
             }
             .section{
@@ -51,24 +67,35 @@
                   padding-left: 0;
                 
                 }
+                @include lg{
+                    flex: none;
+                    width: 50%;
+                    height: 400px;
+                }
              ul{
                 list-style-type: none;
                 @include sm{
                    padding-left:0;
-                    
-                   
                    }
+                   @include lg{
+                    padding-left:0;
+                    }
                 li{
                     font-size: 1.2rem;
                     font-family: 'Open Sans',sans-serif;
                     color: white;
                     font-weight: 400;
                     line-height: 2.2;
+                    margin: 20px;
                     @include sm{
-                       margin-top: 20px;
-                       
-                      
+                       margin-top: 20px;  
                       }
+                      h3{
+                        @include lg{
+                            font-size: 1.2rem;
+                        } 
+                      }
+
                 }
              }
              .p1{
@@ -85,6 +112,7 @@
                     text-decoration: none;
                     color: white;
                  }
+             
                  
              }
              .buttons1{
@@ -123,6 +151,12 @@
                     width: 80vw !important;
                     height: 500px;                    
                 }
+
+                @include lg{
+                    flex: none;
+                    width: 50%;
+                    height: 1000px;
+                }
             }
         }
         .secondsection{
@@ -138,6 +172,11 @@
                     width: calc(100% - 20%);
 
                 }
+                @include lg{
+                    // height: 250px;
+                    width: calc(100% - 20%);
+                    margin-left: 20px;
+                }
             .image2{
                 height: 600px;
                 width: 1000px;
@@ -147,9 +186,19 @@
                 @include sm{
                     height: 300px;
                     width: calc(100% - 20%);
+                    // height: 800px;
                     // transform: translate(70px, -150px);
                     margin-right: 30px;
                     transform: translate(100px, -150px);
+
+                }
+                @include lg{
+                    // height: 300px;
+                    width: 100%;
+                    padding: 0;
+                    // transform: translate(70px, -150px);
+                    margin-right: 30px;
+                    // transform: translate(100px, -150px);
 
                 }
          }
@@ -167,12 +216,31 @@
             @include sm{
                 height: 650px;
                 width: 330px;
+                width: 80%; 
+                               // height: 
+                // width: calc(100% - 20%);
                 transform: translate(30px, -150px);
                 top: 150%;
                 left: 2%;
                 margin-top: 80px;
                 padding-left: 20px;
-
+                margin-left: -20px;
+            }
+            @include lg{
+                // height: 650px;
+                // width: 330px;
+                // width: 80%; 
+                               // height: 
+                // width: calc(100% - 20%);
+                // transform: translate(-40px, -40px);
+                top: 30%;
+                left: 29%;
+                // top: 150%;
+                // left: 2%;
+                right: 0;
+                margin-top: 80px;
+                padding-left: 20px;
+                margin-left: -20px;
             }
             .h2{
                 font-size: 3rem;

@@ -11,7 +11,11 @@
       margin: 0 auto;
       @include sm{
         width: 100%;
-      }
+      
+      } 
+      //  @include md{
+      //   width: 50%;
+      // }
     }
     .navbar {
       display: flex;

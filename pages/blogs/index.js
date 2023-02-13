@@ -21,7 +21,7 @@ import FAQ from "@/components/FAQComponent";
 import { faSortAlphaDesc } from "@fortawesome/free-solid-svg-icons";
 
 // Last;
-
+import Top from "../../components/topComponent"
 function BLogs() {
   const [id, setId] = useState();
 
@@ -62,6 +62,7 @@ function BLogs() {
             </Container>
           </Navbar>
         </div>
+        {/* <Top/> */}
         <div className={styles.twosections}>
           <div className={styles.firstsection}>
             <div className={styles.blog1}>

@@ -2,21 +2,22 @@
 .header{
   margin-top: 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: relative;
+  align-items: center;
   
  
 .h3{
-  position: absolute;
-  flex: 1;
-  left: 0;
+  // position: absolute;
+  // flex: 1;
+  // left: 0;
   line-height: 1.2em;
   color: #26222f;
   font-size: 2rem;
   font-family: 'Sora',sans-serif;
   font-weight: 700;
   @include sm{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     padding-left: 20px;
   }
@@ -30,7 +31,7 @@
   justify-content: center;
   // font-family: 'Inter',sans-serif;
   font-family: "Sora", sans-serif;
-  transform: translateY(10px);
+  // transform: translateY(10px);
   // font-weight: 500;
   @include sm{
     margin-top: 5px;
@@ -40,6 +41,11 @@
   font-size: 1rem;
   color: #805aed;
   font-family: "Sora", sans-serif;
+  @include sm{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    align-items: center;
+  }
   }
   svg{
     display: flex;
@@ -98,6 +104,12 @@
         @include sm{
           height: 500px;
           top: 60%;
+        
+          
+        }
+        @include lg{
+          height: 500px;
+          top: 72%;
         
           
         }

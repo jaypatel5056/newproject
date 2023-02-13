@@ -10,6 +10,10 @@
     @include sm{
         height: 1600px;
     }
+    @include lg{
+        height: 1300px;
+        margin-bottom: 40px;
+    }
     .firstsection{
         background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f6017eaa9b1354efa1f776d0/pexels-photo-301930.png);
         height: 800px;
@@ -21,6 +25,7 @@
     //    overflow: hidden;
        background-size:cover ;
        background-position: center center;
+   
 
     }
     .secondsection{
@@ -35,13 +40,24 @@
                 flex-direction: column;
                 width: 100%;
                 margin-left: 5px;
+                height: 500px;
 
+            }
+            @include lg{
+                flex-wrap: wrap;
+                height: 800px;
             }
             .section{
                 flex: 1;
                 height: 300px;
                 word-wrap: break-word;
                 padding: 30px;
+                 @include lg{
+                    flex: none;
+                    width: 50%;
+                    margin-top: 20px;
+                    height: 00px;
+                }
                 .style{
                     padding: 30px;
                     padding-left: 0;
@@ -50,6 +66,10 @@
                     text-align: left;
                     @include sm{
                         display: block;
+                    }
+                    @include lg{
+                        display: block;
+                        // margin-top: 20px;
                     }
                     .h2{
                         font-weight: 700;   
@@ -60,6 +80,9 @@
                         @include sm{
                             display: block;
                             font-size: 2.5rem;
+                        } 
+                        @include lg{
+                             margin-top: 20px;
                         }
                     }
                     .h5{

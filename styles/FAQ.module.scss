@@ -9,6 +9,12 @@
      padding: 50px;
      margin-top: 40px;
     }
+    @include lg{
+        width: 100%;       
+        // height: 1000px; 
+        // padding: 50px;
+        // margin-top: 40px;
+       }
     .second{
         // width: 55%;
         display: flex;

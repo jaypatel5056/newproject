@@ -19,8 +19,13 @@
     font-weight: 700;
     @include sm{
       padding: 20px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      width: 100%;
       }
+    @include lg{
+     font-size: 1rem;
+    flex: none;
+        }
   }
   .right{
     cursor: pointer;
@@ -36,10 +41,16 @@
     @include sm{
       transform: translateY(25px);
     }
+    @include lg{
+      font-size: 1  rem;
+    }
     .h5{
       margin-top: 0;
     font-size: 1rem;
     color: #805aed;
+    @include sm{
+      font-size: 0.8rem;
+    }
     }
     svg{
       display: flex;
@@ -90,6 +101,10 @@
       flex-direction: column;
       padding: 0 10px;
     }
+    @include lg{
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
   
     /* overflow-x: hidden; */
     /* margin: 20px; */
@@ -109,6 +124,11 @@
     @include sm{
       padding-left: 20px;
       margin: 50px 20px 46px 0px;
+
+    }
+    @include lg{
+      width: 45%;
+      flex: none;
 
     }
   }
