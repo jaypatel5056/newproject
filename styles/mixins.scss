@@ -18,7 +18,7 @@
 // }
 
 @mixin lg{
-   @media only screen and (max-width: 1024px) and (min-width: 540x){
+   @media only screen and (max-width: 1180px) and (min-width: 541px){
     @content;
    }
 }

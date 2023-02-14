@@ -28,16 +28,21 @@
     font-size: 1.5rem;
     font-weight: 100;
     img {
-      height: 100px;
+      height: 80px;
       width: 250px;
       @include sm {
-       width: 200px;
-       height: 90px;   
+       width: 150px;
+       text-align: left;
+       height: 100px;
+      //  width: 100%;
+      //  object-fit: cover;
+      //  object-position: center center;
       }
      
     }
     @include sm {
       font-size: 1rem;
+      width: 20%;
     }
     // @include xlg{
     //   margin: 0;
@@ -58,6 +63,10 @@
         display: none;
       }
       @include lg{
+        display: none;
+
+      }
+      @include xlg{
         display: none;
 
       }
@@ -130,6 +139,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      @include sm{
+        padding: 20px;
+      }
       @include lg{
         padding: 20px;
       }
