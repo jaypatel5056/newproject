@@ -7,7 +7,7 @@
     height: 100%;
     margin: 0;
     .FAQ{
-      width: 55%;
+      width: 65%;
       margin: 0 auto;
       @include sm{
         width: 100%;
@@ -108,6 +108,7 @@
           .p3{
             font-size: 1.25rem;
             // font-family: 'Open Sans',sans-serif;
+            
             color: white !important;
             padding-top: 10px;
             padding-bottom: 20px;

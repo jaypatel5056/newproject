@@ -1,0 +1,89 @@
+@import "../styles/mixins.scss";
+
+.hello{
+    background-color: #879ffc;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height: auto; 
+    padding-top: 101px;
+    color: white;
+}      
+
+.h2{
+        font-size: 3rem;
+        font-family: Montserrat,sans-serif;
+       
+      }
+      .p1{
+        font-family: 'Open Sans',sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-top:  20px;
+        line-height: 2.2;
+      }
+      .icon{
+        margin-top:20px;
+
+      }
+      // @include xlg{
+      //   width: 50%;
+      //   flex: none;
+      // }
+    
+    .square{
+        flex: 1;
+        padding-top: 101px;  
+       padding-right: 30px;
+       padding-left: 30px;
+       padding-bottom: 30px;
+        background-color: white; 
+        
+        // color: white;
+      
+        text-align: left;
+        .h2{
+            font-size: 3rem;
+            font-family: Montserrat,sans-serif;
+            color: #5576fb !important;
+            // animation: rsctoggle 0.7s  ease-in forwards;
+          }
+          .p1{
+            font-family: 'Open Sans',sans-serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top:  20px;
+            line-height: 2.2;
+          }
+          .icon{
+            margin-top:20px;
+            color: #5576fb !important;
+          }
+
+          @include lg{
+            max-width: 50%;
+            flex: none;
+          }
+          // @include xlg{
+          //   width: 50%;
+          //   flex: none;
+          // }
+          }
+    // .strategy{}
+    // .consulting{}
+
+
+
+@keyframes rsctoggle {
+  0%{
+      transform: translatey(-150%);
+      opacity: 0.5;
+  }
+  100%{
+      transform: translatey(0%);
+      opacity: 1;
+      // transform: translateY(-50%);
+      // transform: translateY(-50%);
+  }
+  
+}

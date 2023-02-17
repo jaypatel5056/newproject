@@ -1,10 +1,11 @@
 @import "../styles/mixins.scss";
 .home{
-    height: 375px;
+    height: 820px;
     font-size: 2rem;
     margin-top: 70px;
     @include sm{
         // margin-top: 1500px;
+        height: 600px;
     }
     .colour1{
         height: 250px;
@@ -13,7 +14,13 @@
         height: 600px;
         background-color: #5576fb;
         @include sm{
-            height: 600px;
+            // height: 600px;
+            height: 500px;
+        }
+        @include xlg{
+            // height: 600px;
+            height: 500px;
+            transform: translatey(-100px);
         }
     }
     .section1{
@@ -33,6 +40,7 @@
             // padding-left: 20px;
 
             transform: translatey(-900px);
+            margin-left: 40px;
             
         }  @include lg{
             width: 100%;
@@ -50,7 +58,7 @@
         // }
         
         .image{
-            background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c89956fbc2d95ac2bffb4a86/gffg.jpg);
+            background-image:url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/c89956fbc2d95ac2bffb4a86/gffg.jpg);
             width: 900px;
             height: 720px ;
             background-size: cover;
@@ -67,6 +75,8 @@
                 background-position: -40px -30px;
                 background-repeat: no-repeat;
                 top: 30%;
+                // padding: 0 0px;
+           
             
            
                 
@@ -104,7 +114,7 @@
             @include sm{
                 width: 300px;
                 margin: auto;
-                height: 450px ;
+                height: 450px;
                 transform: translatex(-10px);
                 left: 70px;
                 top: -40%;
@@ -116,13 +126,13 @@
                 width: 450px;
                 // top: -40%;
             }
-            // @include xlg{
-            //     // transform: translatex(-30px);
-            //     left: 330px;
-            //     height: 550px;
-            //     width: 450px;
-            //     // top: -40%;
-            // }
+            @include xlg{
+                // transform: translatex(-30px);
+                left: 330px;
+                height: 550px;
+                width: 450px;
+                top: -40%;
+            }
             .h2{
                 font-size: 3rem;
                 font-family: Montserrat,sans-serif;
@@ -136,15 +146,14 @@
             }
            .p1{
             margin-top: 30px;
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-style: italic;
             color: #111111 !important;
             word-wrap: break-word;
             text-align: left;
             font-family: 'Open Sans',sans-serif;
             .a1{
-                border-bottom-style: solid;
-                border-radius: 2px;
+               border-bottom: 1px solid;
                 text-decoration: none;
                 font-style: italic;
                 color: black;
@@ -153,7 +162,7 @@
            .buttons1{
             width: 230px;
             margin-top: 30px;
-            border: 1px solid;
+            // border: 1px solid;
             border-radius: 50px !important;
             text-align: center;
             padding: 10px;
@@ -168,9 +177,15 @@
             justify-content: center;
             align-items: center;
             background-color: #5576fb !important;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(0,0,0,0.7);
+                
+            }
             a{
                 // padding: 10px;
                 color: #ffffff !important;
+                letter-spacing: 2.5px;
                 
                 
             }

@@ -6,12 +6,12 @@ import Link from "next/Link"
 const Header = () => {
   return (
     <>
-    <div className={styles.navbar}>
+    {/* <div className={styles.navbar}>
       <div className={styles.navbarheading}>
         <Link href="/">
-      <img src="/unnamed.jpg" alt="log-img" /></Link>
+      <img src="/unnamed.jpg" alt="log-img" /></Link> */}
       {/* <img src="https://capp.nicepage.com/1a3b34123e5a23fa2ec02642c3f27a25764372fe/images/default-logo.png" alt="log-img" /> */}
-       </div>
+       {/* </div>
        <div className={styles.links}>
          <ul id="ast-hf-menu-1" class="" >
              <li id="menu-item-859" class=""><a href="https://websitedemos.net/tech-news-04/category/technology/" class="menu-link">Technology</a></li>
@@ -35,7 +35,7 @@ const Header = () => {
        <GiHamburgerMenu/>
       </div> 
       </div>
-      </div>
+      </div> */}
 
       <div className={styles.section1}>
       <div className={styles.section1place} id="section1place">

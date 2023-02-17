@@ -1,7 +1,7 @@
 import React, { use, useEffect, useState } from "react";
-import styles from "../styles/FAQ.module.scss";
+import styles from "../styles/faqtest.module.scss";
 import { IoIosArrowDropdown } from "react-icons/Io";
-import { Accordion, Row, Col } from "react-bootstrap";
+import { Accordion, Row, Column, Container, Col } from "react-bootstrap";
 import dynamic from "next/dynamic";
 const Animator = dynamic(
   import("react-scroll-motion").then((it) => it.Animator),
@@ -68,8 +68,8 @@ const FAQ = () => {
     if (inputData) {
       console.log("from ");
       console.log(inputData);
-      console.log(new1);
-      console.log(new2);
+      // console.log(new1);
+      // console.log(new2);
       const response = await fetch("/api/message", {
         method: "POST",
         body: JSON.stringify({ name, email, message }),
@@ -77,58 +77,61 @@ const FAQ = () => {
     }
   };
   return (
-    <div className={styles.first}>
-      <div className={styles.second}>
-        <div className={styles.formsection}>
+       <Container fluid>
+      <Row  className={styles.main}>
+        <Col xxl={6} className="mt-sm-5 p-5" >
           <div className={styles.h21}>
             <h2> Get in tou​ch!</h2>
           </div>
-          <div className={styles.form}>
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                className={styles.name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                  console.log(name);
-                }}
-                placeholder="Enter your Name"
-                id="name-2ee9"
-                name="name"
-                value={name}
-                required=""
-              />
-              <input
-                type="text"
-                className={styles.email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                placeholder="Enter a valid email address "
-                id="name-2ee9"
-                name="name"
-                value={email}
-                required=""
-              />
-              <input
-                type="text"
-                className={styles.message}
-                onChange={(e) => {
-                  setMessage(e?.target?.value);
-                  console.log(message);
-                }}
-                placeholder="Enter your message"
-                id="name-2ee9"
-                name="name"
-                value={message}
-                required=""
-              />
-              <button className={styles.button}>SUBMIT</button>
-            </form>
-          </div>
-        </div>
-        <div className={styles.faq}>
-          <h2 className={styles.h3}>Frequently asked Questions</h2>
+            <div className={styles.form}>
+              <form onSubmit={handleSubmit}>
+              <div className="d-flex flex-column mt-2">
+                <input 
+                  type="text"
+                  className={`mt-5 ${styles.name}`}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                    console.log(name);
+                  }}
+                  placeholder="Enter your Name"
+                  id="name-2ee9"
+                  name="name"
+                  value={name}
+                  required=""
+                />
+                <input
+                  type="text"
+                  className={`mt-5 ${styles.email}`}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  placeholder="Enter a valid email address "
+                  id="name-2ee9"
+                  name="name"
+                  value={email}
+                  required=""
+                />
+                <input
+                  type="text"
+                  className={`mt-5 ${styles.message}`}
+                  onChange={(e) => {
+                    setMessage(e?.target?.value);
+                    console.log(message);
+                  }}
+                  placeholder="Enter your message"
+                  id="name-2ee9"
+                  name="name"
+                  value={message}
+                  required=""
+                />
+                <button className={styles.button}>SUBMIT</button>
+                </div>
+              </form>
+            </div>
+         
+        </Col>
+        <Col xxl={6}  className="mt-sm-5 p-5">
+          <h2 className={` fs-2 ${styles.h3}`}>Frequently asked Questions</h2>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
               <Accordion.Header>
@@ -189,9 +192,9 @@ const FAQ = () => {
     </div>
     { toggle3 && globalToggle &&<p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>}
     </div> */}
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

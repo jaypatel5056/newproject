@@ -1,0 +1,53 @@
+
+@import "../styles/mixins.scss";
+.logo{
+    height: 70px;
+    width: 100%;
+    // object-fit: cover;
+    background-color: black;
+    
+}
+.toggler {
+    // outline: none;
+    // font-size: 5rem;
+    // background-color: black;
+    box-shadow: none;
+    border: none;
+    // transition: all 0.3s ease-out;
+    &:focus{
+        box-shadow: none;
+    }
+}
+.nav1{
+    padding: 0 50px;
+    margin-right: auto;
+    @include sm{
+        padding: 0 20px;
+    }
+}
+.text{
+    text-decoration: none;
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #26222f;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0 2px;
+    &:hover{
+        // text
+            transition: all 0.2s linear;
+            color: rgb(101, 53, 233);
+        
+    }
+    
+
+}
+.text1{
+    @extend .text;
+     text-transform: none;
+    a:first-child{
+        color: purple;
+    }
+    
+}

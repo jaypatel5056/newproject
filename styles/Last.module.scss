@@ -20,12 +20,13 @@
     .middle{
         width: calc(100% - 52%);
         height: calc(100% - 25%);
+        // height: auto;
         background-color: white;
         margin: 20px auto;
         position: relative;
         @include sm{
-             width: calc(100% - 17%);
-             height: calc(100% - 10%);
+             width: calc(100% - 25%);
+             height: calc(100% - 15%);
         }
         @include lg{
             width: calc(100% - 10%);
@@ -39,7 +40,7 @@
             text-align: center;
             margin: auto;
             @include sm{
-                width: 70vw;
+                width: 60vw;
                 height: 15px;
             }
 
@@ -55,7 +56,7 @@
             right: 50%;
             transform: translateX(50%);
             @include sm{
-                width: 70vw;
+                width: 60vw;
                 height: 15px;
             }
 
@@ -70,7 +71,7 @@
             padding: 0 100px;
             @include sm{
             font-size: 2.3rem;    
-            padding: 0 40px;
+            padding: 0 9px;
             
             } 
             @include lg{

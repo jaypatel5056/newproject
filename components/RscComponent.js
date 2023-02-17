@@ -10,7 +10,7 @@ const cardVariants= {
     y: -200, opacity: 0
   },
   onscreen: {
-    y: 0, opacity: 1,
+    y: 0, opacity: 1, 
     transition: {
       duration: 1.5,
       delay: 1
@@ -21,7 +21,7 @@ const RSC = () => {
   return (
     <div className={styles.rsc}> 
      <motion.div 
-     initial={{y: 350,opacity: 0}}
+     initial={{y: 50,opacity: 0}}
      whileInView={{y: 0,opacity: 1}}
      transition={{duration: 1,opacity: 1}}
      viewport={{ once: true, amount: 0.3}}  
@@ -36,7 +36,7 @@ const RSC = () => {
      class={styles.h2}>Research</motion.h2>
      <motion.p 
      initial={{opacity:0 }}
-     whileInView={{rotate: [45,0],opacity:1}}
+     whileInView={{ rotate: [45,0],opacity:1}}
      transition={{duration: 1,delay:1}}
      viewport={{ once: true, amount: 0.2}}  
      

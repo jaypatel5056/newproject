@@ -10,7 +10,16 @@ import Three from "../components/ThreeComponent";
 import Firm from "../components/FirmComponent";
 import Last from "../components/Last";
 import Header from "@/components/HeaderComponent";
+import Botstrap from "@/components/rsc-botstrap"
 import FAQ from "@/components/FAQComponent";
+import Navbar1 from "@/components/Navbar1";
+import FAQ1 from "@/components/faqtest";
+import Test from "@/components/firm1";
+import Test1 from "@/components/testing";
+
+
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,15 +55,24 @@ export default function Home() {
       </div>
     </div>
   </div> */}
+        <Navbar1/>
         <Header />
-        <RSC />
+        
+        <Botstrap/> 
+        {/* <RSC /> */}
         <Meet />
+        
         <Advice />
         <Three />
-        <Firm />
+        {/* <Firm /> */}
+        <Test/>
         <Last />
+        
         <div className={styles.FAQ}>
-          <FAQ />
+          {/* <FAQ /> */}
+        <FAQ1 />
+        <Test1/>
+         
         </div>
       </main>
     </>

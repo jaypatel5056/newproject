@@ -5,6 +5,7 @@ import { motion, variants } from "framer-motion"
 
 const Three = () => {
   return (
+    
     <div className={styles.starting}>
       {/* <div className={styles.binding}> */}
       <div className={styles.firstsection}>
