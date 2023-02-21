@@ -40,16 +40,16 @@ const Header = () => {
       <div className={styles.section1}>
       <div className={styles.section1place} id="section1place">
       <motion.div 
-    //    initial={{x: -200,}}
-    //    animate={{x: 0,}}
-    //    transition={{duration: 1.5}}
+       initial={{x: -400,}}
+       animate={{x: 0,}}
+       transition={{duration: 1}}
       
       
       className={styles.rectangle} id="rectangle">  
         <motion.h1
         initial={{y: -200, scale:0.5}}
         animate={{y: 0, opacity:[0,0.25,0.50,0.75,1],scale:1}}
-        transition={{duration: 1.5}}
+        transition={{duration: 1.5,delay: 1}}
         className={styles.p1} id="p1">What We Believe</motion.h1>
         <p className={styles.p2}>Nibh venenatis cras sed felis eget velit aliquet sagittis id. Tellus pellentesque eu tincidunt tortor aliquam nulla. </p>
         <p class={styles.p3}>Image from <a href="https://freepik.com/photos/backround" class={styles.a1}>Freepik</a>

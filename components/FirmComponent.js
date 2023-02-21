@@ -42,7 +42,6 @@ const Firm = () => {
     /> */}
           <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a12553e956115c89af7ad1bf/fgfgggg.jpg" alt="" className={styles.image2}></img>
           <div className={styles.rectangle1}>
-
           <h2 class={styles.h2}> We are bringing ideas to life. </h2>
           <p className={styles.p2}>Nibh tortor id aliquet lectus proin nibh nisl condimentum. Libero id faucibus nisl tincidunt eget nullam. Justo eget magna fermentum iaculis eu non diam phasellus. Arcu risus quis varius quam quisque id diam vel quam.</p>
           <p class={styles.p1}>Image from <a href="https://www.freepik.com/photos/business" class={styles.a1}>Freepik</a>
@@ -54,10 +53,7 @@ const Firm = () => {
           </div>
           </div>
         </div>
-
-
        </div>
-
     </div>  );
 };
 

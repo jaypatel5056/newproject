@@ -1,26 +1,26 @@
+require("dotenv").config();
+const webpack = require("webpack");
 
-
-
-require('dotenv').config()
-const webpack = require('webpack')
-
-const nextConfig = {         
+const nextConfig = {
   reactStrictMode: true,
 
   // webpack(config, { defaultLoaders }) {
   //   config.module.rules.push({
   //     test: /\.(scss|css)$/,
   //     use: [
-  //       defaultLoaders.babel, 
+  //       defaultLoaders.babel,
   //       {
-  //         loader: require('styled-jsx/webpack').loader,
+  //         loader: require("styled-jsx/webpack").loader,
   //         options: {
-  //           type: 'global',
+  //           type: "global",
   //         },
   //       },
   //     ],
   //   });
+
+  //   config.plugins.push(new webpack.EnvironmentPlugin(process.env));
+
   //   return config;
   // },
-}
-module.exports = nextConfig
+};
+module.exports = nextConfig;

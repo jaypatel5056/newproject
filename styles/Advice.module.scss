@@ -41,6 +41,7 @@
 
             transform: translatey(-900px);
             margin-left: 40px;
+            // margin-top: 10px;
             
         }  @include lg{
             width: 100%;
@@ -62,9 +63,42 @@
             width: 900px;
             height: 720px ;
             background-size: cover;
-            object-fit: cover;
-            vertical-align: middle;
-            position: absolute;
+            // justify-content: space-between;
+            // align-items: space-around;
+            // display: block;
+            // align-items: center;
+            // justify-content: center;
+            // align-items: center;
+            //  justify-content: space-around;
+            //  align-items: center;
+            // justify-content: space-between;
+            text-align: center;
+        ;
+            @include sm{
+                
+               
+                   
+
+
+
+
+            }
+            // font-weight: 100;
+            align-items: flex-end;
+            display: block;
+            // display: inline-block;
+            // display: inline-block;
+            // justify-content: space-around;
+            // font-style:initial(0,0);
+            // // display: inline-block;
+            // padding: 0 auto;
+            // margin-bottom: 10px ;
+            // padding: 10px;
+            // justify-content: space-between;
+            // postion: absolute;
+            // display: inline-flex;
+            // justify-content:space-between;
+            
             @include sm{
                 width: 300px;
                 // margin: auto;
@@ -157,6 +191,14 @@
                 text-decoration: none;
                 font-style: italic;
                 color: black;
+                // text-align: center;
+                // margin-top: 200px;
+                // padding-bottom: 10px;
+                // border: 1px solid black;
+                // padding-top: 10px;
+                // margin-bottom: 10px;
+                // text-decoration: white;
+                
                }
            }
            .buttons1{
@@ -164,6 +206,7 @@
             margin-top: 30px;
             // border: 1px solid;
             border-radius: 50px !important;
+            padding: 0 10px;
             text-align: center;
             padding: 10px;
             margin-top: 45px;
@@ -171,6 +214,7 @@
             letter-spacing: 1px;
             background-color: white;
             height: 60px;
+            
             font-size: 1rem;
             font-weight: 600;
             display: flex;
@@ -186,7 +230,6 @@
                 // padding: 10px;
                 color: #ffffff !important;
                 letter-spacing: 2.5px;
-                
                 
             }
           }

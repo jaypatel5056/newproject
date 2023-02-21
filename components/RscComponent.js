@@ -31,8 +31,8 @@ const RSC = () => {
      initial="offscreen"
      whileInView="onscreen"
      viewport={{ once: false, amount: 0.5 }}
-    // animate= {{y: 0, opacity: 1}}
-    // transition ={{duration: 1.5}}
+     // animate= {{y: 0, opacity: 1}}
+     // transition ={{duration: 1.5}}
      class={styles.h2}>Research</motion.h2>
      <motion.p 
      initial={{opacity:0 }}

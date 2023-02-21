@@ -18,8 +18,9 @@ const cardVariants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1.5,
-      delay: 1,
+      duration: 0.5,
+      delay:  0.5, //asociation-one object nkwos about the other object .it respresents how objects are 
+      //aggregation-is a association  
     },
   },
 };
@@ -29,12 +30,12 @@ const RSC = () => {
     <Row>
     
     <Col sm={6}  lg={4} className={` ${styles.hello}`}>
-
+      
         <motion.h2
           variants={cardVariants}
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false,  }}
           // animate= {{y: 0, opacity: 1}}
           // transition ={{duration: 1.5}}
           class={styles.h2}
@@ -44,8 +45,8 @@ const RSC = () => {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ rotate: [45, 0], opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration:  0.5, delay:  0 }}
+          viewport={{ once: false,  }}
           class={styles.p1}
         >
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -56,20 +57,24 @@ const RSC = () => {
         <motion.div
           initial={{ x: -50 }}
           whileInView={{ x: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.2 }}
-          className={styles.icon}
+          transition={{ duration:  0.5, delay:  0.0  }}
+          // transition={{ duration: 0.5 }}
+          viewport={{ once: false,  }}
+          className={styles.icon}//association means one object knows about other objects  aggregation means one object reprents as a whole and is made of other objects which are rferred to it as its parts aggregation is knows as a has a relationship
+          
+          //asociation means one object knows about the other object it represents the relationship between two objects and they communicate which ither.
          >
           <HiOutlineArrowNarrowRight size={70} color="white" />
         </motion.div>
+        {/* </motion.div> */}
       </Col>
       <Col sm={6} lg={4} className={`  ${styles.square}`}>
         <motion.h2
           variants={cardVariants}
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ delay: 2 }}
+          viewport={{ once: false,  }}
+          transition={{ duradelay: 2 }}
           //  variants={cardVariants}
           //  initial={{
           //   y: -200, opacity: 0
@@ -87,8 +92,8 @@ const RSC = () => {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ rotate: [45, 0], opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration:  0.5, delay:  0.5 }}
+          viewport={{ once: false,  }}
           class={styles.p1}
         >
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -101,8 +106,9 @@ const RSC = () => {
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 1 }}
-          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration:  0.5, delay:  0.5  }}
+          // transition={{ duration: 0.5, delay: 1 }}
+          viewport={{ once: false,  }}
           className={styles.icon}
         >
           <HiOutlineArrowNarrowRight size={70} color="#5576fb" />
@@ -110,11 +116,11 @@ const RSC = () => {
       </Col>
       <Col sm={6} lg={4} className={`  ${styles.square}`}>
         <motion.h2
-          variants={cardVariants}
-          initial="offscreen"
-          whileInView="onscreen"
-          transition={{ delay: 2 }}
-          viewport={{ once: true, amount: 0.01 }}
+       variants={cardVariants}
+       initial="offscreen"
+       whileInView="onscreen"
+       viewport={{ once: false,  }}
+       transition={{ duradelay: 2 }}
           class={styles.h2}
         >
           Consulting
@@ -122,20 +128,24 @@ const RSC = () => {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ rotate: [45, 0], opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration:  0.5, delay:  0.5 }}
+          viewport={{ once: false,  }}
           class={styles.p1}
         >
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.
-        </motion.p>
+        </motion.p> 
+        {/* <motion.div>
+
+        </motion.div> */}
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 2 }}
-          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration:  0.5, delay:  0.5  }}
+          // transition={{ duration: 0.5, delay: 2 }}
+          viewport={{ once: false}}
           className={styles.icon}
         >
           <HiOutlineArrowNarrowRight size={70} color="#5576fb" />

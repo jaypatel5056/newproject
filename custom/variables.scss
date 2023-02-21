@@ -1,0 +1,137 @@
+
+:root {
+  @mixin sm {
+    @media only screen and (max-width: 540px) {
+      @content;
+    }
+  }
+  --black1: black;
+  .black2 {
+    background-color: var(--black1);
+  }
+  // Define maximum margin value
+  $maximum-margin: 1000;
+
+  // Loop to generate margin classes
+  @for $i from 1 through $maximum-margin {
+    .mt-#{$i} {
+      margin-top: #{$i}px;
+    }
+    .mr-#{$i} {
+      margin-right: #{$i}px;
+    }
+    .mb-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+    .ml-#{$i} {
+      margin-left: #{$i}px;
+    }
+  }
+
+  @for $i from 1 through $maximum-margin {
+    .p-#{$i} {
+      padding: #{$i}px;
+    }
+    .pt-#{$i} {
+      padding-top: #{$i}px;
+    }
+    .pr-#{$i} {
+      padding-right: #{$i}px;
+    }
+    .pb-#{$i} {
+      padding-bottom: #{$i}px;
+    }
+    .pl-#{$i} {
+      padding-left: #{$i}px;
+    }
+  }
+
+  .td {
+    text-decoration: none;
+  }
+
+  @for $i from 1 through $maximum-margin {
+    .w-#{$i} {
+      width: #{$i}px !important;
+    }
+    .h-#{$i} {
+      height: #{$i}px !important;
+    }
+    .h-sm-#{$i} {
+      @include sm {
+        height: #{$i}px !important;
+      }
+    }
+  }
+
+  @for $i from 1 through 100 {
+    $p: $i * 1%;
+    .wp-#{$i} {
+      width: #{$p} !important;
+    }
+    .hp-#{$i} {
+      height: #{$p} !important;
+    }
+  }
+  @for $i from 1 through 100 {
+    .ls-#{$i} {
+      letter-spacing: #{$i}px !important;
+    }
+    .ws-#{$i} {
+      word-spacing: #{$i}px !important;
+    }
+  }
+  .td-1 {
+    text-decoration: none !important;
+  }
+
+  //postioning
+  .pa {
+    position: absolute;
+  }
+  .pre {
+    position: relative;
+  }
+  .pf {
+    position: fixed;
+  }
+  @for $i from 1 through $maximum-margin {
+    .g-#{$i} {
+      gap: #{$i}px !important;
+    }
+  }
+
+  // @mixin md{
+  //    @media only screen and (max-width: 540px){
+  //     @content;
+
+  //    }
+  // }
+  // @mixin lg{
+  //    @media only screen and (max-width: 830px){
+  //     @content;
+
+  //    }
+  // }
+
+  @mixin lg {
+    @media only screen and (max-width: 1180px) and (min-width: 541px) {
+      @content;
+    }
+  }
+
+  @mixin xlg {
+    @media only screen and (max-width: 1280px) and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin xlg {
+    @media only screen and (max-width: 1280px) and (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+body {
+  // display: none !important;
+}
