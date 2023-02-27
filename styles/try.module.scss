@@ -1,14 +1,62 @@
 @import "../styles/mixins.scss";
 
 .hello{
-    background-color: #879ffc;
+    // background-color: #879ffc;
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    height: auto; 
+    height: 500px; 
     padding-top: 101px;
+    position: relative;
     color: white;
+    .try{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #879ffc;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+      // height: auto; 
+      padding-top: 101px;
+      color: white;
+      // height: fit-content;
+      
+    }
+    .try1{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      // background-color: #879ffc;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+      // height: auto; 
+      padding-top: 101px;
+      color:  #5576fb ;
+      // height: fit-content;
+      .p1{
+        color: black;
+      }
+      .icon{
+  margin-top:20px;
+  margin-bottom: 20px;
+
+}
+     
+      
+    }
+    
 }      
+
 .square1{
   padding-top: 101px;
  padding-right: 30px;
@@ -18,6 +66,7 @@
   color: white;
   text-align: left;
   flex: 1;
+  
 .h2{
   font-size: 3rem;
   font-family: Montserrat,sans-serif;
@@ -31,6 +80,7 @@
 }
 .icon{
   margin-top:20px;
+  margin-bottom: 20px;
 
 }
 @include lg{
@@ -46,6 +96,7 @@
 .h2{
         font-size: 3rem;
         font-family: Montserrat,sans-serif;
+        font-weight: 800;
        
       }
       .p1{
@@ -72,6 +123,7 @@
        padding-bottom: 30px;
         background-color: white; 
         
+        
         // color: white;
       
         text-align: left;
@@ -91,10 +143,11 @@
           .icon{
             margin-top:20px;
             color: #5576fb !important;
+            margin-bottom: 100px;
           }
 
           @include lg{
-            max-width: 50%;
+            // max-width: 50%;
             flex: none;
           }
           // @include xlg{

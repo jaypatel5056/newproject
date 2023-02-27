@@ -12,16 +12,27 @@
 //     @include lg{
 //       gap: 10px;
 //     }
+.main1{
+  // background-color: #0a090c78;
+
+
+  // background-image: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-hero-gradient-bg-purple.svg");
+
+  // background-position: top right;
+  // background-repeat: no-repeat;
 .firstsection {
   // width: 70%;
   // position: relative;
   // border: 1px solid;
+  @include sm{
+    width: 100%;
+  }
 
   h5 {
     font-family: "Sora", sans-serif;
     // font-family: 'Inter',sans-serif;
     line-height: 1.2em;
-    color: var(--ast-global-color-2);
+    // color: var(--ast-global-color-2);
     font-weight: 700;
     display: block;
     // padding-left: 30px;
@@ -33,18 +44,50 @@
     }
   }
   .blog1 {
-    background-image: linear-gradient(
-        90deg,
-        rgba(144, 143, 162, 1) 0%,
-        rgba(92, 92, 94, 1) 0%,
-        rgba(0, 0, 0, 0.4542191876750701) 100%,
-        rgba(0, 212, 255, 1) 100%
-      ),
-      url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-01.jpg");
+    background-image: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-01.jpg") ;
+    background-repeat: no-repeat;
+    // position: absolute;
+    // 0a090c78
+    
+    // opacity: 0.9;
+    // background-image: linear-gradient(
+    //     90deg,
+    //     rgba(144, 143, 162, 1) 0%,  
+    //     rgba(92, 92, 94, 1) 0%,
+    //     rgba(0, 0, 0, 0.4542191876750701) 100%,
+    //     rgba(0, 212, 255, 1) 100%
+    //   ),
+    //   url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-01.jpg");
     object-fit: cover;
     position: relative;
     background-size: cover;
+    background-color: black;
     height: 600px;
+    z-index: 1;
+    // &:before{
+    //   content: '';
+    //   background-color: #0a090c78;
+    //   position: absolute;
+    //   display: block;
+    //   top: 0;
+    //   left:0;
+    //   right:0;
+    //   bottom: 0;
+    // }
+    &:after{
+      content: '';
+      background-color: #0a090c78;
+      position: absolute;
+      display: block;
+      top: 0;
+      left:0;
+      right:0;
+      bottom: 0;
+      // width: 100px;
+      // height: 100px;
+    }
+    
+    
     @include sm {
       width: 100%;
       height: 300px;
@@ -55,6 +98,7 @@
     @include lg {
       width: 100%;
       // height: 550px;
+
       background-size: none;
       background-position: center center;
       background-repeat: no-repeat;
@@ -72,6 +116,7 @@
       /* bottom: 0; */
       /* top: 100px; */
       /* left: 10%; */
+      z-index: 3;
       transform: translateY(-50%);
       text-align: left;
       @include sm {
@@ -83,8 +128,9 @@
       //   animation: slidefromleft 0.3s ease forwards;
 
       //   transform: translateX(-100%);
-      &.rectangleshow {
+        &.rectangleshow {
         // animation: slidefromleft 0.3s ease forwards;
+        display: block;
       }
       /* margin-left: 130px; */
       .p1 {
@@ -99,19 +145,20 @@
         opacity: 1;
         // transform: translateY(-200%);
         letter-spacing: 3px;
-        // animation: slidefromup 2s ease-in forwards;
+        // a  nimation: slidefromup 2s ease-in forwards;
         cursor: pointer;
         width: fit-content;
         &:hover {
           color: #805aed;
-          // opacity: ;
+          // opacity: ; 
+  
           transition: all 0.5s linear;
         }
         @include sm {
           font-size: 0.7rem;
           margin-left: 0;
           padding-left: 0;
-        }
+          }
       }
       .p2 {
         font-size: 1.25rem;
@@ -138,6 +185,10 @@
           font-weight: 700;
           @include lg {
             font-size: 1.1rem;
+            // text-align:center;
+            // padding: 20px;
+            // display: flex-end;
+            
             padding-top: 0;
             margin-top: 0;
           }
@@ -186,7 +237,7 @@
           p {
             @include sm {
               font-size: 0.8rem;
-            }
+            } 
           }
           .icons {
             text-align: center;
@@ -234,8 +285,8 @@
       font-size: 0.75rem;
       // top: 20px ;
       @include sm {
-        transform: translateY(-260px);
-      }
+        transform: translateY(-250px);
+      } 
     }
     .label3 {
       height: 17px;
@@ -243,7 +294,6 @@
       background-color: white;
       transform: translateY(-247px);
       font-family: "Inter", sans-serif;
-    
       font-weight: 600;
       text-align: center;
       margin-left: 20px;
@@ -284,12 +334,13 @@
     }
   }
   .header {
-    // // margin-top: 30px;
-    // display: flex;
-    // justify-content: flex-end;
-    // position: relative;
+
+      // margin-top: 30px;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
     @include sm {
-      padding: 0 50px;
+      // padding: 0 50px;
     }
     .h3 {
       // position: absolute;
@@ -318,7 +369,7 @@
       // }
       .h5 {
         margin-top: 0;
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #805aed;
         @include sm {
           font-size: 0.9rem;
@@ -340,7 +391,7 @@
     // display: flex;
     // flex-direction: column;
     // height: 850px;
-    // margin-top: 50px;
+    // margin- top: 50px;
     // border: 1px solid;
     // @include sm {
     //   padding: 0 20px;
@@ -379,8 +430,8 @@
              width: 100px;
              height: 120px;
           
-            // width: 100%;
-            // height: 300px;
+            width: 100%;
+            height: 300px;
           }
           @include lg {
             // width: 270px;
@@ -438,13 +489,14 @@
   }
 }
 .secondsection {
-  padding-left: 20px;
+  // padding-left: 20px !important;
   width: 25%;
   .socials{
     // height: fit-content;
     // margin-top: 20px;
     h5{
     font-family: "Sora";
+    font-weight: 600;
     }
     .socials1{
     display: flex;
@@ -503,6 +555,8 @@
     object-fit: cover;
     object-fit: cover;
     background-size: cover;
+    background-position: center center;
+  
     // background-position: center center;
     @include sm {
       height: 300px;
@@ -513,13 +567,15 @@
     }
   }
   .text {
+    // padding-left: 20px;
+    width: 100%;
     .text1 {
       margin-top: 20px;
       .h2 {
         color: #4169e1;
         font-size: 0.8rem;
         letter-spacing: 2px;
-        font-family: "Inter", sans-serif;
+        font-family: "Sora", sans-serif;
         font-weight: 400;
         @include sm {
           font-size: 0.7rem;
@@ -534,6 +590,7 @@
         color: black;
         font-family: "Sora", sans-serif;
         font-weight: 700;
+        font-size: 1rem;
         @include sm {
           font-size: 0.9rem;
         }
@@ -635,7 +692,7 @@
 .imgsection{
   margin-left: 0px;
   padding-left: 0;
-  margin-top: 90px;
+  margin-top: 44px;
   @include sm{
     padding: 20px;
     padding-top: 0;
@@ -663,7 +720,10 @@
 .socials{
 margin-top: 20px;
 h5{
-font-family: "Sora";
+font-family: "Sora",sans-serif;
+font-weight: 700;
+// font-size: 4rem;
+
 }
 .socials1{
 display: flex;
@@ -814,3 +874,4 @@ margin-bottom: 40px;
 //     }
 //   }
 // }
+}

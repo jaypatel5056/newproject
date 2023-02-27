@@ -22,7 +22,12 @@
   }
 }
 @mixin xlg {
-  @media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  @media only screen and (max-width: 1279px) and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin xxlg {
+  @media only screen and (max-width: 1380px) and (min-width: 1280px) {
     @content;
   }
 }

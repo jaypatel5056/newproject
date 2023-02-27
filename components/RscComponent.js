@@ -87,7 +87,7 @@ const RSC = () => {
       className={styles.icon}>  
       <HiOutlineArrowNarrowRight size={70}  color="#5576fb"/>
       </motion.div>
-
+    
       </motion.div>   
       <div className={styles.square}>
      <motion.h2 variants={cardVariants}

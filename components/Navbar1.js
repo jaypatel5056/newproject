@@ -9,7 +9,7 @@ const Navbar1 = () => {
   return (
     <div className={styles.navbar}>
     <Navbar bg="light" variant="light" expand="lg">
-      <Container className="my-0">
+      <Container className="my-0 ">
       <Navbar.Brand href='/blogs' className="">
       <img width="200" height="200" src="/unnamed.jpg" className={` ${styles.logo}`} alt="Tech News" decoding="async"/>
       </Navbar.Brand>
@@ -30,10 +30,9 @@ const Navbar1 = () => {
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>PODCASTS</Nav.Link>
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>APPS</Nav.Link>
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>GADGET</Nav.Link>
-         
         </Nav>
-        <Nav className={`ml-auto  ${styles.nav1}`}>
-        <Nav.Link href="#link" className={` nav-link ml-auto ${styles.text1}`}>Subscribe</Nav.Link>
+        <Nav className={` d-flex justify-content-around m-0 ml-20 ${styles.nav}`}>
+        <Nav.Link href="#link" className={` nav-link mr-auto ${styles.text1}`}>Subscribe</Nav.Link>
         <Nav.Link href="#link" className={` nav-link ml -auto ${styles.text1}`}>Signin</Nav.Link>
           </Nav>
       </Navbar.Collapse>

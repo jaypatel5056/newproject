@@ -1,8 +1,11 @@
 @import "../styles/mixins.scss";
 .hello1{
     height: 800px;
+    // border: 1px solid black;
+    // margin-top: 400px;
     @include sm{
-    height: 2100px;
+    height: 2400px;
+    margin-top: 70px;
       
     }
     @include lg{
@@ -16,6 +19,7 @@
     .hello {
   height: 500px;
   background-color: #5576fb;
+  border: 1px solid black;
   .first {
     padding: 50px 30px 0;
     .h2 {
@@ -24,6 +28,13 @@
       text-align: center;
       color: white;
       font-family: Montserrat, sans-serif !important;
+      // text-align: center;
+      // display: flex;
+      // font-size: 1px;
+      // font-style: italic;
+      
+      
+
     }
     .p2 {
       font-size: 1rem;
@@ -40,7 +51,7 @@
         color: white !important;
         font-style: italic;
       }
-    }
+    } 
   }
   .squaresection {
     display: flex;
@@ -63,6 +74,16 @@
     @include xlg{
       flex-wrap: wrap;
       width: 100%;
+      
+    }
+    @include xlg{
+      flex-wrap: wrap;
+      width: 100%;
+      
+    }
+    @include xxlg{
+      flex-wrap: wrap;
+      width: 85%;
       
     }
     // @include xlg{
@@ -169,7 +190,7 @@
             display: flex;
             font-size: 1.5rem;
             justify-content: center;
-            gap: 20px;
+            gap: 20px;  
             fill: #5576fb;
             color: #5576fb;
         }
@@ -177,4 +198,5 @@
     }
   }
 }
+
 }

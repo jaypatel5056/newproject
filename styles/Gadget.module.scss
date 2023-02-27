@@ -1,6 +1,6 @@
 @import "../styles/mixins.scss";
 .header{
-  margin-top: 30px;
+  margin-top: 90px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -12,7 +12,7 @@
   // flex: 1;
   // left: 0;
   line-height: 1.2em;
-  color: #26222f;
+  color: #26222f; 
   font-size: 2rem;
   font-family: 'Sora',sans-serif;
   font-weight: 700;
@@ -58,14 +58,15 @@
 
 .twosides{
     display: flex;
-    margin-top: 40px;
+    margin-top: 10px;
+    // margin-top: 40px;
     @include sm{
       flex-direction: column;
       padding: 20px;
       gap: 10px;
     }
     .blog1{
-    background-image:linear-gradient(90deg, rgba(144,143,162,1) 0%, rgba(92,92,94,1) 0%, rgba(0,0,0,0.4542191876750701) 100%  ),
+    background-image:
     url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-iphone.jpg");
     object-fit: cover;
     position: relative;
@@ -74,6 +75,18 @@
     // border: 1px solid;
     width: 100%;
     background-position: center center;
+    z-index: 2;
+    &:after{
+      content: '';
+      background-color:#26222f5e;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      z-index: 1;
+    }
     @include sm{
       height: 300px;
 
@@ -84,7 +97,7 @@
         font-size: 1rem;
         padding: 110px 25px;
         width: 95%;
-        height: 460px;
+        // height: 460px;
         position: absolute;
         top: 80%;
         // bottom: 30%;
@@ -96,6 +109,7 @@
       //   animation: slidefromleft 0.3s ease forwards;
         
       //   transform: translateX(-100%);
+      z-index: 3;
         &.rectangleshow{
           // animation: slidefromleft 0.3s ease forwards;
 
@@ -163,6 +177,7 @@
         //   padding-bottom: 20px;
           font-family: 'Inter',sans-serif;
           padding-bottom: 10px;
+          margin-bottom: 70px;
           @include sm{
             font-size: 0.9rem;
           }

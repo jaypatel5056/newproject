@@ -14,6 +14,7 @@
 
   // Loop to generate margin classes
   @for $i from 1 through $maximum-margin {
+    $p: $i * 1%;
     .mt-#{$i} {
       margin-top: #{$i}px;
     }
@@ -24,7 +25,13 @@
       margin-bottom: #{$i}px;
     }
     .ml-#{$i} {
-      margin-left: #{$i}px;
+      margin-left: #{$i}px !important;
+    }
+    .mr-auto {
+      margin-right:auto;
+    }
+    .mlp-#{$i} {
+      margin-left: #{$p} !important;
     }
   }
 
@@ -43,6 +50,10 @@
     }
     .pl-#{$i} {
       padding-left: #{$i}px;
+    }
+    .px-#{$i} {
+      padding-left: #{$i}px !important;
+      padding-right: #{$i}px !important;
     }
   }
 

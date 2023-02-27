@@ -34,6 +34,8 @@ function BLogs() {
   //  }
   return (
     <>
+    <div className={styles.hello1}> 
+    <div className={styles.hello2}></div>
       <div className={styles.first}>
         <div className={styles.navbar}>
           <Navbar bg="light" variant="light">
@@ -173,6 +175,7 @@ function BLogs() {
           </div>
         </div> */}
         <New />
+        
         <PodcastImageComponent />
         <GadgetComponent />
         <Technology />
@@ -185,6 +188,7 @@ function BLogs() {
         <GamesComponent />
         <Last />
         <FAQ />
+      </div>
       </div>
     </>
   );

@@ -1,8 +1,38 @@
 @import "../styles/mixins.scss";
+.hello1{
+  background-image: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-hero-gradient-bg-purple.svg");
+  transform: translateY(-30px);
+  height: fit-content;
+  height: 700px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  
+  // border: 1px solid black;
+  // z-index: 0;
+  width: 100%;
+  // margin-top: 0;
+  // opacity: 1;
+  .hello2{
+    background-image: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-hero-gradient-bg-green.svg");
+    opacity: 1;
+    height: 300px;
+    background-position: top left;
+    // background-size: cover;
+    background-repeat: no-repeat;
+    // border: 1px solid black;
+    // color: #6EC1E4;
+     width: 500px;
+    // background-position: -100px -100px;
+
+  }
+}
+  
+
 .first {
-  width: 63% !important;
+  width: 65% !important;
   margin: 0 auto;
   height: 100%;
+  transform: translatey(-250px);
   
   //background: url("https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-hero-gradient-bg-purple.svg");
   // object-fit: cover;
@@ -55,9 +85,10 @@
       gap: 10px;
     }
    .firstsection{
-    width: 70%;
+    width: 65%;
     position: relative;
     // border: 1px solid;
+    margin-top: 30px;
     @include sm{
       width: 100%;
     }
@@ -369,7 +400,7 @@
       left: 0;
       line-height: 1.2em;
       color: #26222f;
-      font-size: 2rem;
+      font-size: 1rem;
       font-family: 'Sora',sans-serif;
       font-weight: 700;
       @include sm{
@@ -549,6 +580,7 @@
         letter-spacing: 2px;
         font-family: 'Inter',sans-serif;
         font-weight: 400;
+        font-size: 4rem;
         @include sm{
           font-size: 0.7rem;
         } 
@@ -561,8 +593,10 @@
     .link1{
         text-decoration: none;
         color: black;
-        font-family: 'Sora',sans-serif;
+   
+        // font-family: 'Sora',sans-serif;
         font-weight: 700;
+        font-size: 1.2rem;
         @include sm
         {
           font-size: 0.9rem;
@@ -762,6 +796,4 @@ h5{
   }
   
 }
-
-
 }

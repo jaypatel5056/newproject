@@ -8,11 +8,12 @@
     //     margin: 0 auto;
     // }
     @include sm{
-        height: 1600px;
+        height: 1700px;
     }
     @include lg{
         height: 1300px;
         margin-bottom: 40px;
+    
     }
     .firstsection{
         background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f6017eaa9b1354efa1f776d0/pexels-photo-301930.png);
@@ -40,12 +41,16 @@
                 flex-direction: column;
                 width: 100%;
                 margin-left: 5px;
-                height: 500px;
+                // height: 500px;
 
             }
             @include lg{
+                // width: 85%;
                 flex-wrap: wrap;
                 height: 800px;
+                margin: 0 20px;
+                width: fit-content;
+
             }
             .section{
                 flex: 1;
@@ -103,6 +108,10 @@
                         // font-size: 1rem;
                         font-size: 1.2rem;
                         padding-right: 20px;
+                        @include xxlg{
+                            font-size: 1.1rem;
+
+                        }
                     }
                 }
             }

@@ -49,7 +49,7 @@ const Advice = () => {
       <div className={styles.colour2}></div>
       
         <div className={styles.section1}>
-         { width> 500 && <motion.div initial={{x: -450,scale:0.5}}
+         { width> 1282 && <motion.div initial={{x: -450,scale:0.5}}
            whileInView={{x: 0,opacity:[0,25,50,100],scale:1}}
            transition={{duration: 1}}
           viewport={{ once: true, amount: 0.2}}   
@@ -60,8 +60,13 @@ const Advice = () => {
            transition={{duration: 1}}
           viewport={{ once: true, amount: 0.2}}   
           className={styles.image}></motion.div>}
+           {width>500  && width < 1281 && <motion.div initial={{x: -200,scale:0.5}}
+           whileInView={{x: 0,opacity:[0,25,50,100],scale:1}}
+           transition={{duration: 1}}
+          viewport={{ once: true, amount: 0.2}}   
+          className={styles.image}></motion.div>}
 
-      { width> 500 && <motion.div 
+      { width> 900 && <motion.div 
           initial={{x: 450,scale:0.5}}
           whileInView={{x: 0,opacity:[0,25,50,100],scale:1}}
           transition={{duration: 1}}
@@ -80,6 +85,22 @@ const Advice = () => {
 
          {width <500 &&  <motion.div 
           initial={{x: 50,scale:0.5}}
+          whileInView={{x: 0,opacity:[0,25,50,100],scale:1}}
+          transition={{duration: 1}}
+          viewport={{ once: true, amount: 0.2}}  
+          className={styles.rectangle1}>
+
+          <h2 className={styles.h2}> Quick, practical management advice to help you do your job better. </h2>
+          <p className={styles.p1}>Image from <a href="https://www.freepik.com/photos/business" class={styles.a1}>Freepik</a>
+          </p>
+          <div className={styles.buttons1}>
+            <div>
+        <a href="#">READ MORE</a></div>
+        </div>
+          </motion.div>}
+
+          {width >500 && width< 900 && <motion.div 
+          initial={{x: 250,scale:0.5}}
           whileInView={{x: 0,opacity:[0,25,50,100],scale:1}}
           transition={{duration: 1}}
           viewport={{ once: true, amount: 0.2}}  

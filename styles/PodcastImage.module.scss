@@ -4,12 +4,13 @@
   margin-top: 150px;
   display: flex;
   width: 100%;
-  background-color: rgb(142,251,218);
+  background-color: #8efbda;
   margin-bottom: 40px;
   @include sm{
     margin-top: 100px;
     height: 570px;
-    width: 85%;
+    // width: 85%;
+    width: 90%;
     margin: auto;
     margin-top: 10px;
     flex-direction: column;
@@ -37,6 +38,9 @@
 img{
   transform: translateY(-37px);
   // transform: translatex(-1px);
+  @include sm{
+    // transform: translatex(-20px);
+  }
 
 }
   }

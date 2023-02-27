@@ -17,8 +17,9 @@ const blogs1 = () => {
     //     Rows, content, etc
     //    </Container>
     <>
-      <Container fluid className="wp-100">
-        <Row className={` gx-5`}>
+    <div className={styles.main1}>
+      <Container fluid className="wp-100 }">
+        <Row className={` `}>
           <Col sm={9} className={` ${styles.firstsection}`}>
             <div className={styles.blog1}>
               aaaa
@@ -70,7 +71,7 @@ const blogs1 = () => {
               </div>
             </div>
           </Col>
-          <Col sm={3}  className={` p-0 ${styles.secondsection}`}>
+          <Col sm={3}  className={`  ${styles.secondsection}`}>
             <div className={styles.image}></div>{" "}
             <div className={styles.text}>
               <div className={styles.text1}>
@@ -110,12 +111,23 @@ const blogs1 = () => {
             </div>
           </Col>
         </Row>
-        <Row className={` gx-5 ${styles}`}>
-          <Col sm={9} className={` ${styles.firstsection}`}>
-            <h5 class="elementor-heading-title elementor-size-default">
+        <Row className={`  ${styles}`}>
+          <Col sm={9} className={` mt-40 ${styles.firstsection}`}>
+          <div class="mt-40 d-flex justify-content-between align-items-center blogs-first_header__NqUIR">
+            <div className="d-flex justify-content-center align-items-center "><h5 class="mt-0 elementor-heading-title elementor-size-default">
               Editor’s Pick
-            </h5>
-            <Row className={`   ${styles.editorspick}`}>
+            </h5></div>
+            <div class="d-flex justify-content-between g-5 g-sm-10 m-20 blogs-first_right__MSlQJ"> 
+            <h5 class="blogs-first_h5__dw5P6">View All</h5>
+            <div class="d-flex align-items-center justify-content-center fs-50">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg>
+              </div>
+              </div>
+              </div>
+            {/* <h5 class="elementor-heading-title elementor-size-default">
+              Editor’s Pick
+            </h5> */}
+            <Row className={` mt-10 ${styles.editorspick}`}>
             {/* <div className={styles.editorspick}> */}
             <Col sm={4} className={` ${styles.section1}`}>
               {/* <div className={styles.section1}> */}
@@ -212,6 +224,7 @@ const blogs1 = () => {
           <Col sm={9} className={` ${styles.firstsection}`}>
             <div className={styles.divider}></div>
             <div className={styles.techreviews}>
+              
               <div className={`d-flex justify-content-between align-items-center ${styles.header}`}>
                 <div>
                   <h3 className={styles.h3}>Tech Reviews</h3>
@@ -470,6 +483,7 @@ const blogs1 = () => {
           </Col>
         </Row>
       </Container>
+      </div>
     </>
   );
 };
