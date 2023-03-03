@@ -38,6 +38,7 @@
   // object-fit: cover;
   // background-size: cover;  
   background-position: top left;
+  
   width: 100%;
   background-repeat: no-repeat;
   @include sm{
@@ -67,6 +68,19 @@
         margin-right: 10px;   
     }
     .section2{
+      .link1 {
+        text-decoration: none;
+        color: black;
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        @include sm {
+          font-size: 0.9rem;
+        }
+        @include lg {
+          font-size: 0.9rem;
+        }
+      }
       @include sm{
       display: none;
       }

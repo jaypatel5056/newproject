@@ -59,7 +59,7 @@ const RSC = () => {
      initial="offscreen"
      whileInView="onscreen"
       viewport={{ once: false, amount: 0.5 }}
-      transition={{delay: 2}}
+      transition={{delay: 2}} 
     //  variants={cardVariants}
     //  initial={{
     //   y: -200, opacity: 0

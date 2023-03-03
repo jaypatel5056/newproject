@@ -25,7 +25,7 @@ const topComponent = () => {
                     Running macOS and Windows 10 on the Same Computer{" "}
                   </Link>
                   {/* <a href="https://websitedemos.net/tech-news-04/running-macos-and-windows-10-on-the-same-computer/" target="_self">
-           Running macOS and Windows 10 on the Same Computer </a> */}
+          Running macOS and Windows 10 on the Same Computer </a> */}
                 </h3>
                 <div className={styles.details}>
                   <div className={styles.details1}>

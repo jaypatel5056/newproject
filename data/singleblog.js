@@ -25,6 +25,7 @@ export const data=[
           },
           {
             "uid": 3,
+            
             "id": "6botsthatdeliverscienceandserendipityontwitter",
             "name": "Leanne Graham",
             "imgpath": "https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-21.jpg",

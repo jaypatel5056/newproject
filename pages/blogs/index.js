@@ -60,6 +60,13 @@ function BLogs() {
                   </Nav.Link>
                   <Nav.Link href="#features">Features</Nav.Link>
                   <Nav.Link href="#pricing">Pricing</Nav.Link>
+                  <Nav.Link href="login/login">
+                  {/* <Link */}
+                  {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
+                  {/* className={styles.link1} */}
+                {/* // ></Link> */}
+                Signin</Nav.Link>
+                  <Nav.Link href="login/signup">Signup</Nav.Link>
                 </Nav>
               </div>
             </Container>
