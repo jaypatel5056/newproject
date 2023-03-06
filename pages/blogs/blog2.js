@@ -7,7 +7,7 @@ const BlogPosts = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost/wordpress/wp-json/mo/v1/a');
+        const response = await axios.get('http://localhost/wordpress/wp-json/wp/v2/posts/12');
         setPosts(response.data);
         console.log("hello");
         console.log("hi");

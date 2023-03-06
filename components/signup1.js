@@ -17,7 +17,13 @@ import axios from '../lib/api';
 function App() {
 
 //   const [justifyActive, setJustifyActive] = useState('tab1');
-
+// const [formData, setFormData] = useState({
+//     firstName: '',
+//     lastName: '',
+//     username: '',
+//     email: '',
+//     password: '',
+//   });
 
     const firstNameRef = useRef();
     const lastNameRef = useRef();
@@ -44,6 +50,13 @@ function App() {
       })
         .then((response) => {
           console.log(response);
+        //   setFormData({
+        //     firstName: '',
+        //     lastName: '',
+        //     username: '',
+        //     email: '',
+        //     password: '',
+        //   });
         //   window.location.href = '/login/login';
         })
         .catch((error) => {

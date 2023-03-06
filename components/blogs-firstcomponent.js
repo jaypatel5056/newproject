@@ -77,7 +77,7 @@ const blogs1 = () => {
               <div className={styles.text1}>
                 <h2 className={styles.h2}>APPS</h2>
                 <Link
-                  href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone"
+                  href="blogs/8"
                   className={styles.link1}
                 >
                   Broke a Glass? Someday You Might 3-D-Print a New One{" "}
@@ -96,7 +96,7 @@ const blogs1 = () => {
               <div className={styles.text1}>
                 <h2 className={styles.h2}>EDITORS PICK</h2>
                 <Link
-                  href="blogs/for-families-of-teens-at-microsoft-surface"
+                  href="/blogs/10"
                   className={styles.link1}
                 >
                   For Families of Teens at Microsoft Surface{" "}
@@ -139,7 +139,7 @@ const blogs1 = () => {
                   ></img>
                 </div>
                 <div className={styles.desc}>
-                  <Link href="/blogs/forfamiliesofteensatmicrosoftsurface">
+                  <Link href="/blogs/10">
                     {" "}
                     For Families of Teens at Microsoft Surface
                   </Link>
@@ -180,7 +180,7 @@ const blogs1 = () => {
                   ></img>
                 </div>
                 <div className={styles.desc}>
-                  <Link href="/blogs/6botsthatdeliverscienceandserendipityontwitter">
+                  <Link href="/blogs/12">
                     {" "}
                     6 Bots That Deliver Science and Serendipity on Twitter{" "}
                   </Link>

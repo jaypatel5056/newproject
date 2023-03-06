@@ -5,7 +5,14 @@
       @content;
     }
   }
+  --color-blue: rgb(78, 101, 203);
+    --color-purple: rgb(113,75,128);
+    --color-pink: rgb(203, 66, 116);
+    
+    --transition-time: 500ms;
+    --transition-ease: cubic-bezier(.1,.7,.8,.3);
   --black1: black;
+  
   .black2 {
     background-color: var(--black1);
   }

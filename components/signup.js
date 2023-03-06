@@ -10,6 +10,7 @@ from 'mdb-react-ui-kit';
 import axios from "../lib/api"
 
 const onSubmit = async (e) => {
+  const [isLoggedIn,setIsLoggedIn]=useState(false);
     e.preventDefault();
     const username = e.target.elements.email.value;
     const password = e.target.elements.password.value;
@@ -25,6 +26,7 @@ const onSubmit = async (e) => {
       if (response.data.status==true) {
         localStorage.setItem('username', response.data.data.user_login);
         window.location.href = '/blogs';
+        setIsLoggedIn(true);
         console.log("success");
       }
     } catch (error) {
