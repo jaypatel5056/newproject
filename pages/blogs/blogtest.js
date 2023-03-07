@@ -4,21 +4,51 @@ import axios from "axios";
 // import Navbar from "../../components/NavbarComponent"
 // import styles from "../../styles/Macos.module.scss"
 import styles from "../../styles/blogg.module.scss"
-import { useRouter } from 'next/router'
+import { useRouter, } from 'next/router'
 // import Footer from "../../components/FooterComponent"
 // import { useRouter } from 'next/router'
 // import axios, {isCancel, AxiosError} from 'axios';
 // import { BsArrowLeft,BsArrowRight } from 'react-icons/Bs'
 // import Link from "next/link"
+import React, { useState, } from 'react';
+import { useEffect } from 'react';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Link from "next/link";
+import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
+import { SlCalender } from "react-icons/Sl";
+import { FiMail } from "react-icons/Fi";
+import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
+import { GrFacebookOption } from "react-icons/Gr";
+
 import Navbar from "../../components/NavbarComponent"
 import LikeButton from "../../components/like2"
 import Share from "../../components/share"
+import singlePost from "../../components/1"
 
 
-
-const Posts = ({ post}) => {
+const Posts = ({ post,categoryPosts}) => {
     const router=useRouter();
+    const [isLoggedIn1,setIsLoggedIn1]=useState(false);
   const value=router.query.slug  
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem('username');
+    if (isLoggedIn) {
+     setIsLoggedIn1(true);
+    } else {
+      setIsLoggedIn1(false);
+    }
+  }, []);
+
+  const postcomment = () => {
+    if(isLoggedIn1){
+  }
+  else{
+    alert("Only logged in users can like the post! Please login to continue");
+  }
+};
+
+  
   return (
     // <div>
     //   {/* <h1>Posts</h1> */}
@@ -66,11 +96,95 @@ const Posts = ({ post}) => {
                 </div>
                 <div class="bg-light p-2 ">
                     <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40" alt=""/><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
-                    <div class="mt-20 mb-20 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                    <div class="mt-20 mb-20 text-right">
+                      <button class="btn btn-primary btn-sm shadow-none" type="button" onClick={postcomment}>Post comment
+                      </button>
+                      {/* <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button> */}
+                      </div>
                 </div>
             </div>
+            <h3 className="mt-30 "> Read more</h3>
+            <Row className={` mt-10 ${styles.editorspick}`}>
+            {categoryPosts.map((post) => (
+        <singlePost key={post.id} post={post} />
+      ))}
+            {/* <div className={styles.editorspick}> */}
+            <Col sm={6} className={` ${styles.section1}`}>
+              {/* <div className={styles.section1}> */}
+                
+                <div className={styles.epimg1}>
+                  <img
+                    src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-02.jpg"
+                    alt=""
+                  ></img>
+                </div>
+                <div className={styles.desc}>
+                  <Link href="/blogs/10">
+                    {" "}
+                    For Families of Teens at Microsoft Surface
+                  </Link>
+
+                  <div className={styles.label1}>EDITORS PICK</div>
+                </div>
+              {/* </div> */}
+              </Col>
+
+              <Col sm={6} className={` ${styles.section1}`}>
+              {/* <div className={styles.section1}> */}
+                <div className={styles.epimg1}>
+                  <img
+                    src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-10.jpg"
+                    alt=""
+                  ></img>
+                </div>
+                <div className={styles.desc}>
+                  <Link href="/blogs/whynetflixsharesaredown10">
+                    {" "}
+                    Why Netflix shares are down 10%{" "}
+                  </Link>
+
+                  {/* <a href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-10.jpg" target="_self">
+                        Why Netflix shares are down 10% </a> */}
+                </div>
+                <div className={styles.label2}>EDITORS PICK</div>
+              {/* </div> */}
+              </Col>
+              
+              <Col sm={6} className={` ${styles.section1}`}>
+
+              {/* <div className={styles.section1}> */}
+                <div className={styles.epimg1}>
+                  <img
+                    src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-21.jpg"
+                    alt=""
+                  ></img>
+                </div>
+                <div className={styles.desc}>
+                  <Link href="/blogs/12">
+                    {" "}
+                    6 Bots That Deliver Science and Serendipity on Twitter{" "}
+                  </Link>
+                  {/* <a
+                      href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-21.jpg"
+                      target="_self"
+                    >
+                      6 Bots That Deliver Science and Serendipity on Twitter
+                    </a> */}
+                </div>
+                <div className={styles.label3}>APPS</div>
+              {/* </div> */}
+             
+              </Col>
+            {/* </div> */}
+            </Row>
+
+
+
+
+
         </div>
     </div>
+  
 </div>
      
        </>
@@ -125,24 +239,26 @@ export async function getStaticPaths(){
   }
 }
 export async function getStaticProps(context) {
-     
   const {params }=context
     try {
       console.log('blogss');
       console.log(params.blog4);
       const response = await axios.get(`http://localhost:3000/api/${params.blog4}`);
       const post = response.data;
+      const id=post.categories[0]
+      const categoryData=await fetch(`api/category/${id}`)
+      const categoryPosts=categoryData.data;
       console.log("hixyk");
       console.log(post);
       return {
-        props: { post }
+        props: { post ,categoryPosts}
       };
     } catch (error) {
       console.error(error); 
       console.log("hixyk");
       return {
-        props: { post: {} }
+        props: { post: {} ,}
       };
     }
   }
-  
+

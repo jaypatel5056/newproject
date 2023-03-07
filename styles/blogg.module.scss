@@ -33,3 +33,95 @@
     margin-bottom: 60px;
     margin-top: 20px;
 }
+.first h3{
+    font-size: 0.5rem;
+    font-family: 'Sora',sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-top: 20px;
+    @include sm{
+        font-size: 1.5rem;
+    }
+}
+
+.editorspick {
+ 
+
+
+    .label1 {
+      height: 17px;
+      width: 120px;
+      background-color: white;
+      transform: translateY(-245px);
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin-left: 20px;
+      // position: absolute;
+      font-size: 0.75rem;
+      // top: 20px ;
+      @include sm {
+        transform: translateY(-259px);
+      }
+    }
+    .label2 {
+      height: 17px;
+      width: 120px;
+      background-color: white;
+      transform: translateY(-245px);
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin-left: 20px;
+      // position: absolute;
+      font-size: 0.75rem;
+      // top: 20px ;
+      @include sm {
+        transform: translateY(-250px);
+      } 
+    }
+    .label3 {
+      height: 17px;
+      width: 70px;
+      background-color: white;
+      transform: translateY(-247px);
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin-left: 20px;
+      // position: absolute;
+      font-size: 0.75rem;
+      // top: 20px ;
+      @include sm {
+        transform: translateY(-260px);
+      }
+    }
+    .section1 {
+      // flex: 1;
+      .epimg1 {
+        position: relative;
+        img {
+        //   height: 170px;
+          object-fit: cover;
+          background-size: cover;
+          width: 100%;
+          @include sm {
+            height: 220px;
+          }
+        }
+      }
+      .desc {
+        margin-top: 30px;
+        a {
+          text-decoration: none;
+          color: black;
+          // font-family: 'Inter',sans-serif;
+          font-family: "Sora", sans-serif;
+          font-weight: 700;
+          font-size: 1.2rem;
+          transition: all 0.2s linear;
+          font-weight: 700;
+        }
+      }
+    }
+  }

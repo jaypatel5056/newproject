@@ -1,0 +1,29 @@
+@import "mixins.scss";
+.section1 {
+    // flex: 1;
+    .epimg1 {
+      position: relative;
+      img {
+        height: 170px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        @include sm {
+          height: 220px;
+        }
+      }
+    }
+    .desc {
+      margin-top: 30px;
+      a {
+        text-decoration: none;
+        color: black;
+        // font-family: 'Inter',sans-serif;
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        transition: all 0.2s linear;
+        font-weight: 700;
+      }
+    }
+  }

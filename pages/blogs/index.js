@@ -19,12 +19,24 @@ import GadgetSoftware from "@/components/gadgetsoftwareComponent";
 import GamesComponent from "@/components/GamesComponent";
 import FAQ from "@/components/FAQComponent";
 import { faSortAlphaDesc } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 import New from "@/components/blogs-firstcomponent";
 
 // Last;
 import Top from "../../components/topComponent";
 function BLogs() {
   const [id, setId] = useState();
+  const [isLoggedIn1,setIsLoggedIn1]=useState(false);
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem('username');
+    if (isLoggedIn) {
+     setIsLoggedIn1(true);
+    } else {
+      setIsLoggedIn1(false);
+    }
+  }, []);
+  console.log('home');
+  console.log(isLoggedIn1)
 
   //  const handleCLick=async ()=>{
   //   setId(1)
@@ -60,13 +72,16 @@ function BLogs() {
                   </Nav.Link>
                   <Nav.Link href="#features">Features</Nav.Link>
                   <Nav.Link href="#pricing">Pricing</Nav.Link>
-                  <Nav.Link href="login/login">
+                 { !isLoggedIn1 && <Nav.Link href="login/login">
                   {/* <Link */}
                   {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
                   {/* className={styles.link1} */}
                 {/* // ></Link> */}
-                Signin</Nav.Link>
-                  <Nav.Link href="login/signup">Signup</Nav.Link>
+                Signin</Nav.Link>}
+                { !isLoggedIn1 &&
+                  <Nav.Link href="login/signup">Signup</Nav.Link>}
+                   { isLoggedIn1 &&
+                  <Nav.Link href="login/signout">Signout</Nav.Link>}
                 </Nav>
               </div>
             </Container>
