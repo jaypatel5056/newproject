@@ -3,13 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import GadgetComponent from "@/components/GadgetComponent";
 import styles from "../../styles/Blogs.module.scss";
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import { SlCalender } from "react-icons/Sl";
-import Link from "next/link";
 import { useState } from "react";
-import { FiMail } from "react-icons/Fi";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
-import { GrFacebookOption } from "react-icons/Gr";
 import PodcastImageComponent from "@/components/PodcastImageComponent";
 import Technology from "@/components/TechnologyComponent";
 import Rsc from "../../components/RscComponent";
@@ -18,7 +12,6 @@ import GadgetSoftware from "@/components/gadgetsoftwareComponent";
 // impoGadgetComponent
 import GamesComponent from "@/components/GamesComponent";
 import FAQ from "@/components/FAQComponent";
-import { faSortAlphaDesc } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 import Navbar1 from "../../components/navbar4"
 import New from "@/components/blogs-firstcomponent";

@@ -17,10 +17,6 @@ import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import { SlCalender } from "react-icons/sl";
-import { FiMail } from "react-icons/Fi";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
-import { GrFacebookOption } from "react-icons/Gr";
-
 import Navbar from "../../components/NavbarComponent"
 import LikeButton from "../../components/like2"
 import Share from "../../components/share"

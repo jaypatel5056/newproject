@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 // import Footer from "../../components/FooterComponent"
 // import { useRouter } from 'next/router'
 // import axios, {isCancel, AxiosError} from 'axios';
-// import { BsArrowLeft,BsArrowRight } from 'react-icons/Bs'
 // import Link from "next/link"
 import Navbar from "../../components/NavbarComponent"
 import LikeButton from "../../components/like2"
