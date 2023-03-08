@@ -2,7 +2,7 @@ import React from "react";
 import SmallDetails from "../components/blogsmalldetailsComponent";
 import styles from "../styles/gadgetsoftware.module.scss";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const TechnologyComponent = () => {
   return (
