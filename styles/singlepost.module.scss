@@ -4,12 +4,11 @@
     .epimg1 {
       position: relative;
       img {
-        height: 170px;
         object-fit: cover;
         background-size: cover;
         width: 100%;
         @include sm {
-          height: 220px;
+        //   height: 220px;
         }
       }
     }
@@ -24,6 +23,17 @@
         font-size: 1.2rem;
         transition: all 0.2s linear;
         font-weight: 700;
+        @include sm{
+            font-size: 0.9rem;
+        }
       }
     }
+  }
+  .label1 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-family: 'Inter',sans-serif;
+   margin-top: 10px;
+  font-weight: 500;
+
   }

@@ -8,23 +8,42 @@ import Link from "next/link";
 import styles from "../styles/allposts.module.scss";
 import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
 import { SlCalender } from "react-icons/Sl";
+import axios from "axios"
 import { FiMail } from "react-icons/Fi";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
+import {useEffect,useState  } from 'react'
+import Navbar1 from "../components/navbar4"
+
 
 const allposts = ({post}) => {
     const regex = /<img.+?src="(.+?)".*?>/i;
     const urlmatch = post.content.rendered.match(regex);
     const imageUrl = urlmatch ? urlmatch[1] : null;
+    const [categoryName, setCategoryName] = useState("");
 
     console.log("url");
     console.log(imageUrl);
     console.log("match");
     console.log(urlmatch);
 
+    useEffect(() => {
+      async function getCategoryName() {
+        // console.log('0 s');
+        console.log(post.categories[0])
+        const categoryData = await axios.get(`/api/category/name/${post.categories[0]}`);
+        console.log('iiii')
+        console.log(categoryData);
+        console.log('name');
+        console.log(categoryData.data.name)
+        setCategoryName(categoryData.data.name);
+      }
+      getCategoryName();
+    }, [post.categories]);
+
   return (
     <div>
-         <Row className={`  p-0  ${styles.three}`}>
-              <Col sm={6} className={` ${styles.firstsection}`}>
+         <Row className={`p-0  ${styles.three}`}>
+              <Col  xs={12} md={6} className={` ${styles.firstsection}`}>
               {/* <div className={styles.firstsection}> */}
                 <Link
                   href={`blogs/${post.id}`}
@@ -40,9 +59,9 @@ const allposts = ({post}) => {
                     src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-11.jpg"
                     alt=""
                   ></img> */}
-                  <Col sm={6} className={` ${styles.firstsection}`}>
+                  <Col  xs={12} md={6} className={` ${styles.firstsection}`}>
                 <div className={styles.content1}>
-                  <p className={styles.p1}> GADGET</p>
+                  <p className={styles.p1}> {categoryName}</p>
                   <Link
                    href={`blogs/${post.id}`}
                     className={styles.a1}

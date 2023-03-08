@@ -37,31 +37,31 @@ const Navbar1 = () => {
           </Nav>
       </Navbar.Collapse>
 
-        {/* <Nav className="collapse navbar-collapse" id="navbarSupportedContent1">
-          
-        <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
-        <a className={` nav-link ${styles.text}`} href="#">TECHNOLOGY</a>
-      </li>
-      <li class="nav-item">
-        <a className={`nav-link ${styles.text}`}  href="#">SOFTWARE</a>
-      </li>
-      <li class="nav-item">
-        <a className={` nav-link ${styles.text}`}  href="#">APPS</a>
-      </li>
-      <li class="nav-item">
-        <a className={` nav-link ${styles.text}`}  href="#">GAMES</a>
-      </li>
-      <li class="nav-item">
-        <a className={` nav-link ${styles.text}`}  href="#">PODCASTS
-        </a>
-      </li>
-      <li class="nav-item">
-        <a className={` nav-link ${styles.text}`} href="#">GADGET</a>
-      </li>
-    </ul>
+          {/* <Nav className="collapse navbar-collapse" id="navbarSupportedContent1">
+            
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          <a className={` nav-link ${styles.text}`} href="#">TECHNOLOGY</a>
+        </li>
+        <li class="nav-item">
+          <a className={`nav-link ${styles.text}`}  href="#">SOFTWARE</a>
+        </li>
+        <li class="nav-item">
+          <a className={` nav-link ${styles.text}`}  href="#">APPS</a>
+        </li>
+        <li class="nav-item">
+          <a className={` nav-link ${styles.text}`}  href="#">GAMES</a>
+        </li>
+        <li class="nav-item">
+          <a className={` nav-link ${styles.text}`}  href="#">PODCASTS
+          </a>
+        </li>
+        <li class="nav-item">
+          <a className={` nav-link ${styles.text}`} href="#">GADGET</a>
+        </li>
+      </ul>
 
-        </Nav> */}
+          </Nav> */}
       </Container>
     </Navbar>
   </div>

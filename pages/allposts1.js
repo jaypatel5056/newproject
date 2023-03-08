@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Allposts from "../components/allposts";
-import Navbar1 from '@/components/NavbarComponent';
+import Navbar1 from '@/components/navbar4';
+// import Navbar2 from "../components/navbar4"
 
 const Posts = ({ initialPosts }) => {
   const [posts, setPosts] = useState(initialPosts);

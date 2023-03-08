@@ -13,12 +13,38 @@ import { useRouter } from 'next/router'
 import Navbar from "../../components/NavbarComponent"
 import LikeButton from "../../components/like2"
 import Share from "../../components/share"
+import React, { useState, } from 'react';
+import { useEffect } from 'react';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Link from "next/link";
+import SinglePost from "../../components/1"
+import Navbar1 from "../../components/navbar4"
+// import styles from "../../styles/blogg.module.scss"
 
 
 
-const Posts = ({ post}) => {
-    const router=useRouter();
-  const value=router.query.slug  
+const Posts = ({ post,categoryPosts}) => {
+  const router=useRouter();
+  const [isLoggedIn1,setIsLoggedIn1]=useState(false);
+const value=router.query.slug  
+useEffect(() => {
+  const isLoggedIn = localStorage.getItem('username');
+  if (isLoggedIn) {
+   setIsLoggedIn1(true);
+  } else {
+    setIsLoggedIn1(false);
+  }
+}, []);
+
+const postcomment = () => {
+  if(isLoggedIn1){
+}
+else{
+  alert("Only logged in users can like the post! Please login to continue");
+}
+};
+
   return (
     // <div>
     //   {/* <h1>Posts</h1> */}
@@ -31,7 +57,7 @@ const Posts = ({ post}) => {
     //   {/* ))} */}
     // </div>
     <>
-    <Navbar/>
+    <Navbar1/>
     {/* <LikeButton/> */}
     {/* <Share/> */}
     
@@ -40,7 +66,7 @@ const Posts = ({ post}) => {
        <h1>{post.id}</h1> */}
        <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} /> 
        </div>
-       <div class="container mt-5 wp-60">
+       <div class="container mt-5 wp-60 wp-sm-90">
     <div class="d-flex justify-content-center row p-0">
         <div class="col-md-8 p-0">
             <div class="d-flex flex-column comment-section">
@@ -66,9 +92,23 @@ const Posts = ({ post}) => {
                 </div>
                 <div class="bg-light p-2 ">
                     <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40" alt=""/><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
-                    <div class="mt-20 mb-20 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                    <div class="mt-20 mb-20 text-right">
+                      <button class="btn btn-primary btn-sm shadow-none" type="button" onClick={postcomment}>Post comment
+                      </button>
+                      {/* <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button> */}
+                      </div>
                 </div>
             </div>
+            <h3 className="mt-30 "> Read more</h3>
+  
+            <Row className={` mt-10 ${styles.editorspick}`}>
+            {categoryPosts.map((post1) => (             
+        <SinglePost key={post1.id} post={post1} postcheck={post.id}/>
+      ))}
+            {/* <div className={styles.editorspick}> */}
+         
+            {/* </div> */}
+            </Row>
         </div>
     </div>
 </div>
@@ -119,30 +159,57 @@ export async function getStaticPaths(){
       {
         params:{blog4: '5'},
       },
+      {
+        params:{blog4: '14'},
+      },
 
     ],
     fallback:false,
   }
 }
-export async function getStaticProps(context) {
+// export async function getStaticProps(context) {
      
-  const {params }=context
-    try {
-      console.log('blogss');
-      console.log(params.blog4);
-      const response = await axios.get(`http://localhost:3000/api/${params.blog4}`);
-      const post = response.data;
-      console.log("hixyk");
-      console.log(post);
-      return {
-        props: { post }
-      };
-    } catch (error) {
-      console.error(error); 
-      console.log("hixyk");
-      return {
-        props: { post: {} }
-      };
+//   const {params }=context
+//     try {
+//       console.log('blogss');
+//       console.log(params.blog4);
+//       const response = await axios.get(`http://localhost:3000/api/${params.blog4}`);
+//       const post = response.data;
+//       console.log("hixyk");
+//       console.log(post);
+//       return {
+//         props: { post }
+//       };
+//     } catch (error) {
+//       console.error(error); 
+//       console.log("hixyk");
+//       return {
+//         props: { post: {} }
+//       };
+//     }
+//   }
+  export async function getStaticProps(context) {
+    const {params }=context
+      try {
+        console.log('blogss');
+        console.log(params.blog4);
+        const response = await axios.get(`http://localhost:3000/api/${params.blog4}`);
+        const post = response.data;
+        const id=post.categories[0]
+        console.log('nppp')
+        const categoryData=await axios.get(`http://localhost:3000/api/category/${id}`);
+        const categoryPosts=categoryData.data;
+        console.log("hixyk");
+        console.log(post);
+        return {
+          props: { post ,categoryPosts}
+        };
+      } catch (error) {
+        console.error(error); 
+        console.log("hixyk");
+        return {
+          props: { post: {} ,}
+        };
+      }
     }
-  }
   

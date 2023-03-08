@@ -50,6 +50,7 @@ function App() {
       })
         .then((response) => {
           console.log(response);
+          console.log('hello');
         //   setFormData({
         //     firstName: '',
         //     lastName: '',

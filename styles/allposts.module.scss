@@ -1,8 +1,11 @@
 
 @import "../styles/mixins.scss";
 .three{
-    width: 60%;
+    width: 50%;
     margin: auto;
+    @include sm{
+      width: 90%;
+    }
 
     // display: flex;
     // flex-direction: column;
@@ -18,7 +21,7 @@
       // width: 100%;
       // display: flex;
       // gap: 5px;
-      width: 50%;
+      // width: 50%;
       margin: 0 auto;
       margin-top: 20px;
       @include sm {
@@ -36,7 +39,7 @@
           // width: 100%;
         }
         img {
-          height: 300px;
+          // height: 300px;
           width: 100%;
           object-fit: cover;
           background-size: cover;
@@ -46,10 +49,9 @@
           // background-position: center center;
           @include sm {
              width: 100px;
-             height: 120px;
           
             width: 100%;
-            height: 300px;
+            // height: 300px;
           }
           @include lg {
             // width: 270px;
@@ -73,6 +75,7 @@
           color: #805aed;
           letter-spacing: 2px;  
           font-family: "Sora", sans-serif;
+          text-transform: uppercase;
         }
         .details {
           margin-top: 5px;
@@ -98,6 +101,11 @@
           font-family: "Sora", sans-serif;
           font-size: 1.5rem;
           font-weight: 700;
+
+          @include sm{
+            font-size: 1.2rem;
+          }
+          
         }
         p {
           font-size: 0.875rem;

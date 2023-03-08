@@ -87,6 +87,12 @@
     .wp-#{$i} {
       width: #{$p} !important;
     }
+    .wp-sm-#{$i} {
+      @include sm {
+        width: #{$p} !important;
+      } 
+    }
+
     .hp-#{$i} {
       height: #{$p} !important;
     }
@@ -117,6 +123,9 @@
     .g-#{$i} {
       gap: #{$i}px !important;
     }
+  }
+  .jce{
+    justify-content: flex-end ;
   }
 
   // @mixin md{

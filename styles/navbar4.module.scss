@@ -1,0 +1,30 @@
+@import "mixins.scss";
+.navbar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .logo{
+        margin-right: 20px;
+    }
+    .hello{
+        font-size:1rem;
+        margin-right: 10px;   
+    }
+    .section2{
+      .link1 {
+        text-decoration: none;
+        color: black;
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        @include sm {
+          font-size: 0.9rem;
+        }
+        @include lg {
+          font-size: 0.9rem;
+        }
+      }
+      @include sm{
+      display: none;
+      }
+    }
+  }

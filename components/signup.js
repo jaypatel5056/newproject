@@ -10,7 +10,8 @@ from 'mdb-react-ui-kit';
 import axios from "../lib/api"
 
 const onSubmit = async (e) => {
-  const [isLoggedIn,setIsLoggedIn]=useState(false);
+  console.log('hello');
+  // const [isLoggedIn,setIsLoggedIn]=useState(false);
     e.preventDefault();
     const username = e.target.elements.email.value;
     const password = e.target.elements.password.value;

@@ -177,16 +177,9 @@ const Posts = ({ post,categoryPosts}) => {
               </Col>
             {/* </div> */}
             </Row>
-
-
-
-
-
         </div>
     </div>
-  
 </div>
-     
        </>
   );
 };

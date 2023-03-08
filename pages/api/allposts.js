@@ -9,7 +9,7 @@ export default async (req, res) => {
   console.log(value);
   
   try {
-    const response = await axios.get(`http://localhost/wordpress/wp-json/wp/v2/posts/?per_page=3`,
+    const response = await axios.get(`http://localhost/wordpress/wp-json/wp/v2/posts/?per_page=2`,
       {
         headers:{  
           Authorization: `Bearer ${token}`

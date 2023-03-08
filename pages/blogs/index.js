@@ -20,7 +20,9 @@ import GamesComponent from "@/components/GamesComponent";
 import FAQ from "@/components/FAQComponent";
 import { faSortAlphaDesc } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
+import Navbar1 from "../../components/navbar4"
 import New from "@/components/blogs-firstcomponent";
+
 
 // Last;
 import Top from "../../components/topComponent";
@@ -46,10 +48,11 @@ function BLogs() {
   //  }
   return (
     <>
+    {/* <Navbar1/> */}
     <div className={styles.hello1}> 
     <div className={styles.hello2}></div>
       <div className={styles.first}>
-        <div className={styles.navbar}>
+        {/* <div className={styles.navbar}>
           <Navbar bg="light" variant="light">
             <Container>
               <Navbar.Brand>
@@ -65,7 +68,7 @@ function BLogs() {
                 </Link>
               </Navbar.Brand>
               {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-              <div className={styles.section2}>
+              {/* <div className={styles.section2}>
                 <Nav className="me-auto">
                   <Nav.Link href="#home" className={styles.hello}>
                     Home
@@ -77,16 +80,16 @@ function BLogs() {
                   {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
                   {/* className={styles.link1} */}
                 {/* // ></Link> */}
-                Signin</Nav.Link>}
+                {/* Signin</Nav.Link>}
                 { !isLoggedIn1 &&
                   <Nav.Link href="login/signup">Signup</Nav.Link>}
                    { isLoggedIn1 &&
                   <Nav.Link href="login/signout">Signout</Nav.Link>}
                 </Nav>
               </div>
-            </Container>
-          </Navbar>
-        </div>
+            </Container> */}
+          {/* </Navbar> */}
+        {/* </div> */}
         {/* <Top/> */}
         {/* <div className={styles.twosections}>
           <div className={styles.secondsection}>
@@ -196,6 +199,7 @@ function BLogs() {
             </div>
           </div>
         </div> */}
+        <Navbar1/>
         <New />
         
         <PodcastImageComponent />
