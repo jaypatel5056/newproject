@@ -1,6 +1,5 @@
 import React, { use, useEffect, useState } from "react";
 import styles from "../styles/faqtest.module.scss";
-import { IoIosArrowDropdown } from "react-icons/Io";
 import { Accordion, Row, Column, Container, Col } from "react-bootstrap";
 import dynamic from "next/dynamic";
 const Animator = dynamic(
@@ -26,7 +25,6 @@ import {
   ZoomIn,
   ZoomOut,
 } from "react-scroll-motion";
-import { GiVikingLonghouse } from "react-icons/Gi";
 
 const FAQ = () => {
   const [name, setName] = useState("");

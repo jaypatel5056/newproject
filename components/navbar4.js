@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
-import { GiHamburgerMenu } from 'react-icons/Gi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const navbar4 = () => {
     const [isLoggedIn1,setIsLoggedIn1]=useState(false);

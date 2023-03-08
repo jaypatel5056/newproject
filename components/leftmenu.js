@@ -1,6 +1,6 @@
 import React from 'react';
 import SidebarMenu from 'react-bootstrap-sidebar-menu';
-import { AiOutlineUser, AiOutlineBell } from "react-icons/Ai";
+import { AiOutlineUser, AiOutlineBell } from "react-icons/ai";
 
 
 const leftmenu = () => {

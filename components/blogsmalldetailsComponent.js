@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "../styles/blogsmalldetails.module.scss"
 
-import { SlCalender } from "react-icons/Sl";
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
+import { SlCalender } from "react-icons/sl";
+import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 
 const blogsmalldetailsComponent = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../styles/Rsc.module.scss";
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { HiOutlineArrowNarrowRight } from 'react-icons/Hi';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { motion, variants } from "framer-motion"
 import { fas } from '@fortawesome/free-solid-svg-icons';
 

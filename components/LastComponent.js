@@ -1,8 +1,8 @@
 import React from "react";
 import SmallDetails from "./blogsmalldetailsComponent";
 import styles from "../styles/Last1.module.scss";
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
+import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
+import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 
 const TechnologyComponent = () => {
   return (

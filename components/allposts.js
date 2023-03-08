@@ -6,11 +6,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import styles from "../styles/allposts.module.scss";
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import { SlCalender } from "react-icons/Sl";
+import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
+import { SlCalender } from "react-icons/sl";
 import axios from "axios"
-import { FiMail } from "react-icons/Fi";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
 import {useEffect,useState  } from 'react'
 import Navbar1 from "../components/navbar4"
 

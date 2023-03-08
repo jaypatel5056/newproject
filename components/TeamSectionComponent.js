@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "../styles/TeamSection.module.scss";
 import { useState,useEffect } from 'react';
-  import { FaFacebookF ,FaInstagram } from 'react-icons/Fa';
-import { BsTwitter } from 'react-icons/Bs';
+  import { FaFacebookF ,FaInstagram } from 'react-icons/fa';
+import { BsTwitter } from 'react-icons/bs';
 import { motion, variants } from "framer-motion"
 function getWindowDimensions() {
   if (typeof window !== 'undefined') {

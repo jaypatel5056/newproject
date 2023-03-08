@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "../styles/sidebarmenu.module.scss"
 
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import {FaRegUserCircle} from "react-icons/Fa";
-import {RxDotFilled} from "react-icons/Rx"
-import {AiFillDashboard} from "react-icons/Ai"
+import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
+import {FaRegUserCircle} from "react-icons/fa";
+import {RxDotFilled} from "react-icons/rx"
+import {AiFillDashboard} from "react-icons/ai"
 
 const sidebarmenu = () => {
   return (

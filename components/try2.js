@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/try.module.scss";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import { HiOutlineArrowNarrowRight } from "react-icons/Hi";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { motion, variants } from "framer-motion";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";

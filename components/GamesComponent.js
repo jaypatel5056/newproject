@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "../styles/Games.module.scss";
 import Link from "next/link";
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import { SlCalender } from "react-icons/Sl";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
+import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 
 const GadgetComponent = () => {
   return (

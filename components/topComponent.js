@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../styles/TopComponent.module.scss";
 import Link from "next/link";
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import { SlCalender } from "react-icons/Sl";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
-import { FiMail } from "react-icons/Fi";
-import { GrFacebookOption } from "react-icons/Gr";
+import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
+import { SlCalender } from "react-icons/sl";
+import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
+import { GrFacebookOption } from "react-icons/gr";
 
 const topComponent = () => {
   return (

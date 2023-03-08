@@ -5,11 +5,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
-import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import { SlCalender } from "react-icons/Sl";
-import { FiMail } from "react-icons/Fi";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
-import { GrFacebookOption } from "react-icons/Gr";
+import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
+import { SlCalender } from "react-icons/sl";
+import { FiMail } from "react-icons/fi";
+import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
+import { GrFacebookOption } from "react-icons/gr";
 
 const blogs1 = () => {
   return (

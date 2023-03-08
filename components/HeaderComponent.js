@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "../styles/Header.module.scss"
-import { GiHamburgerMenu } from 'react-icons/Gi';
 import { motion } from "framer-motion"
 import Link from "next/Link"
 const Header = () => {

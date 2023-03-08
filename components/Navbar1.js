@@ -3,7 +3,7 @@ import styles from '../styles/Navbar1.module.scss'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { GiHamburgerMenu } from 'react-icons/Gi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar1 = () => {
   return (

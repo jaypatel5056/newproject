@@ -2,7 +2,7 @@ import React from 'react'
 import SmallDetails from "../components/blogsmalldetailsComponent"
 import styles from "../styles/Technology.module.scss"
 import { AiOutlineUser, AiFillWechat } from "react-icons/Ai";
-import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/Bs";
+import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 import Link from "next/link"
 
 

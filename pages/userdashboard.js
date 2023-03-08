@@ -2,9 +2,9 @@ import React from 'react'
 import styles from "../styles/dashboard.module.scss"
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import { AiOutlineUser, AiOutlineBell } from "react-icons/Ai";
-import {FaTasks} from "react-icons/Fa"
-import {FiMail} from "react-icons/Fi"
+import { AiOutlineUser, AiOutlineBell } from "react-icons/ai";
+import {FaTasks} from "react-icons/fa"
+import {FiMail} from "react-icons/fi"
 import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";

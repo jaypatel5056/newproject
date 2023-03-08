@@ -4,7 +4,7 @@ import styles from "../../styles/Macos.module.scss"
 import Footer from "../../components/FooterComponent"
 import { useRouter } from 'next/router'
 import axios, {isCancel, AxiosError} from 'axios';
-import { BsArrowLeft,BsArrowRight } from 'react-icons/Bs'
+import { BsArrowLeft,BsArrowRight } from 'react-icons/bs'
 import Link from "next/link"
 
 
