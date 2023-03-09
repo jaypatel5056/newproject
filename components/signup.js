@@ -7,7 +7,8 @@ import {
   MDBIcon
 }
 from 'mdb-react-ui-kit';
-import axios from "../lib/api"
+// import axios from "../lib/api"
+import axios from "axios"
 
 const onSubmit = async (e) => {
   console.log('hello');

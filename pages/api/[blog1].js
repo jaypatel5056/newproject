@@ -1,6 +1,7 @@
 
 // import axios from "../../lib/api2";
 import axios from "axios";
+import axiosRequest from "@/lib/api";
 // let config = {
   // import { useRouter } from 'next/router'
 //   method: "POST",
@@ -29,13 +30,18 @@ export default async (req, res) => {
   console.log(value);
   
   try {
-    const response = await axios.get(`http://localhost/wordpress/wp-json/wp/v2/posts/${value}`,
-      {
-        headers:{  
-          Authorization: `Bearer ${token}`
-        }
-      }
+    // const response = await axios.get(`http://localhost/wordpress/wp-json/wp/v2/posts/${value}`,
+    //   {
+    //     headers:{  
+    //       Authorization: `Bearer ${token}`
+    //     }
+    //   }
+    // );
+
+    let response = await axiosRequest.getData(
+      `https://testapivai.000webhostapp.com/wp-json/wp/v2/posts/${value}`
     );
+
     console.log(response);
     const posts = response.data;
     res.status(200).json(posts);

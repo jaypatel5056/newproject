@@ -9,18 +9,23 @@ import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
+import First from "../components/dashboradfirst"
 import Left1 from "../components/sidebarmenu"
 import SidebarMenu from '../components/leftmenu';
 import New from "../components/new"
 
 
+
 const userdashboard = () => {
   return (
     <>
+    <div className={styles.wrap}>
     {/* <New/> */}
+    <div className={styles.section1}>
     <Left1/>
+    </div>
     {/* <SidebarMenu/> */}
-    
+
     <div className={styles.first}>
       
         <div className={styles.navbar}>
@@ -65,6 +70,9 @@ const userdashboard = () => {
 
 
 
+    </div>
+
+   
     </div>
     </>
   )

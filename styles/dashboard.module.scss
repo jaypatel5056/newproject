@@ -1,46 +1,72 @@
 @import "mixins.scss";
-.first{
-    width: 60%;
-    margin: 0 auto;
-    // margin-top: 100px;
-    
-    font-size: 0.8rem;
-    .h1{
-        font-size: 2rem;
-    }
-   
-.navbar{
+
+
+.wrap {
+  display: flex;
+}
+
+.section1 {
+// min-width: fit-content;
+// flex-shrink: 0;
+display: inline-block;
+width: 450px;
+@include sm{
+  width: 10px;
+  display: none;
+}
+  
+}
+
+.first {
+  
+  margin: 0 auto;
+  font-size: 0.8rem;
+  width: 100%;
+
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .navbar {
     margin-top: 30px;
     margin-bottom: 30px;
-    .logo{
-        margin-right: 20px;
+
+    .logo {
+      margin-right: 20px;
     }
-    .hello{
-        font-size:1rem;
-        margin-right: 10px;   
+
+    .hello {
+      font-size: 1rem;
+      margin-right: 10px;
     }
-    .section2{
-        .navsection{
-            justify-content: end;
-        }
-        svg{
-            font-size: 1.2rem;
-        }
+
+    .section2 {
+      .navsection {
+        justify-content: end;
+      }
+
+      svg {
+        font-size: 1.2rem;
+      }
+
       .link1 {
         text-decoration: none;
         color: black;
         font-family: "Sora", sans-serif;
         font-weight: 700;
         font-size: 1rem;
+
         @include sm {
           font-size: 0.9rem;
         }
+
         @include lg {
           font-size: 0.9rem;
         }
       }
-      @include sm{
-      display: none;
+
+      @include sm {
+        display: none;
       }
     }
   }

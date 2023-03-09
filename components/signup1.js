@@ -12,8 +12,8 @@ import {
   MDBCheckbox
 }
 from 'mdb-react-ui-kit';
-import axios from '../lib/api';
-
+// import axios from '../lib/api';
+import axios from "axios"
 function App() {
 
 //   const [justifyActive, setJustifyActive] = useState('tab1');
