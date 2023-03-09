@@ -16,7 +16,7 @@ const Posts = ({ initialPosts }) => {
       console.log('insdei');
       console.log(loadedPosts)
       const response = await axios.get(
-        `api/fetchposts?loadedPosts=${loadedPosts}`
+        `/api/fetchposts?loadedPosts=${loadedPosts}`
       );
       console.log('res data');
       console.log(response.data);
