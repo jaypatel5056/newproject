@@ -13,7 +13,7 @@ export default async (req, res) => {
     const response = await axios.get(`https://testapivai.000webhostapp.com/wp-json/wp/v2/posts?per_page=3`,
       {
         headers:{  
-          Authorization: `Bearer ${token}`
+          Authorization: `Bearer ${token1}`
         }
       }
     );

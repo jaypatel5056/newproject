@@ -63,7 +63,10 @@ else{
     <div className={styles.first}>
         {/* <p>hi</p>
        <h1>{post.id}</h1> */}
-       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} /> 
+       {/* <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />  */}
+       {post.content.rendered && (
+  <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+)}
        </div>
        <div class="container mt-5 wp-60 wp-sm-90">
     <div class="d-flex justify-content-center row p-0">
