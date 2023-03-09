@@ -3,6 +3,7 @@
 .three{
     width: 50%;
     margin: auto;
+    margin-bottom: 20px;
     @include sm{
       width: 90%;
     }

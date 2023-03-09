@@ -2,19 +2,20 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.scss";
-import RSC from "../components/RscComponent";
-import Meet from "../components/TeamSectionComponent.js";
-import Advice from "@/components/AdviceComponent";
-import Three from "../components/ThreeComponent";
+// import RSC from "../components/RscComponent";
+import TeamSection from "../components/homepage/teamSectionComponent.js";
+import Advice from "@/components/homepage/adviceComponent";
+import Three from "../components/homepage/threeComponent";
 import Firm from "../components/FirmComponent";
-import Last from "../components/Last";
-import Header from "@/components/HeaderComponent";
-import Botstrap from "@/components/rsc-botstrap"
+import Last from "../components/homepage/last";
+import Header from "@/components/homepage/headerComponent";
+// import Botstrap from "@/components/homepage/rscComponent"
+import RSC from "@/components/homepage/rscComponent"
 import FAQ from "@/components/FAQComponent";
-import Navbar1 from "@/components/Navbar1";
-import FAQ1 from "@/components/faqtest";
-import Test from "@/components/firm1";
-import Test1 from "@/components/testing";
+import Navbar1 from "@/components/homepage/navbarComponent";
+import FAQ1 from "@/components/homepage/faqtest";
+import Test from "@/components/homepage/firm1";
+import Test1 from "@/components/homepage/testing";
 
 
 
@@ -57,11 +58,11 @@ export default function Home() {
         <Navbar1/>
         <Header />
         
-        <Botstrap/> 
-        {/* <RSC /> */}
-        <Meet />
+        {/* <Botstrap/>  */}
+        <RSC />
+        <TeamSection />
         
-        <Advice />
+        <Advice/>
         <Three />
         {/* <Firm /> */}
         <Test/>
