@@ -8,6 +8,7 @@ const Posts = ({ initialPosts }) => {
   const [posts, setPosts] = useState(initialPosts);
   const [totalPosts, setTotalPosts] = useState(initialPosts.length);
   const [loadedPosts, setLoadedPosts] = useState(initialPosts.length);
+
  
 
   const loadMorePosts = async () => {
@@ -67,12 +68,25 @@ export default Posts;
 
 export async function getStaticProps() {
   try {
-    const response = await axios.get('http://localhost:3000/api/allposts');
-    const initialPosts = response.data;
+    // const response = await axios.get('http://localhost:3000/api/allposts');
+    // const initialPosts = response.data;
+    // return {
+    //   props: { initialPosts },
+    // }
+    const response = await axios.get(`https://testapivai.000webhostapp.com/wp-json/wp/v2/posts?per_page=3`,
+      {
+        headers:{  
+          Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY3ODM0MzYzNiwiZXhwIjoxODM2MDIzNjM2fQ.5f6q0jPv6NlGYoxlwuM-GOS-mS1A8AQ3OjIuHMMZ9fE`
+        }
+      }
+    );
+    const initialPosts=response.data;
     return {
       props: { initialPosts },
     }
-  } catch (error) {
+  } 
+  
+  catch (error) {
     console.error(error)
     return {
       props: { initialPosts: [] },
