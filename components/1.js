@@ -46,7 +46,9 @@ const Post = ({post,postcheck}) => {
   <div className={styles.desc}>
     <Link href={`/blogs/${post.id}`}>
       {" "}
-      {post.title.rendered}
+      {post.title.rendered &&
+      post.title.rendered
+    }
     </Link>
 
     <div className={styles.label1}> {categoryName && `${categoryName}`}</div>

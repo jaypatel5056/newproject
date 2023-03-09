@@ -64,7 +64,9 @@ const allposts = ({post}) => {
                    href={`blogs/${post.id}`}
                     className={styles.a1}
                   >
-                    {post.title.rendered}
+                   {post.title.rendered &&
+      post.title.rendered
+    }
                   </Link>
                   {/* <a
                       href="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-post-featured-img-11.jpg"
