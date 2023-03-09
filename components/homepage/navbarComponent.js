@@ -30,7 +30,7 @@ const Navbar1 = () => {
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>PODCASTS</Nav.Link>
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>APPS</Nav.Link>
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>GADGET</Nav.Link>
-          <Nav.Link href="/blogs" className={` nav-link ${styles.text}`}>BLOGS</Nav.Link>
+          <Nav.Link href="/allposts1" className={` nav-link ${styles.text}`}>BLOGS</Nav.Link>
         </Nav>
         <Nav className={` d-flex justify-content-around m-0 ml-20 ${styles.nav}`}>
         <Nav.Link href="#link" className={` nav-link mr-auto ${styles.text1}`}>Subscribe</Nav.Link>
