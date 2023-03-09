@@ -8,9 +8,11 @@ const Posts = ({ initialPosts }) => {
   const [posts, setPosts] = useState(initialPosts);
   const [totalPosts, setTotalPosts] = useState(initialPosts.length);
   const [loadedPosts, setLoadedPosts] = useState(initialPosts.length);
+ 
 
   const loadMorePosts = async () => {
     try {
+  
       console.log('insdei');
       console.log(loadedPosts)
       const response = await axios.get(

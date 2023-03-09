@@ -1,4 +1,5 @@
 import axios from "axios";
+// import axiosRequest from "@/lib/api"
 // import styles from "../../styles/Macos.module.scss"
 // import {React,useState,useEffect} from 'react'
 // import Navbar from "../../components/NavbarComponent"
@@ -19,6 +20,7 @@ import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import SinglePost from "../../components/1"
 import Navbar1 from "../../components/navbar4"
+import axiosRequest from "@/lib/api"
 // import styles from "../../styles/blogg.module.scss"
 
 
@@ -27,6 +29,7 @@ const Posts = ({ post,categoryPosts}) => {
   const router=useRouter();
   const [isLoggedIn1,setIsLoggedIn1]=useState(false);
 const value=router.query.slug  
+const token1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY3ODM0MzYzNiwiZXhwIjoxODM2MDIzNjM2fQ.5f6q0jPv6NlGYoxlwuM-GOS-mS1A8AQ3OjIuHMMZ9fE'  
 useEffect(() => {
   const isLoggedIn = localStorage.getItem('username');
   if (isLoggedIn) {
@@ -63,10 +66,8 @@ else{
     <div className={styles.first}>
         {/* <p>hi</p>
        <h1>{post.id}</h1> */}
-       {/* <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />  */}
-       {post.content.rendered && (
-  <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-)}
+       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} /> 
+   
        </div>
        <div class="container mt-5 wp-60 wp-sm-90">
     <div class="d-flex justify-content-center row p-0">
@@ -195,11 +196,30 @@ export async function getStaticPaths(){
       try {
         console.log('blogss');
         console.log(params.blog4);
-        const response = await axios.get(`http://localhost:3000/api/${params.blog4}`);
+        // const response = await axios.get("/api/allposts");
+        // const response = await axios.get(`http://localhost:3000/api/allposts`);
+        // const response = await axios.get(`${window.location.origin}/api/allposts`);
+        // const response = await axios.get(`${process.env.API_URL}/api/allposts`);
+     const response = await axios.get( `https://testapivai.000webhostapp.com/wp-json/wp/v2/posts/${params.blog4}`,
+      {
+        headers:{  
+          Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY3ODM0MzYzNiwiZXhwIjoxODM2MDIzNjM2fQ.5f6q0jPv6NlGYoxlwuM-GOS-mS1A8AQ3OjIuHMMZ9fE`
+        }
+      }
+    );
         const post = response.data;
         const id=post.categories[0]
         console.log('nppp')
-        const categoryData=await axios.get(`http://localhost:3000/api/category/${id}`);
+        // const categoryData=await axios.get(`api/category/${id}`);
+        const categoryData = await axios.get( `https://testapivai.000webhostapp.com/wp-json/wp/v2/posts?categories=${id}`,
+      {
+        headers:{  
+          Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY3ODM0MzYzNiwiZXhwIjoxODM2MDIzNjM2fQ.5f6q0jPv6NlGYoxlwuM-GOS-mS1A8AQ3OjIuHMMZ9fE`
+        }
+      }
+    );
+        console.log("categorrry");
+        console.log(categoryData);
         const categoryPosts=categoryData.data;
         console.log("hixyk");
         console.log(post);
