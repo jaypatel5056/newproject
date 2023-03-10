@@ -1,6 +1,7 @@
 import React from "react";
 import SmallDetails from "./blogSmallDetailsComponent";
-import styles from "../../styles/technology.module.scss";
+// import styles from "../../styles/technology.module.scss";
+import styles from "../../styles/FAQ.module.scss";
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
@@ -16,7 +17,7 @@ const TechnologyComponent = () => {
           {" "}
           <h5 class={styles.h5}>More In Technology</h5>
           <BsArrowRight />
-        </div>
+        </div>  
       </div>
       <div className={styles.capacitysection}>
         <div className={styles.section1place}>
