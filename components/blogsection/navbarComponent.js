@@ -57,9 +57,9 @@ const navbar4 = () => {
           {/* // ></Link> */}
           Signin</Nav.Link>}
           { !isLoggedIn1 &&
-            <Nav.Link href="login/signup" className={styles.text}>Signup</Nav.Link>}
+            <Nav.Link href="/login/signup" className={styles.text}>Signup</Nav.Link>}
              { isLoggedIn1 &&
-            <Nav.Link href="login/signout" className={styles.text}>Signout</Nav.Link>}
+            <Nav.Link href="/login/signout" className={styles.text}>Signout</Nav.Link>}
             { isLoggedIn1 && <Nav.Link href="/userDashboard" className={styles.text}>
             {/* <Link */}
             {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
