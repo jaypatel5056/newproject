@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
-import styles from "../../styles/blog/allPosts.module.scss";
+import styles from "../../styles/blog/AllPosts.module.scss";
 
 // import styles from
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
