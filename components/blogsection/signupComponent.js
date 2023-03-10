@@ -43,11 +43,16 @@ function App() {
       };
       console.log(data);
   
-      axios.post('http://localhost/wordpress/wp-json/api/v2/signup', data,{
-        headers:{
-            'Content-Type':'application/x-www-form-urlencoded'
-        }
-      })
+      // axios.post('http://localhost/wordpress/wp-json/api/v2/signup', data,{
+      //   headers:{
+      //       'Content-Type':'application/x-www-form-urlencoded'
+      //   }
+      // })
+     axios.post('https://testapivai.000webhostapp.com/wp-json/api/v2/signup', { username, password },
+      {
+        headers:{  'Content-Type':'application/x-www-form-urlencoded'}
+      }
+      )
         .then((response) => {
           console.log(response);
           console.log('hello');

@@ -18,11 +18,18 @@ const onSubmit = async (e) => {
     const password = e.target.elements.password.value;
     console.log(username);
     try {
-      const response = await axios.post('http://localhost/wordpress/wp-json/api/v2/signin', { username, password },
+      // const response = await axios.post('http://localhost/wordpress/wp-json/api/v2/signin', { username, password },
+      // {
+      //   headers:{  'Content-Type':'application/x-www-form-urlencoded'}
+      // }
+      // );
+       const response = await axios.post('https://testapivai.000webhostapp.com/wp-json/api/v2/signin', { username, password },
       {
         headers:{  'Content-Type':'application/x-www-form-urlencoded'}
       }
       );
+
+      // https://testapivai.000webhostapp.com/wp-json/wp/v2/posts/
       console.log(response);
       console.log(response.data.status);
       if (response.data.status==true) {
