@@ -1,5 +1,5 @@
 import React, { use, useEffect, useState } from "react";
-import styles from "../styles/FAQ.module.scss";
+import styles from "../../styles/FAQ.module.scss";
 import { Accordion, Row, Col } from "react-bootstrap";
 import dynamic from "next/dynamic";
 const Animator = dynamic(

@@ -1,8 +1,8 @@
 import React from "react";
-import SmallDetails from "../components/blogsmalldetailsComponent";
-import styles from "../styles/gadgetsoftware.module.scss";
+import SmallDetails from "./blogSmallDetailsComponent";
+import styles from "../../styles/gadgetSoftware.module.scss";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
-import Link from 'next/link'
+import Link from "next/link";
 
 const TechnologyComponent = () => {
   return (
@@ -68,7 +68,6 @@ const TechnologyComponent = () => {
                       target="_self"
                     >
                       An IoT Failure Worst Nightmare
-
                     </a>
                   </h3>
                   <SmallDetails />
@@ -139,7 +138,7 @@ const TechnologyComponent = () => {
                     href="https://websitedemos.net/tech-news-04/a-lesson-from-the-henrietta-lacks-story-science-needs-your-cells/"
                     target="_self"
                   >
-                  Scientists Fear Climate Data Gap as Trump Aims at Satellites
+                    Scientists Fear Climate Data Gap as Trump Aims at Satellites
                   </a>
                 </h3>
                 <SmallDetails />

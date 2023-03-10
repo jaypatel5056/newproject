@@ -1,37 +1,36 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import GadgetComponent from "@/components/GadgetComponent";
-import styles from "../../styles/Blogs.module.scss";
+import GadgetComponent from "@/components/blogsection/gadgetComponent";
+import styles from "../../styles/blogs.module.scss";
 import { useState } from "react";
-import PodcastImageComponent from "@/components/PodcastImageComponent";
-import Technology from "@/components/TechnologyComponent";
-import Rsc from "../../components/RscComponent";
-import Last from "@/components/LastComponent";
-import GadgetSoftware from "@/components/gadgetsoftwareComponent";
+import PodcastImageComponent from "@/components/blogsection/podcastImageComponent";
+import Technology from "@/components/blogsection/technologyComponent";
+import Rsc from "../../components/test/RscComponent";
+import Last from "@/components/blogsection/lastComponent";
+import GadgetSoftware from "@/components/blogsection/gadgetSoftwareComponent";
 // impoGadgetComponent
-import GamesComponent from "@/components/GamesComponent";
-import FAQ from "@/components/FAQComponent";
+import GamesComponent from "@/components/blogsection/gamesComponent";
+import FAQ from "@/components/blogsection/faqComponent";
 import { useEffect } from "react";
-import Navbar1 from "../../components/navbar4"
-import New from "@/components/blogs-firstcomponent";
-
+import Navbar1 from "../../components/blogsection/navbarComponent";
+import New from "@/components/blogsection/blogsFirstComponent";
 
 // Last;
-import Top from "../../components/topComponent";
+import Top from "../../components/test/topComponent";
 function BLogs() {
   const [id, setId] = useState();
-  const [isLoggedIn1,setIsLoggedIn1]=useState(false);
+  const [isLoggedIn1, setIsLoggedIn1] = useState(false);
   useEffect(() => {
-    const isLoggedIn = localStorage.getItem('username');
+    const isLoggedIn = localStorage.getItem("username");
     if (isLoggedIn) {
-     setIsLoggedIn1(true);
+      setIsLoggedIn1(true);
     } else {
       setIsLoggedIn1(false);
     }
   }, []);
-  console.log('home');
-  console.log(isLoggedIn1)
+  console.log("home");
+  console.log(isLoggedIn1);
 
   //  const handleCLick=async ()=>{
   //   setId(1)
@@ -41,11 +40,11 @@ function BLogs() {
   //  }
   return (
     <>
-    {/* <Navbar1/> */}
-    <div className={styles.hello1}> 
-    <div className={styles.hello2}></div>
-      <div className={styles.first}>
-        {/* <div className={styles.navbar}>
+      {/* <Navbar1/> */}
+      <div className={styles.hello1}>
+        <div className={styles.hello2}></div>
+        <div className={styles.first}>
+          {/* <div className={styles.navbar}>
           <Navbar bg="light" variant="light">
             <Container>
               <Navbar.Brand>
@@ -61,7 +60,7 @@ function BLogs() {
                 </Link>
               </Navbar.Brand>
               {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-              {/* <div className={styles.section2}>
+          {/* <div className={styles.section2}>
                 <Nav className="me-auto">
                   <Nav.Link href="#home" className={styles.hello}>
                     Home
@@ -70,10 +69,10 @@ function BLogs() {
                   <Nav.Link href="#pricing">Pricing</Nav.Link>
                  { !isLoggedIn1 && <Nav.Link href="login/login">
                   {/* <Link */}
-                  {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
-                  {/* className={styles.link1} */}
-                {/* // ></Link> */}
-                {/* Signin</Nav.Link>}
+          {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
+          {/* className={styles.link1} */}
+          {/* // ></Link> */}
+          {/* Signin</Nav.Link>}
                 { !isLoggedIn1 &&
                   <Nav.Link href="login/signup">Signup</Nav.Link>}
                    { isLoggedIn1 &&
@@ -82,9 +81,9 @@ function BLogs() {
               </div>
             </Container> */}
           {/* </Navbar> */}
-        {/* </div> */}
-        {/* <Top/> */}
-        {/* <div className={styles.twosections}>
+          {/* </div> */}
+          {/* <Top/> */}
+          {/* <div className={styles.twosections}>
           <div className={styles.secondsection}>
             <div className={styles.image}></div>
             <div className={styles.text}>
@@ -192,22 +191,22 @@ function BLogs() {
             </div>
           </div>
         </div> */}
-        <Navbar1/>
-        <New />
-        
-        <PodcastImageComponent />
-        <GadgetComponent />
-        <Technology />
-        <GadgetSoftware />
-        <img
-          src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-wide-promo-banner-placeholder.jpg"
-          alt=""
-          className={styles.lastimg}
-        />
-        <GamesComponent />
-        <Last />
-        <FAQ />
-      </div>
+          <Navbar1 />
+          <New />
+
+          <PodcastImageComponent />
+          <GadgetComponent />
+          <Technology />
+          <GadgetSoftware />
+          <img
+            src="https://websitedemos.net/tech-news-04/wp-content/uploads/sites/903/2021/07/tech-news-wide-promo-banner-placeholder.jpg"
+            alt=""
+            className={styles.lastimg}
+          />
+          <GamesComponent />
+          <Last />
+          <FAQ />
+        </div>
       </div>
     </>
   );

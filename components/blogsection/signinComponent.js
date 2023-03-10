@@ -46,7 +46,7 @@ function App() {
         {/* <MDBContainer className="p-3 my-5 d-flex flex-column wp-50"> */}
         <h2 className="mb-50">Sign In</h2>
           <form onSubmit={onSubmit}>
-          <MDBInput wrapperClass="mb-4" label="Email address" id="email" type="username" />
+          <MDBInput wrapperClass="mb-4" label="Username" id="email" type="username" />
           <MDBInput wrapperClass="mb-4" label="Password" id="password" type="password" />
   
           <div className="d-flex justify-content-between mx-3 mb-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/blogs-first.module.scss";
+import styles from "../../styles/blogsFirst.module.scss";
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -22,13 +22,13 @@ const blogs1 = () => {
         <Row className={` `}>
           <Col sm={9} className={` ${styles.firstsection}`}>
             <div className={styles.blog1}>
-              aaaa
+              
               <div className={styles.rectangle} id="rectangle">
                 <h5 className={styles.p1} id="p1">
                   SOFTWARE
                 </h5>
                 <h3 class={styles.p2}>
-                  <Link href="/blogs/runningmacosandwindows10onthesamecomputer">
+                  <Link href="/blogs/5">
                     {" "}
                     Running macOS and Windows 10 on the Same Computer{" "}
                   </Link>
@@ -86,7 +86,7 @@ const blogs1 = () => {
               <div className={styles.text1}>
                 <h2 className={styles.h2}>GAMES</h2>
                 <Link
-                  href="blogs/this-is-a-giant-shipworm-you-may-wish-it-had-stayed-in-its-tube"
+                  href="blogs/27"
                   className={styles.link1}
                 >
                   This Is a Giant Shipworm. You May Wish It Had Stayed In Its
@@ -104,7 +104,7 @@ const blogs1 = () => {
               </div>
               <div className={styles.text1}>
                 <h2 className={styles.h2}>EDITORS PICK</h2>
-                <Link href="/api/hello" className={styles.link1}>
+                <Link href="/blogs/29" className={styles.link1}>
                   Why Netflix shares are down 10%{" "}
                 </Link>
               </div>
@@ -158,7 +158,7 @@ const blogs1 = () => {
                   ></img>
                 </div>
                 <div className={styles.desc}>
-                  <Link href="/blogs/whynetflixsharesaredown10">
+                  <Link href="/blogs/29">
                     {" "}
                     Why Netflix shares are down 10%{" "}
                   </Link>
@@ -245,7 +245,7 @@ const blogs1 = () => {
             <Col sm={6} className={` ${styles.firstsection}`}> 
               {/* <div className={styles.firstsection}> */}
                 <Link
-                  href="blogs/ipad-pro-m1-chip-bringing-the-macbook-pro-power"
+                  href="blogs/33"
                   className={styles.a1}
                 >
                   <img
@@ -261,10 +261,10 @@ const blogs1 = () => {
                   <Col sm={6} className={` ${styles.firstsection}`}>
 
                 <div className={styles.content1}>
-                  <p className={styles.p1}> GADGET</p>
+                  <p className={styles.p1}> TECH REVIEWS </p>
 
                   <Link
-                    href="blogs/ipad-pro-m1-chip-bringing-the-macbook-pro-power"
+                    href="blogs/33"
                     className={styles.a1}
                   >
                     iPad Pro M1 Chip: Bringing The MacBook Pro Power{" "}
@@ -312,7 +312,7 @@ const blogs1 = () => {
               <Col sm={6} className={` ${styles.firstsection}`}>
               {/* <div className={styles.firstsection}> */}
                 <Link
-                  href="blogs/dell-xps-13-2021-the-best-windows-laptop-now-with-oled"
+                  href="blogs/35"
                   className={styles.a1}
                 >
                   <img
@@ -327,9 +327,10 @@ const blogs1 = () => {
                   ></img> */}
                   <Col sm={6} className={` ${styles.firstsection}`}>
                 <div className={styles.content1}>
-                  <p className={styles.p1}> GADGET</p>
+                  <p className={styles.p1}> TECH REVIEWS </p>
                   <Link
-                    href="blogs/dell-xps-13-2021-the-best-windows-laptop-now-with-oled"
+                    // href="blogs/dell-xps-13-2021-the-best-windows-laptop-now-with-oled"
+                    href="blogs/35"
                     className={styles.a1}
                   >
                     Dell XPS 13 2021: The best Windows laptop now with OLED{" "}
@@ -374,7 +375,7 @@ const blogs1 = () => {
               <Col sm={6} className={`  ${styles.firstsection}`}>
               {/* <div className={styles.firstsection}> */}
                 <Link
-                  href="blogs/watching-their-dust-photographing-players-in-pollination"
+                  href="blogs/14"
                   className={styles.a1}
                 >
                   <img
@@ -385,9 +386,9 @@ const blogs1 = () => {
                 </Col>
                 <Col sm={6} className={`  ${styles.firstsection}`}>
                 <div className={` d-flex flex-column ${styles.content1}`}>
-                  <p className={styles.p1}> GADGET</p>
+                  <p className={styles.p1}> TECH REVIEWS </p>
                   <Link
-                    href="blogs/watching-their-dust-photographing-players-in-pollination"
+                    href="blogs/14"
                     className={`wp-100 ${styles.a1}`}
                   >
                     Watching Their Dust: Photographing Players in Pollination

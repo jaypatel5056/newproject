@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../styles/blogsmalldetails.module.scss"
+import styles from "../../styles/blogsmalldetails.module.scss"
 
 import { SlCalender } from "react-icons/sl";
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";

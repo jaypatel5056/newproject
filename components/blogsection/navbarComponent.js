@@ -1,6 +1,6 @@
 
 import React from 'react'
-import styles from "../styles/navbar4.module.scss"
+import styles from "../../styles/navbar4.module.scss"
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Link from "next/link";
@@ -43,24 +43,24 @@ const navbar4 = () => {
         <div className={styles.section2}>
         <Navbar.Collapse id="basic-navbar-nav w-100">
           <Nav className="me-auto">
-            <Nav.Link href="/blogs" className={styles.hello}>
+            <Nav.Link href="/blogs" className={styles.text}>
               Home
             </Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#features" className={styles.text}>Features</Nav.Link>
             {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-            <Nav.Link href="/allposts1">All Posts</Nav.Link>
+            <Nav.Link href="/allposts1" className={styles.text}>All Posts</Nav.Link>
             {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-           { !isLoggedIn1 && <Nav.Link href="login/login">
+           { !isLoggedIn1 && <Nav.Link href="login/login" className={styles.text}>
             {/* <Link */}
             {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
             {/* className={styles.link1} */}
           {/* // ></Link> */}
           Signin</Nav.Link>}
           { !isLoggedIn1 &&
-            <Nav.Link href="login/signup">Signup</Nav.Link>}
+            <Nav.Link href="login/signup" className={styles.text}>Signup</Nav.Link>}
              { isLoggedIn1 &&
-            <Nav.Link href="login/signout" >Signout</Nav.Link>}
-            { isLoggedIn1 && <Nav.Link href="/userdashboard">
+            <Nav.Link href="login/signout" className={styles.text}>Signout</Nav.Link>}
+            { isLoggedIn1 && <Nav.Link href="/userDashboard" className={styles.text}>
             {/* <Link */}
             {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
             {/* className={styles.link1} */}

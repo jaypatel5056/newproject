@@ -1,25 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.scss";
+import styles from "@/styles/home.module.scss";
 // import RSC from "../components/RscComponent";
 import TeamSection from "../components/homepage/teamSectionComponent.js";
 import Advice from "@/components/homepage/adviceComponent";
 import Three from "../components/homepage/threeComponent";
-import Firm from "../components/FirmComponent";
-import Last from "../components/homepage/last";
+import Firm from "../components/test/FirmComponent";
+import Last from "../components/homepage/lastComponent";
 import Header from "@/components/homepage/headerComponent";
 // import Botstrap from "@/components/homepage/rscComponent"
-import RSC from "@/components/homepage/rscComponent"
-import FAQ from "@/components/FAQComponent";
+import RSC from "@/components/homepage/rscComponent";
+import FAQ from "@/components/blogsection/faqComponent";
 import Navbar1 from "@/components/homepage/navbarComponent";
-import FAQ1 from "@/components/homepage/faqtest";
-import Test from "@/components/homepage/firm1";
-import Test1 from "@/components/homepage/testing";
-
-
-
-
+import FAQ1 from "@/components/homepage/faqTestComponent";
+import Test from "@/components/homepage/firm1Component";
+import Test1 from "@/components/homepage/testingComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -55,24 +51,23 @@ export default function Home() {
       </div>
     </div>
   </div> */}
-        <Navbar1/>
+        <Navbar1 />
         <Header />
-        
+
         {/* <Botstrap/>  */}
         <RSC />
         <TeamSection />
-        
-        <Advice/>
+
+        <Advice />
         <Three />
         {/* <Firm /> */}
-        <Test/>
+        <Test />
         <Last />
-        
+
         <div className={styles.FAQ}>
           {/* <FAQ /> */}
-        <FAQ1 />
-        <Test1/>
-         
+          <FAQ1 />
+          {/* <Test1 /> */}
         </div>
       </main>
     </>

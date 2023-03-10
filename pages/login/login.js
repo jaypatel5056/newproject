@@ -6,7 +6,7 @@ import Link from "next/link";
 import Nav from "react-bootstrap/Nav";
 // import New from "@/components/blogs-firstcomponent";
 
-import New from "@/components/signup";
+import New from "@/components/blogsection/signinComponent";
 const login = () => {
   return (
     <>

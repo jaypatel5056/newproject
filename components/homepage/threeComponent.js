@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../styles/Three.module.scss";
+import styles from "../../styles/three.module.scss";
 
 import { motion, variants } from "framer-motion"
 

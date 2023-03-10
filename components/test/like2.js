@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaThumbsUp, FaRegThumbsUp } from 'react-icons/fa';
-import styles from "../styles/like2.module.scss"
+import styles from "../../styles/like2.module.scss"
 
 import { useEffect } from 'react';
 

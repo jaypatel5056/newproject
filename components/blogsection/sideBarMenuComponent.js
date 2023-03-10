@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/sidebarmenu.module.scss"
+import styles from "../../styles/sidebarmenu.module.scss"
 
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import {FaRegUserCircle} from "react-icons/fa";

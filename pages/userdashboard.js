@@ -9,10 +9,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
-import First from "../components/dashboradfirst"
-import Left1 from "../components/sidebarmenu"
-import SidebarMenu from '../components/leftmenu';
-import New from "../components/new"
+// import First from "../components/dashboradfirst"
+import Left1 from "../components/blogsection/sideBarMenuComponent"
+import SidebarMenu from '../components/blogsection/leftMenuComponent';
+import New from "../components/test/new"
 
 
 
