@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/home.module.scss";
+// import styles from "@/styles/home.module.scss";
+import styles from "@/styles/page/home.module.scss";
 // import RSC from "../components/RscComponent";
 import TeamSection from "@/components/homepage/teamSectionComponent";
 import Advice from "@/components/homepage/adviceComponent";

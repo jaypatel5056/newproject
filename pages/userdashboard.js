@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from "../styles/dashboard.module.scss"
+// import styles from "../styles/dashboard.module.scss"
+import styles from "../styles/page/dashboard.module.scss"
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { AiOutlineUser, AiOutlineBell } from "react-icons/ai";

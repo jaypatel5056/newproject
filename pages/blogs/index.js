@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import GadgetComponent from "../../components/blogsection/gadgetComponent";
-import styles from "../../styles/blogs.module.scss";
+import styles from "../../styles/page/blogs.module.scss";
 import { useState } from "react";
 import PodcastImageComponent from "../../components/blogsection/podcastImageComponent";
 import Technology from "../../components/blogsection/technologyComponent";

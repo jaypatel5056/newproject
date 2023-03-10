@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../styles/heartToggle.module.scss";
+import styles from "../../styles/test/heartToggle.module.scss";
 
 const HeartToggle = () => {
   return (

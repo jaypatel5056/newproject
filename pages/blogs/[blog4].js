@@ -4,7 +4,7 @@ import axios from "axios";
 // import {React,useState,useEffect} from 'react'
 // import Navbar from "../../components/NavbarComponent"
 // import styles from "../../styles/Macos.module.scss"
-import styles from "../../styles/oneblog.module.scss";
+import styles from "../../styles/page/oneblog.module.scss";
 import { useRouter } from "next/router";
 // import Footer from "../../components/FooterComponent"
 // import { useRouter } from 'next/router'

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/firm.module.scss";
+import styles from "../../styles/test/firm.module.scss";
 import Image from 'next/image'
 
 const Firm = () => {

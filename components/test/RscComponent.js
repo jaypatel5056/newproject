@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../styles/rsc.module.scss";
+import styles from "../../styles/test/rsc.module.scss";
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { motion, variants } from "framer-motion"

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/topComponent.module.scss";
+import styles from "../../styles/test/topComponent.module.scss";
 import Link from "next/link";
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import { SlCalender } from "react-icons/sl";
