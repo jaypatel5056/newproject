@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from "../../styles/homepage/TeamSection.module.scss";
+// import styles from "../../styles/homepage/TeamSection.module.scss";
+import styles from "../../styles/homepage/teamSection.module.scss";
 import { useState,useEffect } from 'react';
   import { FaFacebookF ,FaInstagram } from 'react-icons/fa';
 import { BsTwitter } from 'react-icons/bs';

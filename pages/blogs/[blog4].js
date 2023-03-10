@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 // import axios, {isCancel, AxiosError} from 'axios';
 // import Link from "next/link"
 import Navbar from "../../components/test/NavbarComponent";
-import LikeButton from "../../components/test/like2";
+import LikeButton from "../../components/test/likeComponent";
 import Share from "../../components/blogsection/shareComponent";
 import React, { useState } from "react";
 import { useEffect } from "react";

@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
-import styles from "../../styles/blog/singlepost.module.scss"
+import styles from "../../styles/blog/singlePost.module.scss"
 import axios from "axios"
 
 const Post = ({post,postcheck}) => {

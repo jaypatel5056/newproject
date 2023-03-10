@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/blog/BlogsFirst.module.scss";
+import styles from "../../styles/blog/blogsFirst.module.scss";
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -117,12 +117,24 @@ const blogs1 = () => {
             <div className="d-flex justify-content-center align-items-center "><h5 class="mt-0 elementor-heading-title elementor-size-default">
               Editor’s Pick
             </h5></div>
-            <div class="d-flex justify-content-between g-5 g-sm-10 m-20 blogs-first_right__MSlQJ"> 
+            <div className={`d-flex justify-content-between align-items-center ${styles.header}`}>
+                  {/* <div>
+                    <h3 className={styles.h3}>View All</h3>
+                  </div> */}
+                <div className={`d-flex justify-content-between g-5 g-sm-10 ${styles.right}`}>
+                  {" "}
+                  <h5 class={styles.h5}>View All</h5>
+                  <div className="d-flex align-items-center justify-content-center fs-50">
+                  <BsArrowRight />
+                  </div>
+                </div>
+              </div>
+            {/* <div class="d-flex justify-content-between g-5 g-sm-10 m-20 blogs-first_right__MSlQJ"> 
             <h5 class="blogs-first_h5__dw5P6">View All</h5>
             <div class="d-flex align-items-center justify-content-center fs-50">
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg>
               </div>
-              </div>
+              </div> */}
               </div>
             {/* <h5 class="elementor-heading-title elementor-size-default">
               Editor’s Pick
