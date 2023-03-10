@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/firm1.module.scss";
+import styles from "../../styles/homepage/firm1.module.scss";
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
