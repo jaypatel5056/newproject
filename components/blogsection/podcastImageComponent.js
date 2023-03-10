@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../styles/podcastImage.module.scss"
+import styles from "../../styles/podcastimage.module.scss"
 
 const PodcastImageComponent = () => {
   return (
