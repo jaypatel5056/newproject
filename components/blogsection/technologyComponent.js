@@ -1,7 +1,7 @@
 import React from "react";
 import SmallDetails from "./blogSmallDetailsComponent";
-// import styles from "../../styles/technology.module.scss";
-import styles from "../../styles/FAQ.module.scss";
+import styles from "../../styles/technology1.module.scss";
+// import styles from "../../styles/FAQ.module.scss";
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 import Link from "next/link";

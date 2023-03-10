@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../styles/header.module.scss"
+import styles from "../../styles/header1.module.scss"
 import { motion } from "framer-motion"
 const Header = () => {
   return (
