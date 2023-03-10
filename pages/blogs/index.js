@@ -1,20 +1,20 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import GadgetComponent from "@/components/blogsection/gadgetComponent";
+import GadgetComponent from "../components/blogsection/gadgetComponent";
 import styles from "../../styles/blogs.module.scss";
 import { useState } from "react";
 import PodcastImageComponent from "@/components/blogsection/podcastImageComponent";
-import Technology from "@/components/blogsection/technologyComponent";
+import Technology from "../components/blogsection/technologyComponent";
 import Rsc from "../../components/test/RscComponent";
-import Last from "@/components/blogsection/lastComponent";
-import GadgetSoftware from "@/components/blogsection/gadgetSoftwareComponent";
+import Last from "../components/blogsection/lastComponent";
+import GadgetSoftware from "../components/blogsection/gadgetSoftwareComponent";
 // impoGadgetComponent
-import GamesComponent from "@/components/blogsection/gamesComponent";
-import FAQ from "@/components/blogsection/faqComponent";
+import GamesComponent from "../components/blogsection/gamesComponent";
+import FAQ from "../components/blogsection/faqComponent";
 import { useEffect } from "react";
 import Navbar1 from "../../components/blogsection/navbarComponent";
-import New from "@/components/blogsection/blogsFirstComponent";
+import New from "../components/blogsection/blogsFirstComponent";
 
 // Last;
 import Top from "../../components/test/topComponent";

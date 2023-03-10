@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Allposts from "../components/blogsection/allPosts";
-import Navbar1 from "@/components/blogsection/navbarComponent";
+import Navbar1 from "../components/blogsection/navbarComponent";
 // import Navbar2 from "../components/navbar4"
 
 const Posts = ({ initialPosts }) => {
