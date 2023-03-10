@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "../../styles/games.module.scss";
+// import styles from "../../styles/games.module.scss";
+import styles from "../../styles/dashboard.module.scss";
 import Link from "next/link";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 
