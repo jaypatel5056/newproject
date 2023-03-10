@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/home.module.scss";
 // import RSC from "../components/RscComponent";
-import TeamSection from "../components/homepage/teamSectionComponent.js";
+import TeamSection from "../../components/homepage/teamSectionComponent.js";
 import Advice from "@/components/homepage/adviceComponent";
-import Three from "../components/homepage/threeComponent";
+import Three from "../../components/homepage/threeComponent";
 import Firm from "../components/test/FirmComponent";
-import Last from "../components/homepage/lastComponent";
+import Last from "../../components/homepage/lastComponent";
 import Header from "@/components/homepage/headerComponent";
 // import Botstrap from "@/components/homepage/rscComponent"
 import RSC from "@/components/homepage/rscComponent";

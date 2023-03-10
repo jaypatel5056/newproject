@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/last.module.scss'
+import styles from "../../styles/last.module.scss"
 const Last = () => {
   return (
     <div className={styles.first}>
