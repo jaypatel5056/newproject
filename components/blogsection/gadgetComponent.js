@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/gadget.module.scss";
+import styles from "@/styles/blog/gadget.module.scss";
 import Link from "next/link";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 

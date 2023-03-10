@@ -1,6 +1,6 @@
 import React from "react";
 import SmallDetails from "./blogSmallDetailsComponent";
-import styles from "../../styles/gadgetsoftware.module.scss";
+import styles from "../../styles/blog/gadgetsoftware.module.scss";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
 

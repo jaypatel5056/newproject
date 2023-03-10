@@ -1,6 +1,6 @@
 import React from "react";
 import SmallDetails from "./blogSmallDetailsComponent";
-import styles from "@/styles/last11.module.scss";
+import styles from "@/styles/blog/last11.module.scss";
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
 

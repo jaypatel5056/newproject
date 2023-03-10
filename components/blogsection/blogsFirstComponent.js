@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/BlogsFirst.module.scss";
+import styles from "../../styles/blog/BlogsFirst.module.scss";
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";

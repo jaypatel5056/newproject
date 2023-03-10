@@ -1,6 +1,6 @@
 
 import React from 'react'
-import styles from "../../styles/navbar4.module.scss"
+import styles from "../../styles/blog/navbar4.module.scss"
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Link from "next/link";

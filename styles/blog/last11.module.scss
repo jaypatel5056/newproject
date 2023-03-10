@@ -1,18 +1,5 @@
-
-@import "../styles/mixins.scss";
-.twosection{
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    @include sm{
-      flex-direction: column;
-      padding: 0 20px;
-    }
-    .hello{
-        flex: 1;
-    }
-}
-
+// @import "../styles/mixins.scss";
+@import "../mixins.scss";
 
 .header{
     margin-top: 30px;
@@ -23,15 +10,16 @@
     
   .h3{
     // position: absolute;
-    // flex: 1;
+    flex: 1;
     left: 0;
-    line-height: 1.2rem;
+    line-height: 1.2em;
     color: #26222f;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-family: 'Sora',sans-serif;
     font-weight: 700;
     @include sm{
-      font-size: 1.3rem;
+      padding: 0 20px;
+      font-size: 1.2rem;
     }
   }
   .right{
@@ -41,8 +29,8 @@
     gap: 5px;
     align-items: center;
     justify-content: center;
-    // font-family: 'Inter',sans-serif;
-    font-family: "Sora", sans-serif;
+    font-family: 'Inter',sans-serif;
+    font-family: "Sora";
     // transform: translateY(10px);
     // font-weight: 500;
     .h5{
@@ -93,11 +81,17 @@
   
   .squaresection {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     @include sm{
-    flex-direction: column;
-    // padding: 0 20px;
+      flex-direction: column;
+      padding: 0 30px;
+    }
+    @include lg{
+      flex-wrap: wrap;
+      // padding: 0 30px;
+      // justify-content: center;
+      gap: 20px;
     }
   
     /* overflow-x: hidden; */
@@ -113,15 +107,23 @@
     text-align: left;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0px;
-    // margin: 50px 20px 46px 0px;
-    // margin-top: 50px;
-    margin-top: 20px;
+    margin: 50px 20px 46px 0px;
     flex: 1;
+    @include sm{
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    @include lg{
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: 42%;
+      flex: none;
+    }
   }
   
   .square img {
     width: 100%;
-    // height: 250px;
+    height: 250px;
     object-fit: cover;
     /* object-position: top; */
   }
@@ -164,6 +166,5 @@
 
     
   }
-  
 }
   
