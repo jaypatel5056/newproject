@@ -6,7 +6,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import styles from "../../styles/Allposts.module.scss";
-// import styles from   
+
+// import styles from
 import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import { SlCalender } from "react-icons/sl";
 import axios from "axios";
