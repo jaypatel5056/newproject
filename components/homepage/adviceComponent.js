@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/homesection/advice.module.scss";
+import styles from "../../styles/advice.module.scss";
 import { motion, variants } from "framer-motion";
 import {useState} from "react";
 import {useEffect} from "react";
