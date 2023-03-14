@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {useRouter} from "next/Router"
+import {useRouter} from "next/router"
 import HashLoader from "react-spinners/HashLoader"
 import styles from "../../styles/blog/signout.module.scss"
 
