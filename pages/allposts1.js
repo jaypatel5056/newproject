@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import PropagateLoader from "react-spinners/PropagateLoader"
+import RingLoader from "react-spinners/RingLoader"
 import Allposts from "../components/blogsection/allPosts";
 import Navbar1 from "../components/blogsection/navbarComponent";
 // import Navbar2 from "../components/navbar4"
@@ -8,9 +10,11 @@ const Posts = ({ initialPosts }) => {
   const [posts, setPosts] = useState(initialPosts);
   const [totalPosts, setTotalPosts] = useState(initialPosts.length);
   const [loadedPosts, setLoadedPosts] = useState(initialPosts.length);
+  const [loading,setLoading] = useState(false);
 
   const loadMorePosts = async () => {
     try {
+      setLoading(true);
       console.log("insdei");
       console.log(loadedPosts);
       const response = await axios.get(
@@ -26,6 +30,9 @@ const Posts = ({ initialPosts }) => {
       console.log(loadedPosts);
     } catch (error) {
       console.error(error);
+    }
+    finally{
+      setLoading(false)
     }
   };
 
@@ -50,19 +57,22 @@ const Posts = ({ initialPosts }) => {
   }, [initialPosts]);
 
   return (
-    <div>
+<div className={`mb-50`}>
       <Navbar1 />
       {posts.map((post) => (
         <Allposts key={post.id} post={post} />
       ))}
-      {loadedPosts < totalPosts && <p>Loading...</p>}
+      {/* {loadedPosts <= totalPosts && <p>Loading...</p>} */}
+      <div style={{display:'flex', alignItems:'center',justifyContent:'center'}}>
+      {loadedPosts <= totalPosts && <PropagateLoader size={15} loading={loading} color="#805aed" className="mt-20"/>}
+      </div>
     </div>
   );
 };
 
 export default Posts;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     // const response = await axios.get('http://localhost:3000/api/allposts');
     // const initialPosts = response.data;

@@ -1,42 +1,82 @@
 import React from "react";
-import styles from "../../styles/sidebarmenu.module.scss"
-
-import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
-import {FaRegUserCircle} from "react-icons/fa";
-import {RxDotFilled} from "react-icons/rx"
-import {AiFillDashboard} from "react-icons/ai"
+import styles from "../../styles/sidebarmenu.module.scss";
+import { FaRegUserCircle } from "react-icons/fa";
+import { RxDotFilled } from "react-icons/rx";
+import { AiFillDashboard } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import { useState } from "react";
 
 const sidebarmenu = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
-    <div className={styles.sidebar}>
-         <div className={styles.sidebarheader} class="sidebar-header">
-        <div className={styles.userpic} class="userpic">
-            <FaRegUserCircle/>
-          <i className={styles.sidebar} class="fa fa-user-circle fa-4x" aria-hidden="true"></i>
-        </div>
-        <div className={styles.userinfo} class="userinfo">
-          <span className={styles.username} class="user-name"> <strong>Joe Chien</strong></span>
-          <span className={styles.userrole} class="user-role">Administrator</span>
-          <span className={styles.userstatus} class="user-status"><div className={styles.icon}><RxDotFilled className={styles.icon1}/></div><span>Online</span></span>
-        </div>
-      </div>
-      <div className={styles.sidebarmenu}>
-        <ul>
-          {/* <li className={styles.headermenu} class="header-menu"><span>General</span></li> */}
-          <li class="sidebar-dropdown" className={styles.sidebardropdown}>
-            <a href="#"><AiFillDashboard className={styles.a1}/> Dashboard</a>
-            {/* <div class="sidebar-submenu" className={styles.sidebarsubmenu}>
+      {/* <Button variant="primary" className="d-lg-none" onClick={handleShow}> */}
+      <GiHamburgerMenu
+        variant="primary"
+        size={20}
+        className="d-lg-none mt-20 ml-20"
+        onClick={handleShow}
+      />
+      {/* </Button> */}
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        responsive="sm"
+        className={`w-250 ${styles.hello}`}
+      >
+        {/* <Offcanvas.Header closeButton className="mt-100">
+          <Offcanvas.Title>Responsive offcanvas</Offcanvas.Title>
+        </Offcanvas.Header> */}
+        <Offcanvas.Body className="w-100">
+          <div className={styles.sidebar}>
+            <div className={styles.sidebarheader1}>
+              <div className={styles.userpic}>
+                <FaRegUserCircle />
+                <i
+                  className={styles.sidebar}
+                  class="fa fa-user-circle fa-4x"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div className={styles.userinfo} >
+                <span className={styles.username}>
+                  {" "}
+                  <strong>Joe Chien</strong>
+                </span>
+                <span className={styles.userrole}>
+                  Administrator
+                </span>
+                <span className={styles.userstatus}>
+                  <div className={styles.icon}>
+                    <RxDotFilled className={styles.icon1} />
+                  </div>
+                  <span>Online</span>
+                </span>
+              </div>
+            </div>
+            <div className={styles.sidebarmenu}>
+              <ul>
+                {/* <li className={styles.headermenu} class="header-menu"><span>General</span></li> */}
+                <li class="sidebar-dropdown" className={styles.sidebardropdown}>
+                  <a href="#">
+                    <AiFillDashboard className={styles.a1} /> Dashboard
+                  </a>
+                  {/* <div class="sidebar-submenu" className={styles.sidebarsubmenu}>
               <ul>
                 <li><a href="#">Dashboard 1 <span class="badge badge-pill badge-success" className={styles.sidebarmenu}>Pro</span></a></li>
                 <li><a href="#">Dashboard 2</a></li>
                 <li><a href="#">Dashboard 3</a></li>
               </ul>
             </div> */}
-          </li>
-          </ul>
-          {/* <!-- Dashboard --> */}
-          {/* <li class="sidebar-dropdown">
+                </li>
+              </ul>
+              {/* <!-- Dashboard --> */}
+              {/* <li class="sidebar-dropdown">
             <a href="#"><i class="fa fa-shopping-cart"></i><span>E-commerce</span><span class="badge badge-pill badge-danger">3</span></a>
             <div class="sidebar-submenu">
               <ul>
@@ -82,23 +122,25 @@ const sidebarmenu = () => {
             </div>
           </li>
           <!-- Maps --> */}
-          
-          {/* <li class="header-menu"><span>Extra</span></li>
+
+              {/* <li class="header-menu"><span>Extra</span></li>
           <li><a href="#"><i class="fa fa-book"></i><span>Documentation</span><span class="badge badge-pill badge-primary">Beta</span></a></li>
           <li><a href="#"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
           <li><a href="#"><i class="fa fa-folder"></i><span>Examples</span></a></li>
         </ul> */}
-      </div>
-      <h1 className={styles.h1}>Brand</h1>
+            </div>
+            {/* <h1 className={styles.h1}>Brand</h1>
       <a href="">Home</a>
       <a href="">About</a>
       <a href="">Portfolio</a>
       <a href="">Gallery</a>
       <a href="">Service</a>
       <a href="">Join</a>
-      <a href="">Contact</a>
-    </div>
-  </>
+      <a href="">Contact</a> */}
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
   );
 };
 

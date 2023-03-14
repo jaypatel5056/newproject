@@ -11,6 +11,13 @@
         margin-right: 10px;   
     }
     .section2{
+      display: flex;
+      gap: 100px;
+      .linkssection{
+        display: flex;
+        // gap: 40px;  
+        gap: 10px;
+      }
       .link1 {
         text-decoration: none;
         color: black;

@@ -4,16 +4,20 @@
 
 .wrap {
   display: flex;
+
 }
 
 .section1 {
 // min-width: fit-content;
 // flex-shrink: 0;
 display: inline-block;
-width: 450px;
+// width: 450px;
+width: 250px;
 @include sm{
-  width: 10px;
-  display: none;
+  // width: 10px;
+  // display: none;
+  // display: flex;
+  // // align-items: center;
 }
   
 }
@@ -23,7 +27,6 @@ width: 450px;
   margin: 0 auto;
   font-size: 0.8rem;
   width: 100%;
-
   .h1 {
     font-size: 2rem;
   }
@@ -37,11 +40,16 @@ width: 450px;
     }
 
     .hello {
-      font-size: 1rem;
-      margin-right: 10px;
+      // font-size: 1rem;
+      // margin-right: 10px;
     }
 
     .section2 {
+
+      @include sm{
+        display: flex;
+        flex-direction: column;
+      }
       .navsection {
         justify-content: end;
       }
@@ -67,7 +75,8 @@ width: 450px;
       }
 
       @include sm {
-        display: none;
+        // display: none;
+        // flex-direction: column;
       }
     }
   }

@@ -4,53 +4,58 @@ import {
   MDBInput,
   MDBCheckbox,
   MDBBtn,
-  MDBIcon
 }
 from 'mdb-react-ui-kit';
-// import axios from "../lib/api"
+import {useState} from "react"
+import ClipLoader from "react-spinners/ClipLoader"
+import {useRouter} from 'next/router'
 import axios from "axios"
+import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
 
-const onSubmit = async (e) => {
-  console.log('hello');
-  // const [isLoggedIn,setIsLoggedIn]=useState(false);
+const App=()=>{
+  const [loading,setLoading]= useState(false);
+  const [isLoggedIn,setIsLoggedIn]=useState(false);
+
+  const router =useRouter();
+
+ const onSubmit = async (e) => {
     e.preventDefault();
     const username = e.target.elements.email.value;
     const password = e.target.elements.password.value;
-    console.log(username);
+    setLoading(true);
     try {
-      // const response = await axios.post('http://localhost/wordpress/wp-json/api/v2/signin', { username, password },
-      // {
-      //   headers:{  'Content-Type':'application/x-www-form-urlencoded'}
-      // }
-      // );
        const response = await axios.post('https://testapivai.000webhostapp.com/wp-json/api/v2/signin', { username, password },
       {
-        headers:{  'Content-Type':'application/x-www-form-urlencoded'}
+        headers:{'Content-Type':'application/x-www-form-urlencoded'}
       }
       );
-
-      // https://testapivai.000webhostapp.com/wp-json/wp/v2/posts/
       console.log(response);
       console.log(response.data.status);
       if (response.data.status==true) {
         localStorage.setItem('username', response.data.data.user_login);
-        window.location.href = '/blogs';
+        router.push('/blogs')
         setIsLoggedIn(true);
         console.log("success");
       }
+      else{
+        alert("Wrong username or password! Please try again")
+      }
     } catch (error) {
-      console.error(error);
+      console.error(error);      
+    } finally {
+      setLoading(false)
     }
   };
-  
-
-
-function App() {
   return (
+    loading ? ( 
+      <div style={{display:'flex',flexDirection:"column",gap:"10px",justifyContent:'center',alignItems:'center',height:'70vh'}}>
+    <ClimbingBoxLoader color="#805aed" size={30} loading={loading} className="mb-50"/>
+    <h5>Logging In</h5>
 
-    <MDBContainer className="p-3 my-5 d-flex flex-column wp-50">
+      </div>
+    
+    ) : ( <MDBContainer className="p-3 my-5 d-flex flex-column wp-50 wp-sm-90 wp-lg-90">
         
-        {/* <MDBContainer className="p-3 my-5 d-flex flex-column wp-50"> */}
         <h2 className="mb-50">Sign In</h2>
           <form onSubmit={onSubmit}>
           <MDBInput wrapperClass="mb-4" label="Username" id="email" type="username" />
@@ -62,6 +67,11 @@ function App() {
           </div>
   
           <MDBBtn className="mb-4">Sign in</MDBBtn>
+          {/* {loading ? <ClipLoader color="#36d7b7" /> : window.location.href = '/blogs' } */}
+        <ClipLoader color="#36d7b7" size={100} loading={loading}/> 
+          {/* {loading && <ClipLoader color="#36d7b7" /> } */}
+          {/* <ClipLoader color="#36d7b7" /> */}
+          {/* {loading && <div>Loading...</div>} */}
         </form>
  
 
@@ -89,7 +99,8 @@ function App() {
         </div> */}
       </div>
 
-    </MDBContainer>
+    </MDBContainer> 
+    )
   );
 }
 

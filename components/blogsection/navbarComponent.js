@@ -42,30 +42,51 @@ const navbar4 = () => {
         {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <div className={styles.section2}>
         <Navbar.Collapse id="basic-navbar-nav w-100">
-          <Nav className="me-auto">
-            <Nav.Link href="/blogs" className={styles.text}>
-              Home
-            </Nav.Link>
-            <Nav.Link href="#features" className={styles.text}>Features</Nav.Link>
+          <Nav className={`me-auto ${styles.linkssection}`}>
+            {/* <Nav.Link href="/blogs" className={styles.text}> */}
+            <Link href="/blogs" className={styles.text}>Home</Link>
+
+            {/* </Nav.Link> */}
+            <Link href="/allposts1" className={styles.text}>Features</Link>
+            
+            {/* <Nav.Link href="#features" className={styles.text}>Features</Nav.Link> */}
             {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-            <Nav.Link href="/allposts1" className={styles.text}>All Posts</Nav.Link>
+            {/* <Nav.Link href="/allposts1" className={styles.text}> */}
+            <Link href="/allposts1" className={styles.text}>All Posts</Link>
+
+              {/* </Nav.Link> */}
             {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-           { !isLoggedIn1 && <Nav.Link href="login/login" className={styles.text}>
-            {/* <Link */}
-            {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
-            {/* className={styles.link1} */}
-          {/* // ></Link> */}
-          Signin</Nav.Link>}
+           { !isLoggedIn1 && 
+          //  <Nav.Link href="login/login" className={styles.text}>
+          <Link 
+            href="login/login"
+           className={styles.text}
+           >Login</Link> 
+          /* Signin</Nav.Link> */
+          }
           { !isLoggedIn1 &&
-            <Nav.Link href="../login/signup" className={styles.text}>Signup</Nav.Link>}
+            // <Nav.Link  className={styles.text}>
+              <Link href="/login/signup" className={styles.text}>Signup</Link>
+            // </Nav.Link>
+            }
              { isLoggedIn1 &&
-            <Nav.Link href="/login/signout" className={styles.text}>Signout</Nav.Link>}
-            { isLoggedIn1 && <Nav.Link href="/userDashboard" className={styles.text}>
-            {/* <Link */}
-            {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
-            {/* className={styles.link1} */}
-          {/* // ></Link> */}
-          User Dashboard</Nav.Link>}
+             <Link href="/login/signout" className={styles.text}>
+              {/* <Nav.Link className={styles.text}>Signout</Nav.Link> */}
+              Signout
+             </Link>
+              }
+            {
+              isLoggedIn1 &&
+                <Link href="/userdashboard" className={styles.text}>User Dashboard</Link>
+              
+              //   //  isLoggedIn1 &&
+          //   {/* //  <Nav.Link href="/userdashboard" className={styles.text}> */}
+          //   {/* <Link */}
+          //   {/* href="blogs/broke-a-glass-someday-you-might-3-d-print-a-newone" */}
+          //   {/* className={styles.link1} */}
+          // {/* // ></Link> */}
+          // User Dashboard</Nav.Link>
+            }
           </Nav>
           </Navbar.Collapse>
         </div>

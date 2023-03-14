@@ -30,7 +30,8 @@
     "react-intersection-observer": "^9.4.3",
     "react-pro-sidebar": "^1.0.0",
     "react-scroll-motion": "^0.3.2",
-    "react-share": "^4.4.1"
+    "react-share": "^4.4.1",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

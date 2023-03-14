@@ -5,6 +5,11 @@
       @content;
     }
   }
+  @mixin lg {
+    @media only screen and (max-width: 1180px) and (min-width: 541px) {
+      @content;
+    }
+  }
   --color-blue: rgb(78, 101, 203);
     --color-purple: rgb(113,75,128);
     --color-pink: rgb(203, 66, 116);
@@ -70,10 +75,15 @@
 
   @for $i from 1 through $maximum-margin {
     .w-#{$i} {
-      width: #{$i}px !important;
+      width: #{$i}px;
     }
     .h-#{$i} {
       height: #{$i}px !important;
+    }
+    .w-sm-#{$i} {
+      @include sm {
+        width: #{$i}px !important;
+      } 
     }
     .h-sm-#{$i} {
       @include sm {
@@ -92,6 +102,17 @@
         width: #{$p} !important;
       } 
     }
+    .wp-lg-#{$i} {
+      @include lg {
+        width: #{$p} !important;
+      } 
+    }
+    .wp-md-#{$i} {
+      @include sm {
+        width: #{$p} !important;
+      } 
+    }
+
 
     .hp-#{$i} {
       height: #{$p} !important;

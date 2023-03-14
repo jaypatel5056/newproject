@@ -14,8 +14,11 @@ import {
 from 'mdb-react-ui-kit';
 // import axios from '../lib/api';
 import axios from "axios"
-function App() {
+import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
+import DotLoader from 'react-spinners/DotLoader';
 
+const App=()=>{
+  const[loading,setLoading]=useState(false)
 //   const [justifyActive, setJustifyActive] = useState('tab1');
 // const [formData, setFormData] = useState({
 //     firstName: '',
@@ -29,7 +32,7 @@ function App() {
     const lastNameRef = useRef();
     const usernameRef = useRef();
     const emailRef = useRef();
-    const passwordRef = useRef();
+    const passwordRef = useRef(); 
   
    const handleSubmit = (e) => {
       e.preventDefault();
@@ -48,6 +51,7 @@ function App() {
       //       'Content-Type':'application/x-www-form-urlencoded'
       //   }
       // })
+      setLoading(true);
      axios.post('https://testapivai.000webhostapp.com/wp-json/api/v2/signup', { username, password },
       {
         headers:{  'Content-Type':'application/x-www-form-urlencoded'}
@@ -67,15 +71,20 @@ function App() {
         })
         .catch((error) => {
           console.log(error);
-        });
+        })
+        .finally(()=>{
+          setLoading(false)
+        }); 
     };
-  
-    // ...
-  
-  
 
   return (
-    <MDBContainer className="p-3 my-5 d-flex flex-column wp-50">
+    loading ? (
+      <div style={{display:'flex',flexDirection:"column",gap:"10px",justifyContent:'center',alignItems:'center',height:'70vh'}}>
+    <DotLoader color="#805aed" size={50} loading={loading} className="mb-50"/>
+    <h5>Setting Up...</h5>
+      </div>
+    ) : (
+    <MDBContainer className="p-3 my-5 d-flex flex-column wp-50 wp-sm-90 wp-lg-90">
          <h3 className='mb-5'>Sign Up</h3>
         {/* <div className="text-center mb-3"> */}
         {/* <MDBContainer className="p-3 my-5 d-flex flex-column wp-50"> */}
@@ -108,6 +117,7 @@ function App() {
      */}
 
     </MDBContainer>
+    )
     // <MDBContainer className="p-3 my-5 d-flex flex-column wp-50">
 
     //   <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
@@ -207,6 +217,7 @@ function App() {
 
     // </MDBContainer>
   );
+
 }
 
 export default App;

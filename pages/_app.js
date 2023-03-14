@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "variables/scss";
 
 import Nstyles from "../styles/globals.css";
+import { ProSidebarProvider } from 'react-pro-sidebar';
+
 // import "..styles/css"
 // import '@/variables.scss'
 import "../custom/variables.scss";
@@ -27,7 +29,10 @@ export default function App({ Component, pageProps }) {
       {/* <Nstyles jsx></Nstyles> */}
 
       {/* <GStyles></GStyles> */}
+      <ProSidebarProvider>
+
       <Component {...pageProps} />
+      </ProSidebarProvider>
     </>
   );
 }

@@ -19,18 +19,18 @@ import New from "../../components/blogsection/blogsFirstComponent";
 // Last;
 import Top from "../../components/test/topComponent";
 function BLogs() {
-  const [id, setId] = useState();
-  const [isLoggedIn1, setIsLoggedIn1] = useState(false);
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("username");
-    if (isLoggedIn) {
-      setIsLoggedIn1(true);
-    } else {
-      setIsLoggedIn1(false);
-    }
-  }, []);
-  console.log("home");
-  console.log(isLoggedIn1);
+  // const [id, setId] = useState();
+  // const [isLoggedIn1, setIsLoggedIn1] = useState(false);
+  // useEffect(() => {
+  //   const isLoggedIn = localStorage.getItem("username");
+  //   if (isLoggedIn) {
+  //     setIsLoggedIn1(true);
+  //   } else {
+  //     setIsLoggedIn1(false);
+  //   }
+  // }, []);
+  // console.log("home");
+  // console.log(isLoggedIn1);
 
   //  const handleCLick=async ()=>{
   //   setId(1)
