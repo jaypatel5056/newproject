@@ -52,9 +52,9 @@ const App=()=>{
       //   }
       // })
       setLoading(true);
-     axios.post('https://testapivai.000webhostapp.com/wp-json/api/v2/signup', { username, password },
+     axios.post('https://testapivai.000webhostapp.com/wp-json/api/v2/signup', data,
       {
-        headers:{  'Content-Type':'application/x-www-form-urlencoded'}
+        headers:{'Content-Type':'application/x-www-form-urlencoded'}
       }
       )
         .then((response) => {

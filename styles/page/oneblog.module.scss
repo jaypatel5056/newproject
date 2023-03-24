@@ -2,8 +2,9 @@
 // @import "../styles/mixins.scss";
 @import "../mixins.scss";
 .first{
-    width: 40%;
-    margin: auto;
+  width: 40%;
+  margin: auto;
+  margin-top: 100px;
     @include sm{
       width: 90%;
     }
@@ -40,6 +41,17 @@
     @include sm{
       font-style: 0.8rem;
     }
+}
+.h3{
+  font-size: 1.5rem;
+  font-family: 'Sora',sans-serif;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-top: 20px;
+  @include sm{
+      font-size: 1.2rem;
+  }
+ 
 }
 
 

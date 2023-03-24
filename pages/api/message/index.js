@@ -3,7 +3,7 @@ export default function handler(req, res) {
   const method = req.method;
   if (method === "POST") {
     console.log(data);
-    console.log("hello");
+    // console.log("hello");
     const data2 = JSON.parse(req.body);
     // console.log(req.body.name);
     const newmessage = {

@@ -40,6 +40,7 @@ const Posts = ({ post, categoryPosts }) => {
 
   const postcomment = () => {
     if (isLoggedIn1) {
+
     } else {
       alert("Only logged in users can like the post! Please login to continue");
     }
@@ -130,7 +131,7 @@ const Posts = ({ post, categoryPosts }) => {
                 </div>
               </div>
             </div>
-            <h3 className="mt-30 "> Read more</h3>
+            <h3 className={`mt-30 ${styles.h3}`}> Must Read</h3>
 
             <Row className={` mt-10 ${styles.editorspick}`}>
               {categoryPosts.map((post1) => (
@@ -255,6 +256,19 @@ export async function getStaticPaths() {
 //       };
 //     }
 //   }
+// export async function getStaticProps(context){
+//   const {params}=context
+//   const response=axios.get("")
+//   const post=resoponse.data
+//   const id=post.categories[0];
+    //  const response1=await axios.get(  ?categories=${id})
+    //  return {
+    //   props:{
+    //     post,categoryData
+    //   }
+    //  }
+
+// }
 export async function getStaticProps(context) {
   const { params } = context;
   try {
@@ -296,7 +310,7 @@ export async function getStaticProps(context) {
     console.error(error);
     console.log("hixyk");
     return {
-      props: { post: {} },
+      props: { post: {} ,categoryPosts:[]},
     };
   }
 }

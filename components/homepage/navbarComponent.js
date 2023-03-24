@@ -11,7 +11,7 @@ const Navbar1 = () => {
     <Navbar bg="light" variant="light" expand="lg">
       <Container className="my-0 ">
       <Navbar.Brand href='/blogs' className="">
-      <img width="200" height="200" src="/unnamed.jpg" className={` ${styles.logo}`} alt="Tech News" decoding="async"/>
+      <img  src="/unnamed.jpg" className={` ${styles.logo}`} alt="Tech News" decoding="async"/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.toggler}>
         <GiHamburgerMenu />

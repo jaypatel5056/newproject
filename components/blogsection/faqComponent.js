@@ -2,6 +2,7 @@ import React, { use, useEffect, useState } from "react";
 import styles from "../../styles/FAQ.module.scss";
 import { Accordion, Row, Col } from "react-bootstrap";
 import dynamic from "next/dynamic";
+import axios from "axios";
 const Animator = dynamic(
   import("react-scroll-motion").then((it) => it.Animator),
   { ssr: false }
@@ -25,53 +26,79 @@ import {
   ZoomIn,
   ZoomOut,
 } from "react-scroll-motion";
+// import axios from "axios";
 
 const FAQ = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [inputData, setInputData] = useState({});
+  
   // useEffect(()=>{
   //   console.log('hello');
   //  console.log(name)
   // },[inputData])
 
-  const [globalToggle, setglobalToggle] = useState(false);
-  const [toggle1, setToggle1] = useState(false);
-  const [data, setData] = useState({});
-  const handletoggle1 = () => {
-    setToggle1(!toggle1);
-    setglobalToggle(!globalToggle);
-    setHighlighted(!highlighted);
-  };
-  const [toggle2, setToggle2] = useState(false);
-  const handletoggle2 = () => {
-    setToggle2(!toggle2);
-    setglobalToggle(!globalToggle);
-  };
-  const [toggle3, setToggle3] = useState(false);
-  const handletoggle3 = () => {
-    setToggle3(!toggle3);
-    setglobalToggle(!globalToggle);
-  };
-  const [highlighted, setHighlighted] = useState(false);
+  // const [globalToggle, setglobalToggle] = useState(false);
+  // const [toggle1, setToggle1] = useState(false);
+  // const [data, setData] = useState({});
+  // const handletoggle1 = () => {
+  //   setToggle1(!toggle1);
+  //   setglobalToggle(!globalToggle);
+  //   setHighlighted(!highlighted);
+  // };
+  // const [toggle2, setToggle2] = useState(false);
+  // const handletoggle2 = () => {
+  //   setToggle2(!toggle2);
+  //   setglobalToggle(!globalToggle);
+  // };
+  // const [toggle3, setToggle3] = useState(false);
+  // const handletoggle3 = () => {
+  //   setToggle3(!toggle3);
+  //   setglobalToggle(!globalToggle);
+  // };
+  // const [highlighted, setHighlighted] = useState(false);
 
-  const handleToggletext = () => {
-    setHighlighted(!highlighted);
-  };
+  // const handleToggletext = () => {
+  //   setHighlighted(!highlighted);
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setInputData({ name: name, email, message });
+    let data={ name , email, message }
+    setInputData({ name , email, message });
+    console.log(JSON.stringify(data));
+    try{
+    const respone=axios.post('/api/contact',JSON.stringify(data),{
+    headers: {
+      'Accept': 'application/json, text/plain, */*',
+      'Content-Type': 'application/json'
+    } 
+  }
+  )
+    console.log('Response revevied');
+    if (respone.status === 200) {
+      console.log('Response succeeded!')
+      setSubmitted(true)
+      setName('')
+      setEmail('')
+    }   
+  }
+    catch(error){
+
+    }
+    
+    console.log(data);
 
     if (inputData) {
-      console.log("from ");
-      console.log(inputData);
-      console.log(new1);
-      console.log(new2);
-      const response = await fetch("/api/message", {
-        method: "POST",
-        body: JSON.stringify({ name, email, message }),
-      });
+
+      // console.log("from ");
+      // console.log(inputData);
+      // console.log(new1);
+      // console.log(new2);
+    //   const response = await fetch("/api/message", {
+    //     method: "POST",
+    //     body: JSON.stringify({ name, email, message }),
+    //   });
     }
   };
   return (

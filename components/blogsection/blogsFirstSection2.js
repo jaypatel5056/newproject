@@ -8,11 +8,87 @@ import { AiOutlineUser, AiFillWechat } from "react-icons/ai";
 import { SlCalender } from "react-icons/sl";
 import { FiMail } from "react-icons/fi";
 import { BsArrowRight, BsTwitter, BsYoutube } from "react-icons/bs";
+import { useEffect,useState } from "react";
+import axios from "axios";
 import { GrFacebookOption } from "react-icons/gr";
 
+
 const blogs1 = () => {
+    const [categoryArray,setCategoryArray]=useState([]);
+    const [posts,setPosts]=useState([]);
+    useEffect(()=>{
+        async function getCategoryData(){
+       try{
+            const response=await axios.get(
+                '/api/category/all'       
+              );
+
+              const categoryPosts = await Promise.all(
+                response.data.map(async (category) => {
+                  const postsResponse = await axios.get(`/api/category/${category.id}`);
+                  return {
+                    category: category,
+                    posts: postsResponse.data,
+                  };
+                })
+              );
+              const { categories, posts } = categoryPosts.reduce((acc, categoryPost) => {
+                acc.categories.push(categoryPost.category);
+                acc.posts.push(categoryPost.posts);
+                return acc;
+              }, { categories: [], posts: [] });
+              setCategoryArray(categories);
+              setPosts(posts);
+
+
+                //   setCategoryArray(response.data);
+                //   const promises=response.data.map(async ()=>{
+                //     console.log('category.id');
+                //     console.log(category.id);
+                //     const postsResponse = await axios.get(`/api/category/2`);
+                //     setPosts(postsResponse.data)
+
+                //     return{
+                //         category:category,
+                //         posts:postsResponse.data
+                //     }
+                //   });
+                //   const categoryPosts = await Promise.all(promises);
+                //   setCategoryArray(categoryPosts.map(category => category.category));
+                //   setPosts(categoryPosts.map(category => category.posts));
+        }
+        catch(error){
+            console.log(error);
+        }
+    }
+    getCategoryData();
+    },[])
+
+    useEffect(() => {
+        if (categoryArray.length > 0) {
+        //   const posts = categoryArray.map((category) => category.posts);
+        //   setPostsArray(posts);
+          console.log('posts');
+          console.log(posts);
+        }
+      }, [categoryArray]);
+      
+    useEffect(() => {
+        console.log("hhelo");
+        if(categoryArray[0]){
+        console.log(categoryArray[0].name);
+        }
+      }, [categoryArray]);
+
+      useEffect(() => {
+        console.log("post1s");
+        if(posts[0]){
+            console.log(posts[0]);
+        }
+      }, [posts]);
+      
   return (
-    <>    
+    <>
       <div className={styles.main1}>
         <Container fluid className="wp-100 }">
           <Row className={` `}>
@@ -98,7 +174,8 @@ const blogs1 = () => {
               <div class="mt-40 d-flex justify-content-between align-items-center blogs-first_header__NqUIR">
                 <div className="d-flex justify-content-center align-items-center ">
                   <h5 class="mt-0 elementor-heading-title elementor-size-default">
-                    Editor’s Pick
+                  {categoryArray.length>1 && categoryArray[0].name}
+                  {/* Editor’s Pick */}
                   </h5>
                 </div>
                 <div
@@ -111,6 +188,7 @@ const blogs1 = () => {
                     <h5 class={styles.h5}>View All</h5>
                     <div className="d-flex align-items-center justify-content-center fs-50">
                       <BsArrowRight />
+
                     </div>
                   </div>
                 </div>
@@ -412,3 +490,28 @@ const blogs1 = () => {
 };
 
 export default blogs1;
+
+export async function getStaticProps(){
+    try{
+        let a=1;
+        const response=await axios.get(
+            `https://testapivai.000webhostapp.com/wp-json/wp/v2/categories`,
+            {
+              headers: {
+                Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY3ODM0MzYzNiwiZXhwIjoxODM2MDIzNjM2fQ.5f6q0jPv6NlGYoxlwuM-GOS-mS1A8AQ3OjIuHMMZ9fE`,
+              },
+            }
+          );
+          const categoryArray=response.data;
+          console.log(categoryArray[0]);
+
+          return {
+            props:{categoryArray,}
+          }
+    }
+    catch(error){
+        console.error(error)
+    }
+
+
+}

@@ -60,7 +60,7 @@ const RSC = () => {
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
-          whileInView={{ rotate: [45, 0], opacity: [0,0.25,0.75,1] }}
+            whileInView={{ rotate: [45, 0], opacity: [0,0.25,0.75,1] }}
           transition={{ duration:  0.7, delay: 0.7}}
           viewport={{ once: false, amount:0.5 }}
           class={styles.p1}
@@ -69,7 +69,7 @@ const RSC = () => {
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.
-        </motion.p>
+        </motion.p> 
         <motion.div
           initial={{ x: -50 }}
           whileInView={{ x: 0 }}
@@ -111,8 +111,9 @@ const RSC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ rotate: [45, 0], opacity: [0,0.25,0.75,1] }}
           transition={{ duration:  0.7, delay:  0.7}}
+          className={styles.p1}
           viewport={{ once: false, amount:0.5 }}
-          class={styles.p1}
+          // class={styles.p1}
         >
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non

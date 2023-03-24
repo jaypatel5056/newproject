@@ -22,9 +22,9 @@ const navbar4 = () => {
 
   return (
     <div className={styles.navbar}>
-    <Navbar bg="light" variant="light">
+    <Navbar bg="light" variant="light" expand="lg">
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand className={`mr-auto ${styles.navbarimage}`}>
           <Link href="/">
             <img
               width=""
@@ -40,11 +40,12 @@ const navbar4 = () => {
         <GiHamburgerMenu />
       </Navbar.Toggle>
         {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-        <div className={styles.section2}>
+        {/* <div className={styles.section2}> */}
         <Navbar.Collapse id="basic-navbar-nav w-100">
-          <Nav className={`me-auto ${styles.linkssection}`}>
-            {/* <Nav.Link href="/blogs" className={styles.text}> */}
-            <Link href="/blogs" className={styles.text}>Home</Link>
+          <Nav className={`ml-auto ${styles.linkssection}`}>
+            {/* <Nav.Link href="#home" className={` nav-link ${styles.text}`}>TECHNOLOGY</Nav.Link> */}
+            {/* <Nav.Link href="/blogs" className={`nav-link ${styles.text}`}>Home</Nav.Link> */}
+            <Link href="/blogs" className={` ${styles.text}`}>Home</Link>
 
             {/* </Nav.Link> */}
             <Link href="/allposts1" className={styles.text}>Features</Link>
@@ -59,14 +60,14 @@ const navbar4 = () => {
            { !isLoggedIn1 && 
           //  <Nav.Link href="login/login" className={styles.text}>
           <Link 
-            href="login/login"
+            href="/login"
            className={styles.text}
            >Login</Link> 
           /* Signin</Nav.Link> */
           }
           { !isLoggedIn1 &&
             // <Nav.Link  className={styles.text}>
-              <Link href="/login/signup" className={styles.text}>Signup</Link>
+              <Link href="/signup" className={styles.text}>Signup</Link>
             // </Nav.Link>
             }
              { isLoggedIn1 &&
@@ -77,8 +78,8 @@ const navbar4 = () => {
               }
             {
               isLoggedIn1 &&
-                <Link href="/userdashboard" className={styles.text}>User Dashboard</Link>
               
+              <Link href="/userdashboard" className={styles.text}>User Dashboard</Link>
               //   //  isLoggedIn1 &&
           //   {/* //  <Nav.Link href="/userdashboard" className={styles.text}> */}
           //   {/* <Link */}
@@ -89,7 +90,7 @@ const navbar4 = () => {
             }
           </Nav>
           </Navbar.Collapse>
-        </div>
+        {/* </div> */}
       </Container>
     </Navbar>
     </div>

@@ -1,22 +1,32 @@
 // @import "mixins.scss";
 @import "../mixins.scss";
 .navbar{
-    margin-top: 30px;
+    // margin-top: 30px;
+    // margin-top:20px;
     margin-bottom: 30px;
     .logo{
         margin-right: 20px;
+        @include sm{
+          width: 150px;
+        }
+        // width: 200px;
+        // height: 100px;
+
+        
     }
     .hello{
         font-size:1rem;
         margin-right: 10px;   
     }
-    .section2{
-      display: flex;
-      gap: 100px;
+    // .section2{
+    //   display: flex;
+    //   gap: 100px;
       .linkssection{
         display: flex;
         // gap: 40px;  
         gap: 10px;
+        margin-left: auto;
+
       }
       .link1 {
         text-decoration: none;
@@ -40,16 +50,12 @@
         text-transform: uppercase;
         list-style: none;
         margin: 0 2px;
-        &:hover{
+        &:hover{  
             // text
                 transition: all 0.2s linear;
                 color: rgb(101, 53, 233);
             
         }
     }
-
-      @include sm{
-      display: none;
-      }
     }
-  }
+  // }

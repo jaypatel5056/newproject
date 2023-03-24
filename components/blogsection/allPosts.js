@@ -1,4 +1,5 @@
 import React from "react";
+// import {useState} from "react"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
@@ -45,6 +46,7 @@ const Allposts = ({ post }) => {
         </Col>
 
         <Col xs={12} md={6} className={` ${styles.firstsection}`}>
+          {/* <div className={styles.}></div> */}
           <div className={styles.content1}>
             <p className={styles.p1}> {categoryName}</p>
             <Link href={`blogs/${post.id}`} className={styles.a1}>

@@ -10,7 +10,7 @@ import axios from "axios"
 const Post = ({post,postcheck}) => {
     const [check,setCheck]=useState(true);
     const regex = /<img.+?src="(.+?)".*?>/i;
-    const urlmatch = post.content.rendered.match(regex);
+    const urlmatch = post.content.rendered.match(regex);  
     const imageUrl = urlmatch ? urlmatch[1] : null;
 
     const [categoryName, setCategoryName] = useState("");
@@ -32,12 +32,13 @@ const Post = ({post,postcheck}) => {
     if(post.id===postcheck){
         setCheck(false)
     }
-},[])
+  },[])
+
+
   return (
     <>
      {check && <Col sm={6} className={` mb-40  mt-30 ${styles.section1}`}>
-  
-  <div className={styles.epimg1}>
+   <div className={styles.epimg1}>
     <img
       src={imageUrl}
       alt=""
@@ -49,11 +50,11 @@ const Post = ({post,postcheck}) => {
       {post.title.rendered &&
       post.title.rendered
     }
-    </Link>
+    </Link> 
 
     <div className={styles.label1}> {categoryName && `${categoryName}`}</div>
-  </div>
-{/* </div> */}
+       </div>
+     {/* </div> */}
 </Col> }
 </>
 

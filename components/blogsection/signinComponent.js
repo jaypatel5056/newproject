@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import {
   MDBContainer,
   MDBInput,
@@ -10,7 +10,9 @@ import {useState} from "react"
 import ClipLoader from "react-spinners/ClipLoader"
 import {useRouter} from 'next/router'
 import axios from "axios"
+import styles from "../../styles/blog/signout.module.scss"
 import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader';
+import PacmanLoader from 'react-spinners/PacmanLoader'
 
 const App=()=>{
   const [loading,setLoading]= useState(false);
@@ -36,6 +38,7 @@ const App=()=>{
         router.push('/blogs')
         setIsLoggedIn(true);
         console.log("success");
+    
       }
       else{
         alert("Wrong username or password! Please try again")
@@ -49,10 +52,18 @@ const App=()=>{
   return (
     loading ? ( 
       <div style={{display:'flex',flexDirection:"column",gap:"10px",justifyContent:'center',alignItems:'center',height:'70vh'}}>
-    <ClimbingBoxLoader color="#805aed" size={30} loading={loading} className="mb-50"/>
+    <PacmanLoader color="#805aed" size={30} loading={loading} className="mb-50"/>
     <h5>Logging In</h5>
 
       </div>
+  //   <div className={styles.main}>
+  //   <div className={styles.content}>
+  //   <ClimbingBoxLoader color="#805aed" size={30} loading={loading} className="mb-50"/>
+  //   {/* <HashLoader size={80} color={"805aed"} className="mb-20" /> */}
+  //   <p>Setting up...</p>
+  //   {/* <p>You will be redirected in 3 seconds...</p> */}
+  //   </div>
+  // </div>
     
     ) : ( <MDBContainer className="p-3 my-5 d-flex flex-column wp-50 wp-sm-90 wp-lg-90">
         
@@ -65,17 +76,16 @@ const App=()=>{
             <MDBCheckbox name="flexCheck" value="" id="flexCheckDefault" label="Remember me" />
             <a href="!#">Forgot password?</a>
           </div>
-  
-          <MDBBtn className="mb-4">Sign in</MDBBtn>
+           <MDBBtn className="mb-4">Sign in</MDBBtn>
           {/* {loading ? <ClipLoader color="#36d7b7" /> : window.location.href = '/blogs' } */}
-        <ClipLoader color="#36d7b7" size={100} loading={loading}/> 
+        <ClipLoader color="#36d7b7" size={50} loading={loading}/> 
           {/* {loading && <ClipLoader color="#36d7b7" /> } */}
           {/* <ClipLoader color="#36d7b7" /> */}
           {/* {loading && <div>Loading...</div>} */}
         </form>
  
 
-      <div className="text-center">
+       <div className="text-center">
         <p>Not a member? <a href="#!">Register</a></p>
         <p>or sign up with:</p>
 

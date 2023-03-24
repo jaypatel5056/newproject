@@ -15,7 +15,7 @@ export default async (req, res) => {
     //   }
     // );
     const response = await axios.get(
-      `https://testapivai.000webhostapp.com/wp-json/wp/v2/posts?categories=${value}`,
+      `https://testapivai.000webhostapp.com/wp-json/wp/v2/categories`,
       {
         headers: {
           Authorization: `Bearer ${token1}`,

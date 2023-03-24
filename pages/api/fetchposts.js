@@ -7,9 +7,11 @@ import axiosRequest from "@/lib/api";
 export default async (req, res) => {
     console.log("abc1");
     console.log(req.query);
+    console.log('the numbe rs');
     const {loadedPosts} =req.query;
+    console.log(loadedPosts);
     const limit=5
-  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY3Nzc1ODI1NSwiZXhwIjoxODM1NDM4MjU1fQ.kiT3VZAx2yNUg6k10lW-Ez77RFnI4KxKa6Ajb3mSkds';
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTY3Nzc1ODI1NSwiZXhwIjoxODM1NDM4MjU1fQ.kiT3VZAx2yNUg6k10lW-Ez77RFnI4KxKa6Ajb3mSkds';
 //   const value=req.query.blog1;
 //   console.log('hilmk'); 
 //   console.log(value);
@@ -27,7 +29,6 @@ export default async (req, res) => {
     console.log(response);
     const posts = response.data;
     res.status(200).json(posts);
-    
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });

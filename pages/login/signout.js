@@ -6,15 +6,22 @@ import styles from "../../styles/blog/signout.module.scss"
 const Signout = () => {
   const router =useRouter();
   useEffect(() => {
+   const timer=setTimeout(() => {
+     router.push('/blogs');
+   },3000)
+   return () => clearTimeout(timer);
+  },[])
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       // window.location.href = '/blogs'; 
       router.push('/blogs');
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
-  
   if (typeof localStorage !== 'undefined') {
     localStorage.removeItem('username');
+    console.log(typeof localStorage);
   }
 
   return (

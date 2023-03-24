@@ -1,4 +1,5 @@
 import {data} from "../../../data/singleblog"
+// KE5Ak%L2PYnpYWr%jSF)
 export default function handler(req,res){
   const previd=0;
   const nextId=0;

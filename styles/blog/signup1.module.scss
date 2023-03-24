@@ -1,0 +1,116 @@
+@import "../mixins.scss";
+
+.full{
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/ea0fac52522a55e9906dd90c/pexels-photo-1372971-Recovered.jpg"); 
+    // height: 100vh;
+    height: 85vh;   
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include sm{
+        width: 90%;
+    }
+    @include lg{
+        width: 100%;
+ 
+        height: 1000px;
+        // margin: 0 auto;
+    }
+    .rectangle{
+        height: 500px;
+        width: 500px;
+        // border: 1px solid black;
+        // transform: translateY(-120px);
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        @include sm{
+            width: 80%;
+            margin: 0 auto;
+        }
+        @include lg{
+            // margin-top: 50px;
+        }
+        .h3{
+            font-family: Montserrat, sans-serif !important;
+            font-weight: 700;
+            text-align: center;
+            font-size: 2rem;
+            @include sm{
+                font-size: 1.2rem;
+
+            }
+            @include lg{
+                font-size: 2rem;
+
+            }
+           
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;  
+            padding: 20px;
+            @include sm{
+                padding: 0;
+                // margin-top: 20px;
+            }
+            @include lg{
+                padding: 0;
+                // margin-top: 50px;
+
+            }
+            .label{
+                font-size: 1rem;
+                @include lg{
+                    font-size: 1rem;
+                }
+                
+            }
+            .labelinput{
+                text-decoration: none;
+                border: none;
+                height: 30px;
+                outline: none;
+                border: 1px ;
+                margin-left: 10px;
+            }
+            .submitbtn{
+                width: 100%;
+                height: 40px;
+                background-color: #f1c50e !important;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .input1{
+                    color: #111111 !important;
+                    background-color: #f1c50e !important;
+                    text-decoration: none;
+                    border: none;
+                    outline: none;
+                }    
+        }
+        .extra{
+            color: #999999 !important;
+            text-align: center;
+            margin-top: 20px;
+            @include lg{
+                font-size: 1.8rem;
+
+            }
+
+        }
+
+
+
+
+
+
+    }
+
+}
