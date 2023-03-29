@@ -1,7 +1,7 @@
 
 @import "../mixins.scss";
 .three{
-    width: 50%;
+    width: 75%;
     margin: auto;
     margin-bottom: 40px;
     @include sm{
@@ -9,6 +9,9 @@
     }
     @include lg{
       width: 90%;
+    }
+    @include xlg{
+      width: 60%;
     }
 
     // display: flex;
@@ -21,7 +24,7 @@
     //   height: 1800px;
     // }
     .firstsection {
-      // height: 300px;
+      height: 300px;
       // width: 100%;
       // display: flex;
       // gap: 5px;

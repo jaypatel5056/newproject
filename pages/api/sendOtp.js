@@ -39,7 +39,7 @@ export default async (req, res) => {
   };
 
   try {
-    await sgMail.send(msg);
+    // await sgMail.send(msg);
 
     // const hashedToken = await compare(token, process.env.COOKIE_SECRET);
 

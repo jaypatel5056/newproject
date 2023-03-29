@@ -1,6 +1,6 @@
 import React from 'react'
 // import styles from "../styles/dashboard.module.scss"
-import styles from "../styles/page/dashboard.module.scss"
+import styles from "../../styles/page/dashboard.module.scss"
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { AiOutlineUser, AiOutlineBell } from "react-icons/ai";
@@ -11,18 +11,13 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 // import First from "../components/dashboradfirst"
-import Left1 from "../components/blogsection/sideBarMenuComponent"
-import Left2 from "../components/test/leftTest"
-
-import SidebarMenu from '../components/blogsection/leftMenuComponent';
-import New from "../components/test/new"
+import Left1 from "../../components/blogsection/sideBarMenuComponent"
+import Left2 from "../../components/test/leftTest"
+import SidebarMenu from '../../components/blogsection/leftMenuComponent';
+import New from "../../components/test/new"
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
-
-
-
 
 const userdashboard = () => {
   const [show, setShow] = useState(false);
@@ -31,9 +26,6 @@ const userdashboard = () => {
 
   return (
     <>
-
-
-    
     <div className={styles.wrap}>
     {/* <New/> */}
     <div className={styles.section1}>
@@ -84,12 +76,7 @@ const userdashboard = () => {
     </Navbar>
     </div>
         <h1 className={styles.h1}>Dashboard</h1>
-
-
-
     </div>
-
-   
     </div>
     </>
   )

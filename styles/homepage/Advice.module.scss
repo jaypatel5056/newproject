@@ -1,7 +1,8 @@
 // @import "../styles/mixins.scss";
 @import "../mixins.scss";
 .home{
-    height: 820px;
+    // height: 820px;
+    height: 650px;
     font-size: 2rem;
     margin-top: 70px;
     @include sm{
@@ -12,7 +13,8 @@
         height: 250px;
     }
     .colour2{
-        height: 600px;
+        // height: 600px;
+        
         background-color: #5576fb;
         @include sm{
             // height: 600px;

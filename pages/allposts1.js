@@ -9,7 +9,7 @@ import Navbar1 from "../components/blogsection/navbarComponent";
 const Posts = ({ initialPosts, totalPostsLength }) => {
   const [posts, setPosts] = useState([]);
   const [totalPosts, setTotalPosts] = useState(0);
-  const [loadedPosts, setLoadedPosts] = useState(0);
+  const [loadedPosts, setLoadedPosts] = useState(0);  
   const [loading, setLoading] = useState(false);
   const l1 = useRef(0);
   const [load, setLoad] = useState(false);
@@ -28,7 +28,6 @@ const Posts = ({ initialPosts, totalPostsLength }) => {
   }, [initialPosts]);
 
   useEffect(() => {}, [posts]);
-
   useEffect(() => {
     const loadMorePosts = async () => {
       try {
@@ -86,7 +85,7 @@ const Posts = ({ initialPosts, totalPostsLength }) => {
       const { scrollTop, clientHeight, scrollHeight } =
         document.documentElement;
       console.log(loadedPosts);
-
+           
       console.log(totalPostsLength);
       // console.log(scrollTop + clientHeight)
       // console.log(scrollHeight)
@@ -95,6 +94,8 @@ const Posts = ({ initialPosts, totalPostsLength }) => {
       if (clientHeight - scrollTop <= 100 && posts.length < totalPostsLength) {
         console.log("hello");
         loadMorePosts();
+        // window.removeEventListener("scroll",handleScroll);
+        
       }
     };
 
@@ -126,7 +127,7 @@ const Posts = ({ initialPosts, totalPostsLength }) => {
 
   return (
     <div className={`mb-50`}>
-      <div>{totalPostsLength}</div>
+      {/* <div>{totalPostsLength}</div> */}
       <Navbar1 />
       {posts && posts.length > 0 ? (
         posts.map((post) => <Allposts key={post.id} post={post} />)
@@ -147,7 +148,7 @@ const Posts = ({ initialPosts, totalPostsLength }) => {
             loading={loading}
             color="#805aed"
             className="mt-20"
-          />
+          />  
         )}
       </div>
     </div>
@@ -171,9 +172,9 @@ export async function getServerSideProps() {
         },
       }
     );
-    const initialPosts = response.data;
+    const initialPosts1 = response.data;
 
-    const response1 = await axios.get(
+    const response2 = await axios.get(
       `https://testapivai.000webhostapp.com/wp-json/wp/v2/posts?per_page=100`,
       {
         headers: {
@@ -181,6 +182,15 @@ export async function getServerSideProps() {
         },
       }
     );
+    const response1 = await axios.get(
+      `http://localhost/wordpress/wp-json/wp/v2/posts?per_page=100`,
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.TOKEN1}`,
+        },
+      }
+    );
+    const initialPosts = response1.data;
     const totalPostsLength = response1.data.length;
     console.log("addad");
     console.log(totalPostsLength);

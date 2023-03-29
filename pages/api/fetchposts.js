@@ -23,8 +23,15 @@ export default async (req, res) => {
     //     }
     //   }
     // );
-    let response = await axiosRequest.getData(
+    let responsee = await axiosRequest.getData(
       `https://testapivai.000webhostapp.com/wp-json/wp/v2/posts/?offset=${loadedPosts}&per_page=${limit}`
+    );
+   const response = await axios.get(`http://localhost/wordpress/wp-json/wp/v2/posts/?offset=${loadedPosts}&per_page=${limit}`,
+      {
+        headers:{  
+          Authorization: `Bearer ${process.env.TOKEN1}`
+        }
+      }
     );
     console.log(response);
     const posts = response.data;

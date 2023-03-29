@@ -23,7 +23,7 @@ const Navbar1 = () => {
         </button> */}
         {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
         <Navbar.Collapse id="basic-navbar-nav w-100">
-        <Nav className={`mr-auto mt-10 ${styles.nav1}`}>
+        <Nav className={`mr-auto  ${styles.nav1}`}>
           <Nav.Link href="#home" className={` nav-link ${styles.text}`}>TECHNOLOGY</Nav.Link>
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>SOFTWARE</Nav.Link>
           <Nav.Link href="#link" className={` nav-link ${styles.text}`}>GAMES</Nav.Link>

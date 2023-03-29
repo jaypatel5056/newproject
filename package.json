@@ -27,6 +27,7 @@
     "mdb-react-ui-kit": "^5.1.0",
     "next": "13.1.6",
     "nodemailer": "^6.9.1",
+    "puppeteer": "^19.8.0",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-bootstrap-sidebar-menu": "^2.0.3",
@@ -37,13 +38,15 @@
     "react-pro-sidebar": "^1.0.0",
     "react-scroll-motion": "^0.3.2",
     "react-share": "^4.4.1",
-    "react-spinners": "^0.13.8"
+    "react-spinners": "^0.13.8",
+    "swr": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.2",
     "html-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^2.7.5",
     "postcss-import": "^15.1.0",
     "webpack": "^5.75.0"
   }

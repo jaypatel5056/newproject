@@ -14,7 +14,7 @@ function BlogPost() {
   if (!post) {
     return <div>Loading...</div>;
   }
-
+  
   return (
     <div>
      hi

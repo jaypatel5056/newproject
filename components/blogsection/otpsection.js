@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import DotLoader from 'react-spinners/DotLoader';
 import OtpInput from 'react-otp-input';
+import {AiOutlineLock} from "react-icons/Ai"
 
 
 const VerifyOTP = ({email,username}) => {
@@ -112,6 +113,8 @@ const VerifyOTP = ({email,username}) => {
       renderSeparator={<span>.</span>}
       renderInput={(props) => <input {...props} />}
     />
+    {/* <AiOutlineLock/> */}
+    <AiOutlineLock/>
     <h1>
       {otp}
       </h1>
@@ -131,8 +134,8 @@ const VerifyOTP = ({email,username}) => {
         <button type='submit' disabled={loading} className="pl-2 pr-2">
           {loading ? 'Loading...' : 'Verify OTP'}
         </button>
-        
-        {error && <p>{error}</p>}
+
+        {error && <p>{error}</p>} 
       </form>
     </div>
     )

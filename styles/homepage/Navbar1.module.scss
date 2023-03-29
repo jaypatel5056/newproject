@@ -9,7 +9,13 @@
     object-position: -50px 0;
     @include sm{
         object-position: -30px 0;
-        
+    }
+    @include xlg{
+    //   width: 200px;
+      object-position: 0px 0;
+      background-color: white;
+    //   border: 1px solid black;
+      width: 100%;
     }
     
 }
@@ -51,7 +57,7 @@
 }
 .text1{
     @extend .text;
-     text-transform: none;
+    //  text-transform: none;
     a:first-child{
         color: purple;
     }
