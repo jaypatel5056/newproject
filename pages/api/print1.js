@@ -1,10 +1,15 @@
 import puppeter from 'puppeteer'
 import ReactDOMServer from 'react-dom/server'
 import Allposts from "../../components/blogsection/allPosts"
+import Allposts1 from "../../components/blogsection/allposts1"
 import axios from 'axios'
+import handlebars from "handlebars";
+// import sass from 'node-sass';
 import PrintPreview from '../printcheck'
 import Try1 from "../../contactform/try1.html"
 import styles from "../../styles/blog/Allposts.module.scss"
+import styles1 from "../../contactform/allposts.css"
+import fs from "fs";
 
 export default async function(req,res){
  try {
@@ -13,15 +18,58 @@ export default async function(req,res){
   const posts = await getBlogPostById1(id);
 //   console.log(posts);
 
-  const html = ReactDOMServer.renderToString(<Allposts post={posts.data} />);
+  const html = ReactDOMServer.renderToString(<Allposts1 post={posts.data} />);
 // const printHtml = ReactDOMServer.renderToString(
 //     <PrintPreview html={html} />
 //   );
 //   res.setHeader("Content-Type", "text/html");
 //   res.end(printHtml);
+const path1=require('path');
+// const htmlFilePath = path1.join(__dirname, "..","..","..","..", "styles", "blog","allposts.css");
+const htmlFilePath = path1.join(__dirname, "..","..","..","..", "contactform", "allposts.css");
+console.log('path');
+console.log(htmlFilePath);
+// const css = sass.renderSync({
+//   file: scssFilePath
+// }).css.toString();
+
+// const styleTags = `
+// <link rel="stylesheet" type="text/scss" href="${htmlFilePath}">
+// `;
+// console.log('stylestage');
+// console.log(styleTags);
+// const styleTags = `
+// <style type="text/css">
+//   ${css}
+// </style>
+// `;
+// console.log('csss');
+// console.log(css);
+const cssFilePath = path1.join(__dirname, "..","..","..","..", "contactform", "allposts.css");
+// const cssContent = fs.readFileSync(cssFilePath, 'utf8');
+const cssContent=`<link rel="stylesheet" href="${cssFilePath}" />`;
+
 const styleTags = `
-<link rel="stylesheet" type="text/scss" href="../../styles/blog/Allposts.module.scss">
+  <style>
+    ${cssContent} 
+  </style>
 `;
+const bodyStyle = { backgroundColor: "red" };
+const content3 = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossOrigin="anonymous"></link>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+          <link rel="stylesheet" type="text/scss" href="${cssFilePath}"> 
+          </head>
+        <body style={{fontFamily: 'Poppins'}}>
+        ${html}
+         <div>Hello </div>
+        </body>
+      </html>
+    `;
 
 
   console.log('html');
@@ -29,14 +77,14 @@ const styleTags = `
 
   const browser = await puppeter.launch();
   const page= await browser.newPage();
-  const html1='<h1>Hello</h1>';
-  
-  await page.setContent(`${styleTags} ${html}`, { waitUntil: 'networkidle0' });
+  const html1='<h1>Hello</h1>'; 
+  const content1 =`${cssContent} ${html}`;
+  await page.setContent(html, { waitUntil: 'networkidle0' });
   // await page.goto(`data:text/html,${html}`, { waitUntil: 'networkidle0' });
 
 // await page.waitForNavigation({
 //   waitUntil: 'networkidle0',
-// });
+// });  
   // await page.waitForTimeout(2000);
   const content= await page.content();
   console.log('oooii');
@@ -63,7 +111,6 @@ console.log(`Rendered HTML length: ${html.length}`);
 
   // const pdf = await page.pdf();
   console.log(`Generated PDF length: ${pdf.length}`);
-  
   res.setHeader('Content-Type', 'application/pdf');
   res.setHeader('Content-Disposition', `attachment; filename=${posts.slug}.pdf`);
   res.send(pdf);

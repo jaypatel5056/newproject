@@ -90,6 +90,36 @@
         height: #{$i}px !important;
       }
     }
+    .mt-sm-#{$i} {
+      @include sm {
+       margin-top: #{$i}px !important;
+      }
+    }
+    .mb-sm-#{$i} {
+      @include sm {
+       margin-bottom: #{$i}px !important;
+      }
+    }
+    .mt-lg-#{$i} {
+      @include lg {
+       margin-top: #{$i}px !important;
+      }
+    }
+    .mb-lg-#{$i} {
+      @include lg {
+       margin-bottom: #{$i}px !important;
+      }
+    }
+    .ml-sm-#{$i} {
+      @include sm {
+       margin-left: #{$i}px !important;
+      }
+    }
+    .ml-lg-#{$i} {
+      @include lg {
+       margin-left: #{$i}px !important;
+      }
+    }
   }
 
   @for $i from 1 through 100 {

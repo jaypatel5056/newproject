@@ -3,10 +3,11 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import DotLoader from 'react-spinners/DotLoader';
 import OtpInput from 'react-otp-input';
-import {AiOutlineLock} from "react-icons/Ai"
+import {AiOutlineLock} from "react-icons/ai"
+import styles from "../../styles/blog/otpsection.module.scss"
 
 
-const VerifyOTP = ({email,username}) => {
+const VerifyOTP = ({email,username,userid}) => {
   const [otp, setOtp] = useState('');
   const [otp1, setOTP1] = useState('');
   const [error, setError] = useState('');
@@ -38,10 +39,11 @@ const VerifyOTP = ({email,username}) => {
     e.preventDefault();
     setLoading(true);
     try {
-     
+     console.log('otp from forntend ');
+     console.log(otp1);
       const response = await axios.post(
         '/api/verifyOtp',
-        { email, otp1 } ,{
+        { email, otp } ,{
           withCredentials:true,
           headers:{
             'Content-Type':'application/json'
@@ -62,10 +64,12 @@ const VerifyOTP = ({email,username}) => {
         console.log('OTP has been verified');
         router.push('/blogs');
         localStorage.setItem('username',username);
+        localStorage.setItem('userId',userid);
         //  localStorage.setItem('username', response.data.data.user_login);
         // Redirect to a success page or show a success message
       
       } else {
+
         console.log('Error verifying OTP');
         router.push('/hello');
         
@@ -106,30 +110,27 @@ const VerifyOTP = ({email,username}) => {
     
     ) : (
     <div>
-      <OtpInput
-      value={otp}
-      onChange={setOtp}
-      numInputs={4}
-      renderSeparator={<span>.</span>}
-      renderInput={(props) => <input {...props} />}
-    />
     {/* <AiOutlineLock/> */}
-    <AiOutlineLock/>
-    <h1>
+    {/* <AiOutlineLock/> */}
+    {/* <h1>
       {otp}
-      </h1>
-      <h3>Enter OTP</h3>
+      </h1> */}
+      <h3 className={styles.h3}>Enter OTP</h3>
       <form onSubmit={handleSubmit}>
         <div>
           <label>OTP : </label>
           <input
             type='text'
             placeholder='Enter OTP'
-            value={otp1}
+            value={otp}
             className="ml-30 mb-30 mt-30 p-2"
-            onChange={(e) => setOTP1(e.target.value)}
+            onChange={(e) => setOtp(e.target.value)}
             required
           />
+           <div class={styles.submitbtn}>
+          {/* <a href="#" className={styles.a}>Login</a>         */}
+          <input type="submit" value="Submit" className={styles.input1} onChange={(e) => setOtp(e.target.value)}/>
+         </div>
         </div>
         <button type='submit' disabled={loading} className="pl-2 pr-2">
           {loading ? 'Loading...' : 'Verify OTP'}

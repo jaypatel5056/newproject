@@ -5,8 +5,19 @@
 //   width: 60%;
 //   margin-left: 190px;
   flex-grow: 1;
+  margin-right: 20px;
+  margin-left: 250px;
   @include sm{
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-left: 0;
+    
+  }
+  @include lg{
+    margin-left: 0;
+  }
+  @include xlg{
+    margin-top: 20px;
+    
   }
 //   border: 1px solid black;
 }
@@ -18,6 +29,7 @@
     display: flex;
     margin-top: 40px;
 }
+
 .container1{
     display: flex;
     flex-direction: column;
@@ -26,6 +38,9 @@
 .heading{
     // border: 1px solid;
     margin-left: 50px;
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
  
 }
 .button1{
@@ -39,6 +54,15 @@
     // background-color: #111;
     justify-content: center;
     margin-top: 45px;
+    margin-left: 250px;
+    @include sm{
+        display: block;
+        margin-left: 0;
+    }
+    @include lg{
+        margin-left: 0;
+        display: block;
+    }
 
 }
 .item{
@@ -55,6 +79,12 @@
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 40px;
+
+    @include sm{
+        text-align: left;
+        margin: 0 0;
+        margin-bottom: 30px;
+    }
 }
 // table, th, td {
 //     border: 1px solid;

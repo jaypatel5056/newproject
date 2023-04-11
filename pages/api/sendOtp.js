@@ -31,6 +31,7 @@ export default async (req, res) => {
   const newOtp= await bcrypt.hash(otp,10);
   const token = generateToken(email, newOtp);
 
+
   const msg = {
     to: TO_EMAIL,
     from: FROM_EMAIL1,
@@ -50,6 +51,5 @@ export default async (req, res) => {
     res.status(500).json({ message: "Failed to send OTP email" });
     return;
   }
-
   res.status(200).json({ message: "OTP has been sent to your email", token });
 };

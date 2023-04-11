@@ -241,12 +241,12 @@ const Meet = () => {
       </div>
       <div className={styles.square}>
    {/* <div className={styles.content}> */}
-   <motion.div 
+   {/* <motion.div 
          initial={{opacity: 1,scale: 0.5,y:100}}
          whileInView={{scale: 1,y:0}}
          transition={{duration: 1.5}} 
          viewport={{ once: false, amount: 0.5}} 
-        className={styles.image1}></motion.div>
+        className={styles.image1}></motion.div> */}
         <motion.div
         initial={{y: 200}}
         whileInView={{y:0}}

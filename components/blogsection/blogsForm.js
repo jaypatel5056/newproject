@@ -4,22 +4,26 @@ import { Accordion, Row, Col } from "react-bootstrap";
 import dynamic from "next/dynamic";
 import axios from "axios";
 
-const blogsForm = () => {
+const blogsForm = ({closeModal}) => {
     const [name, setName] = useState("");
-    const [postId, setPostId] = useState("");
+    const [id, setId] = useState("");
     
-    const [postTitle,setPostTitle]=useState("");
+    const [title,setTitle]=useState("");
+    const [content, setContent] = useState("");
     const [email, setEmail] = useState("");
+  
+    const [categories, setCategories] = useState(""); 
     const [message, setMessage] = useState("");
     const [inputData, setInputData] = useState({});
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let data={ name , email, message }
-        setInputData({ name , email, message });
+        closeModal(); 
+        let data={ id,title,content,categories }
+        setInputData(data);
         console.log(JSON.stringify(data));
         try{
-        const respone=axios.post('/api/contact',JSON.stringify(data),{
+        const respone=axios.post('/api/editpost',JSON.stringify(data),{
         headers: {
           'Accept': 'application/json, text/plain, */*',
           'Content-Type': 'application/json'
@@ -28,14 +32,16 @@ const blogsForm = () => {
       )
         console.log('Response revevied');
         if (respone.status === 200) {
-          console.log('Response succeeded!')
+          console.log('Post updated successfully!')
           setSubmitted(true)
-          setName('')
+          setId('')
+          setTitle('')
+          setContent('')
           setEmail('')
         }   
       }
         catch(error){
-    
+        console.error(error)
         }
         
         console.log(data);
@@ -56,7 +62,9 @@ const blogsForm = () => {
   return (
     <div className={styles.formsection}>
           <div className={styles.h21}>
-            <h2> Get in tou​ch!</h2>
+            {/* <h2> Get in tou​ch!</h2>
+             */}
+             <h2>Update/New Post</h2>
           </div>
           <div className={styles.form}>
             <form onSubmit={handleSubmit}>
@@ -64,41 +72,54 @@ const blogsForm = () => {
                 type="number"
                 className={styles.name}
                 onChange={(e) => {
-                  setPostId(e.target.value);
+                  setId(e.target.value);
                   console.log(name);
                 }}
                 placeholder="Enter the Post ID"
                 id="name-2ee9"
-                name="name"
-                value={postId}
+                name="postId"
+                value={id}
                 required=""
               />
               <input
                 type="text"
                 className={styles.email}
                 onChange={(e) => {
-                  setPostTitle(e.target.value);
+                  setTitle(e.target.value);
                 }}
                 placeholder="Enter the new or existing Post Title"
                 id="name-2ee9"
-                name="name"
-                value={postTitle}
+                name="postTitle"
+                value={title}
                 required=""
               />
               <input
                 type="text"
                 className={styles.message}
                 onChange={(e) => {
-                  setMessage(e?.target?.value);
+                  setContent(e.target.value);
                   console.log(message);
                 }}
-                placeholder="Enter your message"
+                // placeholder="Enter your message"
+                placeholder="Enter the new content of the post"
                 id="name-2ee9"
                 name="name"
-                value={message}
+                value={content}
                 required=""
               />
               <input
+                type="text"
+                className={styles.email}
+                onChange={(e) => {
+                  setCategories(e.target.value);
+                }}
+                placeholder="Enter the tags associated with the post "
+                id="name-2ee9"
+                name="name"
+                value={categories}
+                required=""
+              />
+              {/* <input
                 type="text"
                 className={styles.email}
                 onChange={(e) => {
@@ -109,21 +130,9 @@ const blogsForm = () => {
                 name="name"
                 value={email}
                 required=""
-              />
-              <input
-                type="text"
-                className={styles.email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                placeholder="Enter a valid email address "
-                id="name-2ee9"
-                name="name"
-                value={email}
-                required=""
-              />
+              /> */}
               
-              <button className={styles.button}>SUBMIT</button>
+              <button className={styles.button} >SUBMIT</button>
             </form>
           </div>
         </div>

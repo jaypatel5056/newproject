@@ -44,12 +44,12 @@ const html = fs.readFileSync(htmlFilePath, "utf8");
 //     secure: true,
 //   });
 
-  const mailData = {
-    from: FROM_EMAIL1,
-    to: TO_EMAIL,
-    subject: `Message From ${req.body.name}`,
-    html: htmlContent,
-  };
+    const mailData = {
+      from: FROM_EMAIL1,
+      to: TO_EMAIL,
+      subject: `Message From ${req.body.name}`,
+      html: htmlContent,
+    };
 
 //   try {
 //     await transporter.sendMail(mailData);

@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "../../styles/sidebarmenu.module.scss";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle ,FaBloggerB} from "react-icons/fa";
 import { RxDotFilled } from "react-icons/rx";
 import { AiFillDashboard } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import Link from 'next/link';
 import { useState } from "react";
 
 const sidebarmenu = () => {
@@ -26,19 +27,22 @@ const sidebarmenu = () => {
       <Offcanvas
         show={show}
         onHide={handleClose}
-        responsive="sm"
-        className={`w-250 ${styles.hello}`}
+        responsive="lg"
+        className={styles.hello}
+        
+
       >
         {/* <Offcanvas.Header closeButton className="mt-100">
           <Offcanvas.Title>Responsive offcanvas</Offcanvas.Title>
         </Offcanvas.Header> */}
-        <Offcanvas.Body className="w-100">
+        <Offcanvas.Body >
           <div className={styles.sidebar}>
+            <div className={styles.sidebar1}>
             <div className={styles.sidebarheader1}>
               <div className={styles.userpic}>
                 <FaRegUserCircle />
                 <i
-                  className={styles.sidebar}
+                  // className={}
                   class="fa fa-user-circle fa-4x"
                   aria-hidden="true"
                 ></i>
@@ -63,7 +67,7 @@ const sidebarmenu = () => {
               <ul>
                 {/* <li className={styles.headermenu} class="header-menu"><span>General</span></li> */}
                 <li class="sidebar-dropdown" className={styles.sidebardropdown}>
-                  <a href="#">
+                  <a href="#" className={styles.a1}>
                     <AiFillDashboard className={styles.a1} /> Dashboard
                   </a>
                   {/* <div class="sidebar-submenu" className={styles.sidebarsubmenu}>
@@ -73,6 +77,20 @@ const sidebarmenu = () => {
                 <li><a href="#">Dashboard 3</a></li>
               </ul>
             </div> */}
+                </li>
+                <li class="sidebar-dropdown" className={styles.sidebardropdown}>
+                  <Link href='/userdashboard/blogtable'>
+                    <FaBloggerB className={styles.a1} /> Blog Table
+                  </Link>
+                  {/* </a> */}
+                </li>
+                <li class="sidebar-dropdown" className={styles.sidebardropdown}>
+                  <Link href="/userdashboard/usertable">
+
+                  {/* <a href="#"> */}
+                    <FaRegUserCircle className={styles.a1} /> User Table
+                  {/* </a> */}
+                  </Link>
                 </li>
               </ul>
               {/* <!-- Dashboard --> */}
@@ -92,7 +110,7 @@ const sidebarmenu = () => {
             <div class="sidebar-submenu">
               <ul>
                 <li><a href="#">General</a></li>
-                <li><a href="#">Panels</a></li>
+                  <li><a href="#">Panels</a></li>
                 <li><a href="#">Tables</a></li>
                 <li><a href="#">Icons</a></li>
                 <li><a href="#">Forms</a></li>
@@ -137,6 +155,7 @@ const sidebarmenu = () => {
       <a href="">Service</a>
       <a href="">Join</a>
       <a href="">Contact</a> */}
+          </div>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

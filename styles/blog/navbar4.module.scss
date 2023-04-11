@@ -4,15 +4,14 @@
     // margin-top: 30px;
     // margin-top:20px;
     margin-bottom: 30px;
+    max-width: 2000px;
     .logo{
         margin-right: 20px;
         @include sm{
           width: 150px;
         }
         // width: 200px;
-        // height: 100px;
-
-        
+        // height: 100px
     }
     .hello{
         font-size:1rem;
@@ -26,6 +25,10 @@
         // gap: 40px;  
         gap: 10px;
         margin-left: auto;
+        @include sm{
+          margin-top: 20px;
+          margin-left: 10px;
+        }
 
       }
       .link1 {

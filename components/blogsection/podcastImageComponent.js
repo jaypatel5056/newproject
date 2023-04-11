@@ -14,19 +14,11 @@ const PodcastImageComponent = () => {
         </div>
         <div className={styles.section3}>
         <div className={styles.buttons1}>
-                  <div>
-                    <a href="#">Listen Now</a>
-                  </div>
-                </div>
-
-
-
+        <div>
+        <a href="#">Listen Now</a>
         </div>
-
-
-
-
-
+      </div>
+        </div>
     </div>
   )
 }

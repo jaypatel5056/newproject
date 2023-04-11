@@ -1,0 +1,112 @@
+@import "../mixins.scss";
+
+.main1{
+//  border-collapse: collapse;
+//  display: block;
+//   width: 60%;
+//   margin-left: 190px;
+ flex-grow: 1;
+ margin-right: 20px;
+ @include sm{
+   margin-top: 20px;
+   margin-left: 0;  
+ }
+ @include lg{
+   margin-left: 0;
+ }
+ @include xlg{
+   margin-top: 20px;
+   
+ }
+//   border: 1px solid black;
+}
+.leftmenu{
+   width: fit-content;
+   box-sizing: border-box;
+}
+.container{
+   display: flex;
+   // margin-top: 40px;
+}
+
+.container1{
+   display: flex;
+   flex-direction: column;
+   margin: 20px;
+   // margin-left: 20px;
+   // margin-top: 20px;
+   // margin-right: 20px;
+
+}
+.heading{
+   // border: 1px solid
+
+}
+.zzz{
+   // margin-top: 50px;
+   font-family: "Sora",sans-serif;
+   font-weight: 700;
+   color: #454545;
+
+}
+.button1{
+   color: #888888;
+   background-color: #111;
+}
+.pagesection{
+   display: flex;
+   align-items: center;
+   color: #888888;
+   // background-color: #111;
+   justify-content: center;
+   margin-top: 45px;
+   @include sm{
+       display: block;
+       margin-left: 0;
+   }
+   @include lg{
+       margin-left: 0;
+       display: block;
+   }
+
+}
+.item{
+   background-color: #111;
+   height: 400px;
+}
+.content{
+   // border: 1px solid;
+  flex-grow: 1;
+   
+  
+}
+.formside{
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 30px;
+   margin-bottom: 40px;
+
+   @include sm{
+       text-align: left;
+       margin: 0 0;
+       margin-bottom: 30px;
+   }
+}
+.downloadbutton{
+   cursor:pointer;
+}
+.content1{
+   display: flex;
+   // align-items: center;
+   justify-content: center;
+   // height: 40px;
+   // height: 100%;
+   flex-grow: 1;
+}
+.downloadicon{
+   cursor: pointer;
+   height: 100% !important;
+}
+// table, th, td {
+//     border: 1px solid;
+//   }

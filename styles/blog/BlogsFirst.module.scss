@@ -37,6 +37,8 @@
     // color: var(--ast-global-color-2);
     font-weight: 700;
     display: block;
+    font-weight: 800;
+  
     // padding-left: 30px;
     margin-top: 70px;
     @include sm {
@@ -489,6 +491,13 @@
       }
     }
   }
+  .techreviews{
+    margin-top: 30px;
+    @include sm{
+      margin-top: 30px;
+    }
+  }
+
 }
 .secondsection {
   // padding-left: 20px !important;
@@ -496,6 +505,10 @@
   .socials{
     // height: fit-content;
     // margin-top: 20px;
+    @include sm{
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
     h5{
     font-family: "Sora";
     font-weight: 600;
@@ -611,7 +624,8 @@
     flex-direction: column;
     border: 1px solid #dfdee3;
     @include sm {
-      margin-top: 70px;
+      // margin-top: 70px;
+       margin-top: 30px;
     }
     @include lg {
       margin-top: 70px;
@@ -661,6 +675,11 @@
           width: 100%;
         }
       }
+      .emailbtn{
+        @include sm{
+          width: 230px;
+        }
+      }
       .buttons1 {
         margin-top: -px;
         width: 150px;
@@ -696,7 +715,7 @@
   padding-left: 0;
   margin-top: 44px;
   @include sm{
-    height: 400px;
+    // height: 400px;
     padding: 20px;
     padding-top: 0;
   }

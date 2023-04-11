@@ -1,0 +1,37 @@
+
+@import "../mixins.scss";
+.section2 {
+
+    @include sm{
+      display: flex;
+      flex-direction: column;
+    }
+    .navsection {
+      justify-content: end;
+    }
+
+    svg {
+      font-size: 1.2rem;
+    }
+
+    .link1 {
+      text-decoration: none;
+      color: black;
+      font-family: "Sora", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+
+      @include sm {
+        font-size: 0.9rem;
+      }
+
+      @include lg {
+        font-size: 0.9rem;
+      }
+    }
+
+    @include sm {
+      // display: none;
+      // flex-direction: column;
+    }
+  }

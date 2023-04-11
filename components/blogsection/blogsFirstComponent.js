@@ -79,7 +79,7 @@ const blogs1 = () => {
                   </Link>
                 </div>
                 <div className={styles.text1}>
-                  <h2 className={styles.h2}>EDITORS PICK</h2>
+                  <h2 className={styles.h2}>EDITORS PICaaaaK</h2>
                   <Link href="/blogs/10" className={styles.link1}>
                     For Families of Teens at Microsoft Surface{" "}
                   </Link>
@@ -97,7 +97,7 @@ const blogs1 = () => {
             <Col sm={9} className={` mt-40 ${styles.firstsection}`}>
               <div class="mt-40 d-flex justify-content-between align-items-center blogs-first_header__NqUIR">
                 <div className="d-flex justify-content-center align-items-center ">
-                  <h5 class="mt-0 elementor-heading-title elementor-size-default">
+                  <h5 class="mt-0 p-0 elementor-heading-title elementor-size-default">
                     Editor’s Pick
                   </h5>
                 </div>
@@ -180,6 +180,7 @@ const blogs1 = () => {
                     type="email"
                     placeholder="Email address"
                     required=""
+                    className={styles.emailbtn}
                   ></input>
                   <div className={styles.buttons1}>
                     <div>

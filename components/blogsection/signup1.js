@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useEffect, useSyncExternalStore} from 'react'
 import styles from "../../styles/blog/signup1.module.scss"
 import {useRef} from "react"
 import {
@@ -26,6 +26,19 @@ import DotLoader from 'react-spinners/DotLoader';
   
 
 const login1 = () => {
+  const [id,setID]=useState('');
+
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem('userId');
+    if (isLoggedIn) {
+     console.log(isLoggedIn);
+     setID(isLoggedIn);
+    } else {
+      console.log('not there');
+    }
+  }, [id]);
+  
+  // console.log(id);
     const[loading,setLoading]=useState(false)
 
         const firstNameRef = useRef();
@@ -105,7 +118,8 @@ const login1 = () => {
     <div className={styles.full}>
         
         <div className={`${styles.rectangle}`}>
-        <h3 className={styles.h3}>Sign Up</h3>
+        <h3 className={styles.h3}>Sign Up{id}</h3>
+        {/* <h3>{id}</h3> */}
 
          <form onSubmit={handleSubmit} className={styles.form}>
          <label for="firstName" class={styles.label}>FirstName</label>

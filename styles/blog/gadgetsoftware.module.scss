@@ -9,6 +9,9 @@
       flex-direction: column;
       padding: 0 20px;
     }
+    @include lg{
+      padding: 0 20px;
+    }
     .hello{
         flex: 1;
     }
@@ -67,7 +70,7 @@
 
 .capacitysection {
     color: #35393f;
-    background-color: #eaf2fd;
+    // background-color: #eaf2fd;
     width: 100%;
     margin-top: 0px;
   

@@ -1,7 +1,7 @@
 // @import "../mixins.scss";
 @import "../mixins.scss";
 .image4{
-  height: 100px;
+  // height: 100px;
   margin-top: 150px;
   display: flex;
   width: 100%;
@@ -25,7 +25,7 @@
     margin-top: 100px;
     height: 300px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 50px;
     // padding-left: 20px;
     padding: 20px;
     border: 1px solid white;
@@ -37,7 +37,7 @@
     
 // width: 30%;
 img{
-  transform: translateY(-37px);
+  // transform: translateY(-37px);
   // transform: translatex(-1px);
   @include sm{
     // transform: translatex(-20px);

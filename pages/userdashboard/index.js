@@ -12,12 +12,13 @@ import { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 // import First from "../components/dashboradfirst"
 import Left1 from "../../components/blogsection/sideBarMenuComponent"
-import Left2 from "../../components/test/leftTest"
+// import Left2 from "../../components/test/leftTest"
 import SidebarMenu from '../../components/blogsection/leftMenuComponent';
 import New from "../../components/test/new"
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { withAuth } from '@/auth/auth1';
 
 const userdashboard = () => {
   const [show, setShow] = useState(false);
@@ -28,7 +29,7 @@ const userdashboard = () => {
     <>
     <div className={styles.wrap}>
     {/* <New/> */}
-    <div className={styles.section1}>
+    <div className={`w-280 ${styles.section1}`}>
 
     <Left1/>
     {/* <Left2/> */}
@@ -67,7 +68,7 @@ const userdashboard = () => {
           {/* // ></Link> */}
           <AiOutlineUser/></Nav.Link>
         
-            <Nav.Link href="login/signup">Signup</Nav.Link>
+            {/* <Nav.Link href="login/signup">Signup</Nav.Link> */}
 
             <Nav.Link href="login/signout" >Signout</Nav.Link>
           </Nav>
@@ -82,4 +83,4 @@ const userdashboard = () => {
   )
 }
 
-export default userdashboard
+export default withAuth(userdashboard);

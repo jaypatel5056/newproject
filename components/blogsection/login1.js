@@ -23,6 +23,7 @@ const login1 = () => {
     const [otp1,setOtp1]=useState(false)
     const [isLoggedIn,setIsLoggedIn]=useState(false);
     const [email,setEmail]=useState('');
+    const [userId,setUserId]=useState();
     const [username,setUserName]=useState('')
 
     const router = useRouter();
@@ -43,9 +44,14 @@ const login1 = () => {
         console.log(response);
         console.log(response.data.status);
         if (response.data.status==true) {
+          console.log('user details ');
           console.log(response.data);
           // clg(response.data)
           // localStorage.setItem('username', response.data.data.user_login);
+          console.log(response.data.data.ID);
+          // localStorage.setItem('userId',response.data.data.ID);
+          setUserId(response.data.data.ID);
+
           setUserName(response.data.data.user_login);
           console.log('ama');
           const email=response.data.data.user_email;  
@@ -92,7 +98,7 @@ const login1 = () => {
         
       <div className={styles.rectangle}>
 
-      <OTPsection email={email} username={username}/>
+      <OTPsection email={email} username={username} userid={userId}/>
       </div>
       </div>
       

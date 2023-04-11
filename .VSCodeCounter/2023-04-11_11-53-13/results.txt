@@ -1,0 +1,229 @@
+Date : 2023-04-11 11:53:13
+Directory : c:\Users\jay.patel\Desktop\next1\project-1
+Total : 166 files,  25210 codes, 3486 comments, 1567 blanks, all 30263 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          2 |     10,649 |          0 |          2 |     10,651 |
+| JavaScript         |         97 |      7,182 |      2,006 |        797 |      9,985 |
+| SCSS               |         52 |      6,817 |      1,288 |        670 |      8,775 |
+| CSS                |          7 |        475 |         35 |         67 |        577 |
+| HTML               |          3 |         56 |        153 |         15 |        224 |
+| Markdown           |          1 |         23 |          0 |         16 |         39 |
+| JSON with Comments |          1 |          5 |          4 |          0 |          9 |
+| XML                |          3 |          3 |          0 |          0 |          3 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                           | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                              |        166 |     25,210 |      3,486 |      1,567 |     30,263 |
+| . (Files)                                                                                      |          5 |     10,691 |         44 |         31 |     10,766 |
+| auth                                                                                           |          1 |         16 |         33 |          2 |         51 |
+| components                                                                                     |         48 |      5,119 |      1,139 |        471 |      6,729 |
+| components\blogsection                                                                         |         26 |      2,868 |        771 |        274 |      3,913 |
+| components\homepage                                                                            |         10 |        973 |        175 |        113 |      1,261 |
+| components\test                                                                                |         12 |      1,278 |        193 |         84 |      1,555 |
+| contactform                                                                                    |          5 |        158 |        158 |         20 |        336 |
+| custom                                                                                         |          2 |        191 |         14 |         19 |        224 |
+| data                                                                                           |          3 |        154 |          0 |         15 |        169 |
+| lib                                                                                            |          2 |         52 |         15 |         16 |         83 |
+| pages                                                                                          |         43 |      1,865 |        782 |        281 |      2,928 |
+| pages (Files)                                                                                  |         10 |        320 |         80 |         52 |        452 |
+| pages\api                                                                                      |         22 |        640 |        241 |        119 |      1,000 |
+| pages\api (Files)                                                                              |         15 |        490 |        197 |        100 |        787 |
+| pages\api\category                                                                             |          3 |         67 |         24 |          8 |         99 |
+| pages\api\category (Files)                                                                     |          2 |         48 |         14 |          4 |         66 |
+| pages\api\category\name                                                                        |          1 |         19 |         10 |          4 |         33 |
+| pages\api\contactform                                                                          |          1 |         38 |          3 |          1 |         42 |
+| pages\api\message                                                                              |          1 |         17 |         11 |          3 |         31 |
+| pages\api\users                                                                                |          2 |         28 |          6 |          7 |         41 |
+| pages\blogs                                                                                    |          5 |        435 |        288 |         40 |        763 |
+| pages\blogs (Files)                                                                            |          4 |        396 |        287 |         33 |        716 |
+| pages\blogs\category                                                                           |          1 |         39 |          1 |          7 |         47 |
+| pages\login                                                                                    |          3 |         78 |         56 |          9 |        143 |
+| pages\userdashboard                                                                            |          3 |        392 |        117 |         61 |        570 |
+| public                                                                                         |          3 |          3 |          0 |          0 |          3 |
+| styles                                                                                         |         54 |      6,961 |      1,301 |        712 |      8,974 |
+| styles (Files)                                                                                 |         16 |      1,630 |        174 |        210 |      2,014 |
+| styles\blog                                                                                    |         15 |      1,843 |        412 |        172 |      2,427 |
+| styles\homepage                                                                                |          9 |      1,424 |        258 |        133 |      1,815 |
+| styles\page                                                                                    |          8 |      1,223 |        156 |        138 |      1,517 |
+| styles\test                                                                                    |          6 |        841 |        301 |         59 |      1,201 |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                       | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\jay.patel\Desktop\next1\project-1\README.md                                           | Markdown           |         23 |          0 |         16 |         39 |
+| c:\Users\jay.patel\Desktop\next1\project-1\auth\auth1.js                                       | JavaScript         |         16 |         33 |          2 |         51 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\allPosts.js                  | JavaScript         |         73 |         31 |          8 |        112 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\allposts1.js                 | JavaScript         |        153 |          9 |          6 |        168 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\blogSmallDetailsComponent.js | JavaScript         |         29 |          0 |          3 |         32 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\blogsFirstComponent.js       | JavaScript         |        399 |          1 |         16 |        416 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\blogsFirstSection2.js        | JavaScript         |        471 |         17 |         30 |        518 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\blogsForm.js                 | JavaScript         |         88 |         48 |          6 |        142 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\faqComponent.js              | JavaScript         |         50 |        167 |          7 |        224 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\gadgetComponent.js           | JavaScript         |         71 |         47 |          4 |        122 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\gadgetSoftwareComponent.js   | JavaScript         |        205 |          0 |         10 |        215 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\gamesComponent.js            | JavaScript         |         68 |         48 |          8 |        124 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\getCategoryPosts.js          | JavaScript         |         54 |          1 |         11 |         66 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\lastComponent.js             | JavaScript         |        103 |          0 |          5 |        108 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\leftMenuComponent.js         | JavaScript         |         52 |          0 |          4 |         56 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\login1.js                    | JavaScript         |        108 |         19 |         25 |        152 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\navbarComponent.js           | JavaScript         |         81 |         11 |          9 |        101 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\otpsection.js                | JavaScript         |         84 |         48 |         15 |        147 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\podcastImageComponent.js     | JavaScript         |         24 |          0 |          2 |         26 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\shareComponent.js            | JavaScript         |         44 |          0 |          3 |         47 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\sideBarMenuComponent.js      | JavaScript         |         98 |         60 |          9 |        167 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\signinComponent.js           | JavaScript         |         80 |         24 |         13 |        117 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\signup1.js                   | JavaScript         |         95 |         44 |         18 |        157 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\signupComponent.js           | JavaScript         |         80 |        104 |         39 |        223 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\technologyComponent.js       | JavaScript         |        101 |          1 |          4 |        106 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\userUpdateForm.js            | JavaScript         |        116 |         34 |          7 |        157 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\usernavbar.js                | JavaScript         |         37 |         10 |          4 |         51 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\blogsection\usersForm.js                 | JavaScript         |        104 |         47 |          8 |        159 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\adviceComponent.js              | JavaScript         |        101 |          2 |         21 |        124 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\faqTestComponent.js             | JavaScript         |        169 |         23 |          8 |        200 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\firm1Component.js               | JavaScript         |        151 |          4 |          3 |        158 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\headerComponent.js              | JavaScript         |         36 |         25 |          5 |         66 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\lastComponent.js                | JavaScript         |         18 |          0 |          5 |         23 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\navbarComponent.js              | JavaScript         |         43 |         25 |          4 |         72 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\rscComponent.js                 | JavaScript         |        162 |         82 |         14 |        258 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\teamSectionComponent.js         | JavaScript         |        231 |          9 |         45 |        285 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\testingComponent.js             | JavaScript         |          8 |          0 |          1 |          9 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\homepage\threeComponent.js               | JavaScript         |         54 |          5 |          7 |         66 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\FirmComponent.js                    | JavaScript         |         54 |          4 |          3 |         61 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\NavbarComponent.js                  | JavaScript         |         25 |          0 |          1 |         26 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\RscComponent.js                     | JavaScript         |        101 |         11 |          9 |        121 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\allposts1.js                        | JavaScript         |         29 |          0 |          4 |         33 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\compare.js                          | JavaScript         |         40 |          4 |          2 |         46 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\helloComponent.js                   | JavaScript         |          7 |          0 |          2 |          9 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\leftTest.js                         | JavaScript         |         81 |          2 |         11 |         94 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\likeComponent.js                    | JavaScript         |         41 |          3 |          8 |         52 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\new.js                              | JavaScript         |         19 |          0 |          2 |         21 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\topComponent.js                     | JavaScript         |        364 |        122 |         14 |        500 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\try2.js                             | JavaScript         |        144 |         24 |         12 |        180 |
+| c:\Users\jay.patel\Desktop\next1\project-1\components\test\twocomponents.js                    | JavaScript         |        373 |         23 |         16 |        412 |
+| c:\Users\jay.patel\Desktop\next1\project-1\contactform\allposts.css                            | CSS                |         58 |          0 |          5 |         63 |
+| c:\Users\jay.patel\Desktop\next1\project-1\contactform\contactform.html                        | HTML               |         26 |         74 |          7 |        107 |
+| c:\Users\jay.patel\Desktop\next1\project-1\contactform\styles1.css                             | CSS                |         44 |          5 |          0 |         49 |
+| c:\Users\jay.patel\Desktop\next1\project-1\contactform\try1.html                               | HTML               |         11 |          0 |          1 |         12 |
+| c:\Users\jay.patel\Desktop\next1\project-1\contactform\userregis.html                          | HTML               |         19 |         79 |          7 |        105 |
+| c:\Users\jay.patel\Desktop\next1\project-1\custom\test.css                                     | CSS                |          4 |          0 |          1 |          5 |
+| c:\Users\jay.patel\Desktop\next1\project-1\custom\variables.scss                               | SCSS               |        187 |         14 |         18 |        219 |
+| c:\Users\jay.patel\Desktop\next1\project-1\data\contactformdata.js                             | JavaScript         |          3 |          0 |          1 |          4 |
+| c:\Users\jay.patel\Desktop\next1\project-1\data\forrm1.js                                      | JavaScript         |          6 |          0 |          3 |          9 |
+| c:\Users\jay.patel\Desktop\next1\project-1\data\singleblog.js                                  | JavaScript         |        145 |          0 |         11 |        156 |
+| c:\Users\jay.patel\Desktop\next1\project-1\jsconfig.json                                       | JSON with Comments |          5 |          4 |          0 |          9 |
+| c:\Users\jay.patel\Desktop\next1\project-1\lib\api.js                                          | JavaScript         |         33 |         15 |         14 |         62 |
+| c:\Users\jay.patel\Desktop\next1\project-1\lib\api2.js                                         | JavaScript         |         19 |          0 |          2 |         21 |
+| c:\Users\jay.patel\Desktop\next1\project-1\next.config.js                                      | JavaScript         |         14 |         40 |         13 |         67 |
+| c:\Users\jay.patel\Desktop\next1\project-1\package-lock.json                                   | JSON               |     10,594 |          0 |          1 |     10,595 |
+| c:\Users\jay.patel\Desktop\next1\project-1\package.json                                        | JSON               |         55 |          0 |          1 |         56 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\_app.js                                       | JavaScript         |         26 |          9 |          8 |         43 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\_document.js                                  | JavaScript         |         16 |          0 |          2 |         18 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\allposts1.js                                  | JavaScript         |        145 |         48 |         14 |        207 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\[blog1].js                                | JavaScript         |         19 |         27 |          8 |         54 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\adduser.js                                | JavaScript         |         29 |          0 |          1 |         30 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\allposts.js                               | JavaScript         |         30 |          3 |          5 |         38 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\auth.js                                   | JavaScript         |         25 |          7 |          4 |         36 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\category\[id].js                          | JavaScript         |         24 |          7 |          2 |         33 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\category\all.js                           | JavaScript         |         24 |          7 |          2 |         33 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\category\name\[name].js                   | JavaScript         |         19 |         10 |          4 |         33 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\contact.js                                | JavaScript         |         39 |         21 |         13 |         73 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\contactform\styles1.css                   | CSS                |         38 |          3 |          1 |         42 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\editpost.js                               | JavaScript         |         56 |         28 |         10 |         94 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\fetchposts.js                             | JavaScript         |         29 |         11 |          4 |         44 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\getuser.js                                | JavaScript         |         18 |          7 |          1 |         26 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\hello.js                                  | JavaScript         |          3 |          1 |          2 |          6 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\index.js                                  | JavaScript         |          6 |          0 |          1 |          7 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\message\index.js                          | JavaScript         |         17 |         11 |          3 |         31 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\print1.js                                 | JavaScript         |         85 |         55 |         18 |        158 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\regismail.js                              | JavaScript         |         35 |         25 |         13 |         73 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\sendOtp.js                                | JavaScript         |         43 |          2 |         11 |         56 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\updateuser.js                             | JavaScript         |         27 |          0 |          2 |         29 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\users\[userId].js                         | JavaScript         |         23 |          6 |          5 |         34 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\users\index.js                            | JavaScript         |          5 |          0 |          2 |          7 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\api\verifyOtp.js                              | JavaScript         |         46 |         10 |          7 |         63 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\auth1.js                                      | JavaScript         |         24 |          0 |          4 |         28 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\blogs\[blog4].js                              | JavaScript         |        177 |        124 |         16 |        317 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\blogs\category\[slug].js                      | JavaScript         |         39 |          1 |          7 |         47 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\blogs\firstSCreen.js                          | JavaScript         |         77 |          9 |          6 |         92 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\blogs\index.js                                | JavaScript         |         58 |        152 |          6 |        216 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\blogs\slug.js                                 | JavaScript         |         84 |          2 |          5 |         91 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\hello.js                                      | JavaScript         |         10 |          0 |          2 |         12 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\index.js                                      | JavaScript         |         48 |         23 |          6 |         77 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\login.js                                      | JavaScript         |         12 |          0 |          4 |         16 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\login\login.js                                | JavaScript         |         22 |         27 |          2 |         51 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\login\signout.js                              | JavaScript         |         34 |          1 |          5 |         40 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\login\signup.js                               | JavaScript         |         22 |         28 |          2 |         52 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\printcheck.js                                 | JavaScript         |          7 |          0 |          2 |          9 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\signup.js                                     | JavaScript         |         12 |          0 |          4 |         16 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\test1.js                                      | JavaScript         |         20 |          0 |          6 |         26 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\userdashboard\blogtable.js                    | JavaScript         |        155 |         58 |         28 |        241 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\userdashboard\index.js                        | JavaScript         |         65 |         13 |          8 |         86 |
+| c:\Users\jay.patel\Desktop\next1\project-1\pages\userdashboard\usertable.js                    | JavaScript         |        172 |         46 |         25 |        243 |
+| c:\Users\jay.patel\Desktop\next1\project-1\public\next.svg                                     | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\jay.patel\Desktop\next1\project-1\public\thirteen.svg                                 | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\jay.patel\Desktop\next1\project-1\public\vercel.svg                                   | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\Blog.module.scss                             | SCSS               |          0 |          0 |          1 |          1 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\FAQ.module.scss                              | SCSS               |        172 |          4 |         15 |        191 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\PodcastImage1.module.scss                    | SCSS               |        105 |         14 |         15 |        134 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\Allposts.module.scss                    | SCSS               |         85 |         30 |          8 |        123 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\BlogsFirst.module.scss                  | SCSS               |        632 |        224 |         44 |        900 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\Podcastimage.module.scss                | SCSS               |        103 |         17 |         15 |        135 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\blogSmallDetails.module.scss            | SCSS               |         18 |          0 |          2 |         20 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\blogsForm.module.scss                   | SCSS               |         88 |          2 |          1 |         91 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\gadget.module.scss                      | SCSS               |        172 |         32 |         16 |        220 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\gadgetsoftware.module.scss              | SCSS               |        132 |         22 |         19 |        173 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\games.module.scss                       | SCSS               |        181 |         30 |         21 |        232 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\last11.module.scss                      | SCSS               |        139 |         19 |         16 |        174 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\login1.module.scss                      | SCSS               |         76 |         10 |          6 |         92 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\navbar4.module.scss                     | SCSS               |         51 |         11 |          2 |         64 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\otpsection.module.scss                  | SCSS               |         27 |          0 |          1 |         28 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\signout.module.scss                     | SCSS               |         14 |          0 |          2 |         16 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\signup1.module.scss                     | SCSS               |         90 |         11 |         18 |        119 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\blog\singlepost.module.scss                  | SCSS               |         35 |          4 |          1 |         40 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\footer.module.scss                           | SCSS               |         58 |          0 |          3 |         61 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\globals.css                                  | CSS                |         90 |         20 |         18 |        128 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\header.module.scss                           | SCSS               |        226 |         44 |         15 |        285 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\home.module.css                              | CSS                |        236 |          5 |         39 |        280 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\Advice.module.scss                  | SCSS               |        165 |         65 |         18 |        248 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\Navbar1.module.scss                 | SCSS               |         48 |         11 |          6 |         65 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\TeamSection.module.scss             | SCSS               |        154 |         33 |         19 |        206 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\faqtest.module.scss                 | SCSS               |        134 |          3 |          5 |        142 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\firm1.module.scss                   | SCSS               |        347 |         56 |         30 |        433 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\header1.module.scss                 | SCSS               |        226 |         45 |         15 |        286 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\last.module.scss                    | SCSS               |        121 |          6 |         11 |        138 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\three.module.scss                   | SCSS               |        100 |         13 |          8 |        121 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\homepage\try.module.scss                     | SCSS               |        129 |         26 |         21 |        176 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\last1.module.scss                            | SCSS               |        136 |         17 |         16 |        169 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\login.module.scss                            | SCSS               |         30 |          1 |          1 |         32 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\mixins.scss                                  | SCSS               |         20 |         10 |          4 |         34 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\blogTable.module.scss                   | SCSS               |         83 |         19 |         10 |        112 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\blogs.module.scss                       | SCSS               |        683 |         62 |         71 |        816 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\dashboard.module.scss                   | SCSS               |         53 |         13 |         18 |         84 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\dashboardnavbar.module.scss             | SCSS               |         28 |          2 |          7 |         37 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\home.module.scss                        | SCSS               |        127 |         34 |         14 |        175 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\macos.module.scss                       | SCSS               |         60 |          4 |          2 |         66 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\oneblog.module.scss                     | SCSS               |        116 |         13 |          7 |        136 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\page\userTable.module.scss                   | SCSS               |         73 |          9 |          9 |         91 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\sidebarmenu.module.scss                      | SCSS               |        240 |         21 |         34 |        295 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\technology.module.scss                       | SCSS               |        150 |         13 |         19 |        182 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\technology1.module.scss                      | SCSS               |        156 |         16 |         19 |        191 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\test.css                                     | CSS                |          5 |          2 |          3 |         10 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\test\firm.module.scss                        | SCSS               |        294 |         31 |         20 |        345 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\test\heartToggle.module.scss                 | SCSS               |         74 |          7 |         10 |         91 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\test\like2.module.scss                       | SCSS               |         20 |          1 |          3 |         24 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\test\navbar.module.scss                      | SCSS               |         11 |          0 |          1 |         12 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\test\rsc.module.scss                         | SCSS               |         76 |         26 |          7 |        109 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\test\topComponent.module.scss                | SCSS               |        366 |        236 |         18 |        620 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\testing.module.scss                          | SCSS               |          3 |          0 |          2 |          5 |
+| c:\Users\jay.patel\Desktop\next1\project-1\styles\updates.scss                                 | SCSS               |          3 |          7 |          6 |         16 |
+| Total                                                                                          |                    |     25,210 |      3,486 |      1,567 |     30,263 |
++------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

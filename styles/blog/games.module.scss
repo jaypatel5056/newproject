@@ -9,6 +9,9 @@
     @include sm{
       // padding: 20px;
     }
+    @include lg{
+      padding: 0 20px;
+    }
     
   .h3{
     // position: absolute;
@@ -22,6 +25,9 @@
     @include sm{
       padding: 0 20px;
       font-size: 1.2rem;
+    }
+    @include lg{
+      font-size: 2rem;
     }
   }
   .right{
@@ -59,6 +65,10 @@
         flex-direction: column;
         gap: 20px;
         padding: 0 20px;
+      }
+      @include lg{
+        padding: 0 20px;
+        
       }
       .blog1{
       background-image:
@@ -115,6 +125,10 @@
            transform: translateY(-60%);
           
           }
+          @include lg{
+            transform: translateY(-60%);
+           
+           }
           
           
           /* margin-left: 130px; */

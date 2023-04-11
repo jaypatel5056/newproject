@@ -52,7 +52,7 @@ const Allposts = ({ post }) => {
             <Link href={`blogs/${post.id}`} className={styles.a1}>
               {post.title.rendered && post.title.rendered}
             </Link>
-            <p>
+            <p styles={{color:"orange",}}>
               Cursus iaculis etiam in In nullam donec sem sed consequat
               scelerisque nibh amet, massa egestas risus, gravida vel amet,
               imperdiet …

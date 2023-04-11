@@ -14,10 +14,11 @@ const verifyToken = async (token, email, otp) => {
     console.log(email);
     console.log(decoded.otp);
     console.log(otp);
+
     // console.log(decoded.email === email && decoded.otp === otp)
     // console.log(
     //   decoded.email === email && bcrypt.compareSync(otp, decoded.otp)
-    // );
+    // ); 
     console.log("coming back");
 
     let checkOtpIsCorrect = await bcrypt.compareSync(otp, decoded.otp);
@@ -38,7 +39,7 @@ export default async (req, res) => {
     res.status(405).json({ message: "Method Not Allowed" });
     return;
   }
-
+  console.log('getting called');
   const { email, otp } = req.body;
   console.log(email);
   console.log(otp);

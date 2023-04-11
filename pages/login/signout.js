@@ -21,6 +21,7 @@ const Signout = () => {
   }, []);
   if (typeof localStorage !== 'undefined') {
     localStorage.removeItem('username');
+    localStorage.removeItem('userId')
     console.log(typeof localStorage);
   }
 

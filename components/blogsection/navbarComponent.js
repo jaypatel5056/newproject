@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
-import Nav from "react-bootstrap/Nav";
+import Nav from "react-bootstrap/Nav";    
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const navbar4 = () => {

@@ -1,26 +1,46 @@
 @import "../styles/mixins.scss";
 .hello {
-  background: #111;
+  // background: #111;
+  width: 230px !important;
+  color: black;
+  background-color: #413543;
+  @include sm{
+    width: 230px  !important;
+  }
+
+  // height: 100px;
+  // background-color: ;
   .sidebar {
     position: fixed;
-    //  width: 100px;
+    // width: 250px;
     top: 0;
-    left: 0;
+    // left: 0;
+    width: 230px;
     bottom: 0;
-    background: #111;
+    // background: #111;
+    background-color: #413543;
+    // background: #525965;
+    
+  
     // background: white;
-    padding-top: 50px;
+    // padding-top: 50px;
+    .sidebar1{
+      width: 80%;
+      margin: 0 auto;
+      // border: 1px solid blue;
+    
 
     .sidebarheader1 {
       padding: 20px;
+      padding-left: 0;
       overflow: hidden;
       display: flex;
       align-items: center;
-      border: 1px solid black;
+  
       .userpic {
         float: left;
         width: 60px;
-        padding: 2px;
+        // padding: 2px;
         border-radius: 12px;
         margin-right: 15px;
         overflow: hidden;
@@ -28,28 +48,38 @@
         color: #b8bfce;
         color: #b8bfce;
         font-size: 3rem;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+
+      
         //   transform: translateY(-100px);
         img {
           object-fit: cover;
           height: 100%;
           width: 100%;
           background-color: white;
+      
+          
         }
       }
       .userinfo {
         float: left;
         //   background-color: white;
         color: #b8bfce;
+      
         span {
           display: block;
         }
         .userrole {
           font-size: 12px;
+          
         }
         .userstatus {
           display: flex;
           font-size: 11px;
           margin-top: 4px;
+          
           .icon {
             .icon1 {
               color: black;
@@ -57,6 +87,8 @@
               display: flex;
               align-items: center;
               height: 100%;
+              font-size: 1.2rem;
+              
             }
           }
         }
@@ -69,31 +101,57 @@
     .sidebarmenu {
       padding-bottom: 10px;
       color: #b8bfce;
+  
       span {
         font-weight: bold;
         font-size: 14px;
         color: #bbb;
         padding: 15px 20px 5px 0px;
         display: inline-block;
+        display: block;
+        
       }
       ul {
+        list-style: none;
+        padding: 0;
         li {
           a {
             display: inline-block;
             width: 100%;
             text-decoration: none;
             position: relative;
-            padding: 8px 30px 8px 20px;
+            padding: 8px 30px 8px 0px;
+        
             // &:hover {
             //     display: inline-block;
             //     animation: swing ease-in-out 0.5s 1 alternate;
             // }
-            font-size: 13px;
+            
+            font-size: 15px;
+            color: #eaedf2;
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              background-color: #37D631;
+              transform: scaleX(0);
+              transform-origin: bottom left;
+      
+              transition: transform 0.3s;
+          }
             &:hover {
-              color: #bbb;
+              // color: #bbb;
+              &:after {
+                transform: scaleX(1);
+            }
+              
             }
 
             .a1 {
+              
               margin-right: 10px;
               font-size: 5px;
               width: 30px;
@@ -104,7 +162,7 @@
               &:hover {
                 display: inline-block;
                 animation: swing ease-in-out 0.5s 1 alternate;
-                color: black;
+                color: blue ;
               }
             }
           }
@@ -113,6 +171,7 @@
       .sidebardropdown {
         a {
           // font-size: 4rem;
+          
 
           .a1 {
             // font-size: 4rem;
@@ -201,6 +260,7 @@
       }
     }
   }
+}
 }
 
 @keyframes swing {

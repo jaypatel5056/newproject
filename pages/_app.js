@@ -3,9 +3,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "../data/contactformdata";
 // import "variables/scss";
+// import 'semantic-ui-css/semantic.min.css';
+import { Container } from 'semantic-ui-react';
+
 
 import Nstyles from "../styles/globals.css";
-import { ProSidebarProvider } from 'react-pro-sidebar';
+import { ProSidebarProvider } from 'react-pro-sidebar';  
 
 // import "..styles/css"
 // import '@/variables.scss'
@@ -30,8 +33,9 @@ export default function App({ Component, pageProps }) {
 
       {/* <GStyles></GStyles> */}
       <ProSidebarProvider>
-
+      {/* <Container> */}
       <Component {...pageProps} />
+      {/* </Container> */}
       </ProSidebarProvider>
     </>
   );

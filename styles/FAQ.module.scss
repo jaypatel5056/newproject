@@ -10,11 +10,17 @@
      margin-top: 40px;
     }
     @include lg{
-        width: 100%;       
+        width: 100%; 
+        padding: 0 20px;      
         // height: 1000px; 
         // padding: 50px;
         // margin-top: 40px;
        }
+    @include xxlg{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
     .second{
         // width: 55%;
         display: flex;
@@ -78,7 +84,7 @@
                 @include sm{
                     font-size: 1em;
                     overflow: hidden;
-                    word-wrap: break-word    ;
+                    word-wrap: break-word;
                 }
                }
                .message{
@@ -118,8 +124,13 @@
             @include sm{
                 padding:0px;
             }
+            @include lg{
+                padding:0px;
+            }
+            
             .h3{
                 font-size: 1.8rem;
+                font-size: 2.3rem ;
                 font-family: 'Open Sans',sans-serif;
                 font-weight: 700;
                 margin-bottom: 50px;
